@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+import 'package:jobpilot/core/app_export.dart';
+import 'controller/logo_controller.dart';
+
+// ignore_for_file: must_be_immutable
+class LogoScreen extends GetWidget<LogoController> {
+  const LogoScreen({Key? key})
+      : super(
+          key: key,
+        );
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: theme.colorScheme.primary,
+        body: SizedBox(
+          width: double.maxFinite,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomImageView(
+                imagePath: ImageConstant.imgClose,
+                height: 60.adaptSize,
+                width: 60.adaptSize,
+              ),
+              SizedBox(height: 3.v),
+              Text(
+                "1b1_jobspot".tr,
+                style: theme.textTheme.headlineMedium,
+              ),
+              SizedBox(height: 2.v),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
