@@ -27,7 +27,7 @@ class LoginScreen extends GetWidget<LoginController> {
           child: Column(
             children: [
               Text(
-                "1bl_welcome_back".tr,
+                "lbl_welcome_back".tr,
                 style: theme.textTheme.headlineLarge,
               ),
               SizedBox(height: 12.v),
@@ -63,7 +63,7 @@ class LoginScreen extends GetWidget<LoginController> {
                 child: Padding(
                   padding: EdgeInsets.only(left: 11.h),
                   child: Text(
-                    "1bl_password".tr,
+                    "lbl_password".tr,
                     style: CustomTextStyles.labelLargeOpenSansGray90002,
                   ),
                 ),
@@ -160,7 +160,7 @@ class LoginScreen extends GetWidget<LoginController> {
         children: [
           Obx(
             () => CustomCheckboxButton(
-              text: "1bl_remember_me".tr,
+              text: "lbl_remember_me".tr,
               value: controller.rememberme.value,
               padding: EdgeInsets.symmetric(vertical: 3.v),
               textStyle: CustomTextStyles.bodySmallBluegray30003,
@@ -187,7 +187,7 @@ class LoginScreen extends GetWidget<LoginController> {
   /// Section Widget
   Widget _buildLogin() {
     return CustomElevatedButton(
-      text: "1bl_login".tr.toUpperCase(),
+      text: "lbl_login".tr.toUpperCase(),
       margin: EdgeInsets.only(
         left: 36.h,
         right: 31.h,

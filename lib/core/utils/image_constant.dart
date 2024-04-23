@@ -8,7 +8,7 @@ class ImageConstant {
 // Splash Screen images
   static String imgGroup75 = '$imagePath/img_group_75.svg';
 
-  static String imgArrowLeft = '$imagePath/img_arrow_left. svg';
+  static String imgArrowLeft = '$imagePath/img_arrow_left.svg';
 
 // Login images
   static String imgGoogle2 = '$imagePath/img_google_2.png';

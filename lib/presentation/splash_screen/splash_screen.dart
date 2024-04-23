@@ -62,7 +62,7 @@ class SplashScreen extends GetWidget<SplashController> {
     return CustomAppBar(
       actions: [
         AppbarSubtitle(
-          text: "1bl_jobspot".tr,
+          text: "lbl_jobspot".tr,
           margin: EdgeInsets.symmetric(
             horizontal: 32.h,
             vertical: 16.v,
