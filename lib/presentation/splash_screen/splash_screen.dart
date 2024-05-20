@@ -1,3 +1,5 @@
+import 'package:jobpilot/presentation/login_screen/binding/login_binding.dart';
+import 'package:jobpilot/presentation/login_screen/login_screen.dart';
 import 'package:jobpilot/widgets/app_bar/custom_app_bar.dart';
 import 'package:jobpilot/widgets/app_bar/appbar_subtitle.dart';
 import 'package:jobpilot/widgets/custom_icon_button.dart';
@@ -94,6 +96,7 @@ class SplashScreen extends GetWidget<SplashController> {
             child: CustomImageView(
               imagePath: ImageConstant.imgArrowLeft,
             ),
+            onTap: () => Get.to(() => LoginScreen(), binding: LoginBinding()),
           ),
           Align(
             alignment: Alignment.topLeft,

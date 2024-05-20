@@ -1,3 +1,7 @@
+import 'package:flutter/gestures.dart';
+import 'package:jobpilot/presentation/login_screen/binding/login_binding.dart';
+import 'package:jobpilot/presentation/sign_up_screen/binding/sign_up_binding.dart';
+import 'package:jobpilot/presentation/sign_up_screen/sign_up_screen.dart';
 import 'package:jobpilot/widgets/custom_text_form_field.dart';
 import 'package:jobpilot/widgets/custom_checkbox_button.dart';
 import 'package:jobpilot/widgets/custom_elevated_button.dart';
@@ -90,7 +94,12 @@ class LoginScreen extends GetWidget<LoginController> {
                           CustomTextStyles.bodySmal10penSansff333030.copyWith(
                         decoration: TextDecoration.underline,
                       ),
-                    )
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => Get.to(
+                              () => SignUpScreen(),
+                              binding: SignUpBinding(),
+                            ),
+                    ),
                   ],
                 ),
                 textAlign: TextAlign.left,

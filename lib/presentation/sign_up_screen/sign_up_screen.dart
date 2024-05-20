@@ -45,7 +45,7 @@ class SignUpScreen extends GetWidget<SignUpController> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "1bl_full_name".tr,
+                  "lbl_full_name".tr,
                   style: CustomTextStyles.labelLargeGray90002,
                 ),
               ),
@@ -55,7 +55,7 @@ class SignUpScreen extends GetWidget<SignUpController> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "1bl_email".tr,
+                  "lbl_email".tr,
                   style: CustomTextStyles.labelLargeGray90002,
                 ),
               ),
@@ -65,7 +65,7 @@ class SignUpScreen extends GetWidget<SignUpController> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "1bl_password".tr,
+                  "lbl_password".tr,
                   style: theme.textTheme.labelLarge,
                 ),
               ),
@@ -82,7 +82,7 @@ class SignUpScreen extends GetWidget<SignUpController> {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "msg_you_don_t_have_an2".tr,
+                      text: "msg_already_have_an".tr,
                       style: CustomTextStyles.bodySmal10penSansff514a6b,
                     ),
                     TextSpan(
@@ -107,7 +107,7 @@ class SignUpScreen extends GetWidget<SignUpController> {
   Widget _buildFullName() {
     return CustomTextFormField(
       controller: controller.fullNameController,
-      hintText: "1bl_brandone_louis".tr,
+      hintText: "lbl_brandone_louis".tr,
       hintStyle: CustomTextStyles.bodySmallGray90099,
       contentPadding: EdgeInsets.symmetric(
         horizontal: 25.h,
@@ -165,7 +165,7 @@ class SignUpScreen extends GetWidget<SignUpController> {
         children: [
           Obx(
             () => CustomCheckboxButton(
-              text: "1bl_remember_me".tr,
+              text: "lbl_remember_me".tr,
               value: controller.rememberme.value,
               padding: EdgeInsets.symmetric(vertical: 3.v),
               textStyle: CustomTextStyles.bodySmallBluegray30003,
@@ -226,7 +226,6 @@ class SignUpScreen extends GetWidget<SignUpController> {
   onTapSignUpWithGoogle() async {
     await GoogleAuthHelper().googleSignInProcess().then((googleUser) {
       if (googleUser != null) {
-//TODO Actions to be performed after signin
       } else {
         Get.snackbar('Error', 'user data is empty');
       }

@@ -713,6 +713,7 @@ final Map<String, String> enUs = {
   "msg_wireless_symposium": "Wireless Symposium (RWS)",
   "msg_write_additional": "Write additional information here",
   "msg_you_don_t_have_an2": "You don't have an account yet?",
+  "msg_already_have_an": "Already have an account?",
   "msg_your_application": "Your application",
   "msg_your_job_notification": "Your job notification",
 
