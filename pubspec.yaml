@@ -73,16 +73,17 @@ flutter:
     - assets/
     - assets/images/
     - assets/images/image_not_found.png
+    - assets/fonts/
   fonts:
-    - family: DM Sans
+    - family: DMSans
       fonts:
-        - asset: assets/fonts/DMSansBold.ttf
+        - asset: assets/fonts/DMSans-Bold.ttf
         - weight: 700
-        - asset: assets/fonts/DMSansMedium.ttf
+        - asset: assets/fonts/DMSans-Medium.ttf
         - weight: 400
-        - asset: assets/fonts/DMSansRegular.ttf
+        - asset: assets/fonts/DMSans-Regular.ttf
         - weight: 500
-    - family: Open Sans
+    - family: OpenSans
       fonts:
         - asset: assets/fonts/OpenSansRomanBold.ttf
         - weight: 600
