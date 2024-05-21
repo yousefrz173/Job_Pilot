@@ -80,7 +80,7 @@ flutter:
         - asset: assets/fonts/DMSans-Bold.ttf
         # - weight: 700
         - asset: assets/fonts/DMSans-Medium.ttf
-        # - weight: 400
+        # - weight: 500
         - asset: assets/fonts/DMSans-Regular.ttf
         # - weight: 500
     - family: OpenSans
