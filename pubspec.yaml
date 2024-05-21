@@ -78,21 +78,21 @@ flutter:
     - family: DMSans
       fonts:
         - asset: assets/fonts/DMSans-Bold.ttf
-        - weight: 700
+        # - weight: 700
         - asset: assets/fonts/DMSans-Medium.ttf
-        - weight: 400
+        # - weight: 400
         - asset: assets/fonts/DMSans-Regular.ttf
-        - weight: 500
+        # - weight: 500
     - family: OpenSans
       fonts:
         - asset: assets/fonts/OpenSansRomanBold.ttf
-        - weight: 600
+        # - weight: 600
         - asset: assets/fonts/OpenSansRomanExtraBold.ttf
-        - weight: 400
+        # - weight: 400
         - asset: assets/fonts/OpenSansRomanRegular.ttf
-        - weight: 700
+        # - weight: 700
         - asset: assets/fonts/OpenSansRomanSemiBold.ttf
-        - weight: 800
+        # - weight: 800
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
