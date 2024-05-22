@@ -30,22 +30,22 @@ class ProfileScreen extends GetWidget<ProfileController> {
                     SizedBox(height: 20.v),
                     _buildWorkExperience(
                       thumbsUp: ImageConstant.imgSettingsOrange400,
-                      workExperience: "1bl_about_me".tr,
+                      workExperience: "lbl_about_me".tr,
                     ),
                     SizedBox(height: 10.v),
                     _buildWorkExperience(
                       thumbsUp: ImageConstant.imgThumbsUpOrange40024x24,
-                      workExperience: "1bl_work_experience".tr,
+                      workExperience: "lbl_work_experience".tr,
                     ),
                     SizedBox(height: 10.v),
                     _buildWorkExperience(
                       thumbsUp: ImageConstant.imgSettingsOrange40026x24,
-                      workExperience: "1bl_education".tr,
+                      workExperience: "lbl_education".tr,
                     ),
                     SizedBox(height: 10.v),
                     _buildWorkExperience(
                       thumbsUp: ImageConstant.imgClose24x24,
-                      workExperience: "1bl_skill".tr,
+                      workExperience: "lbl_skill".tr,
                     ),
                     SizedBox(height: 10.v),
                     _buildLanguage(),
@@ -129,7 +129,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                           style: CustomTextStyles.titleSmallffffffff,
                         ),
                         TextSpan(
-                          text: "1bl_follower".tr,
+                          text: "lbl_follower".tr,
                           style: CustomTextStyles.bodySmallffffffff,
                         ),
                       ],
@@ -151,7 +151,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                           style: CustomTextStyles.titleSmallffffffff,
                         ),
                         TextSpan(
-                          text: "1bl_following".tr,
+                          text: "lbl_following".tr,
                           style: CustomTextStyles.bodySmallffffffff,
                         ),
                       ],
@@ -466,7 +466,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
               top: 2.v,
             ),
             child: Text(
-              "1bl_resume".tr,
+              "lbl_resume".tr,
               style: CustomTextStyles.titleSmallOpenSansGray90001,
             ),
           ),

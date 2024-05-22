@@ -49,7 +49,7 @@ class RemoveWorkExperienceBottomsheet extends StatelessWidget {
           ),
           SizedBox(height: 10.v),
           CustomElevatedButton(
-            text: "1bl_undo_changes2".tr.toUpperCase(),
+            text: "lbl_undo_changes2".tr.toUpperCase(),
             margin: EdgeInsets.only(right: 16.h),
             buttonStyle: CustomButtonStyles.fillDeepPurple,
             alignment: Alignment.centerLeft,

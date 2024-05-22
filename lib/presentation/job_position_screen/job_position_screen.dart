@@ -53,7 +53,7 @@ class JobPositionScreen extends GetWidget<JobPositionController> {
               ),
               SizedBox(height: 31.v),
               Text(
-                "1bl_account_manager".tr,
+                "lbl_account_manager".tr,
                 style: theme.textTheme.bodySmall,
               ),
               SizedBox(height: 29.v),
@@ -68,12 +68,12 @@ class JobPositionScreen extends GetWidget<JobPositionController> {
               ),
               SizedBox(height: 30.v),
               Text(
-                "1bl_sales_attendant".tr,
+                "lbl_sales_attendant".tr,
                 style: theme.textTheme.bodySmall,
               ),
               SizedBox(height: 30.v),
               Text(
-                "1bl_accountant".tr,
+                "lbl_accountant".tr,
                 style: theme.textTheme.bodySmall,
               ),
               SizedBox(height: 29.v),
@@ -83,7 +83,7 @@ class JobPositionScreen extends GetWidget<JobPositionController> {
               ),
               SizedBox(height: 31.v),
               Text(
-                "1bl_analyst".tr,
+                "lbl_analyst".tr,
                 style: theme.textTheme.bodySmall,
               ),
               SizedBox(height: 5.v),

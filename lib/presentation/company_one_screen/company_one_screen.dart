@@ -120,7 +120,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1bl_employee_size".tr,
+                      "lbl_employee_size".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                   ),
@@ -152,7 +152,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1bl_type".tr,
+                      "lbl_type".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                   ),
@@ -402,7 +402,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
             CustomElevatedButton(
               height: 40.v,
               width: 162.h,
-              text: "1bl_company".tr,
+              text: "lbl_company".tr,
               margin: EdgeInsets.only(left: 9.h),
               buttonStyle: CustomButtonStyles.fillDeepPurple,
               buttonTextStyle: CustomTextStyles.titleSmallPrimary,

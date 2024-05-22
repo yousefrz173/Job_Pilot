@@ -42,7 +42,7 @@ class ChooseJobTypeBottomsheet extends StatelessWidget {
           ),
           SizedBox(height: 7.v),
           Text(
-            "1bl_california_usa".tr,
+            "lbl_california_usa".tr,
             style: CustomTextStyles.bodySmall0penSans,
           ),
         ],

@@ -28,7 +28,7 @@ class EditAddAJobScreen extends GetWidget<EditAddAJobController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "1bl_add_a_job".tr,
+                "lbl_add_a_job".tr,
                 style: theme.textTheme.titleMedium,
               ),
               SizedBox(height: 29.v),

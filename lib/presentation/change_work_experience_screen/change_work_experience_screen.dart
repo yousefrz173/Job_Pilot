@@ -53,7 +53,7 @@ class ChangeWorkExperienceScreen
               _buildThisismypositionnow(),
               SizedBox(height: 21.v),
               Text(
-                "1bl_description".tr,
+                "lbl_description".tr,
                 style: theme.textTheme.labelLarge,
               ),
               SizedBox(height: 9.v),
@@ -83,7 +83,7 @@ class ChangeWorkExperienceScreen
   Widget _buildManager() {
     return CustomTextFormField(
       controller: controller.managerController,
-      hintText: "1bl_manager".tr,
+      hintText: "lbl_manager".tr,
       hintStyle: theme.textTheme.bodySmall!,
     );
   }
@@ -92,7 +92,7 @@ class ChangeWorkExperienceScreen
   Widget _buildAmazonInc() {
     return CustomTextFormField(
       controller: controller.amazonIncController,
-      hintText: "1bl_amazon_inc".tr,
+      hintText: "lbl_amazon_inc".tr,
       hintStyle: theme.textTheme.bodySmall!,
     );
   }
@@ -109,7 +109,7 @@ class ChangeWorkExperienceScreen
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "1bl_start_date".tr,
+                  "lbl_start_date".tr,
                   style: theme.textTheme.labelLarge,
                 ),
                 SizedBox(height: 10.v),
@@ -142,14 +142,14 @@ class ChangeWorkExperienceScreen
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "1bl_end_date".tr,
+                  "lbl_end_date".tr,
                   style: theme.textTheme.labelLarge,
                 ),
                 SizedBox(height: 10.v),
                 CustomTextFormField(
                   width: 160.h,
                   controller: controller.dateController,
-                  hintText: "1bl_feb_2022".tr,
+                  hintText: "lbl_feb_2022".tr,
                   hintStyle: theme.textTheme.bodySmall!,
                 ),
               ],

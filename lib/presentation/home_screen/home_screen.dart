@@ -100,7 +100,7 @@ class HomeScreen extends GetWidget<HomeController> {
                           CustomElevatedButton(
                             height: 26.v,
                             width: 90.h,
-                            text: "1bl_join_now".tr,
+                            text: "lbl_join_now".tr,
                             buttonStyle: CustomButtonStyles.fillOrange,
                             buttonTextStyle: CustomTextStyles
                                 .labelLargeOnPrimaryContainerMedium,
@@ -301,7 +301,7 @@ class HomeScreen extends GetWidget<HomeController> {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "1bl_15k".tr,
+                    text: "lbl_15k".tr,
                     style: CustomTextStyles.titleSmall0penSansff150b3d,
                   ),
                   TextSpan(
@@ -309,7 +309,7 @@ class HomeScreen extends GetWidget<HomeController> {
                     style: CustomTextStyles.labelLargeOpenSansffa9a5b8,
                   ),
                   TextSpan(
-                    text: "1bl_mo".tr,
+                    text: "lbl_mo".tr,
                     style: CustomTextStyles.bodySmall0penSansffa9a5b8,
                   ),
                 ],

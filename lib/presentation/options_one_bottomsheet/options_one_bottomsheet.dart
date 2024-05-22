@@ -55,7 +55,7 @@ class OptionsOneBottomsheet extends StatelessWidget {
                       bottom: 2.v,
                     ),
                     child: Text(
-                      "1bl_delete".tr,
+                      "lbl_delete".tr,
                       style: CustomTextStyles.bodyMediumDMSansBluegray80002,
                     ),
                   ),
@@ -88,7 +88,7 @@ class OptionsOneBottomsheet extends StatelessWidget {
             ),
             SizedBox(height: 12.v),
             CustomElevatedButton(
-              text: "1bl_setting".tr,
+              text: "lbl_setting".tr,
               leftIcon: Container(
                 margin: EdgeInsets.only(right: 15.h),
                 child: CustomImageView(

@@ -54,7 +54,7 @@ class YourApplicationScreen extends GetWidget<YourApplicationController> {
                     ),
                     SizedBox(height: 20.v),
                     Text(
-                      "1bl_ui_ux_designer".tr,
+                      "lbl_ui_ux_designer".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                     SizedBox(height: 5.v),
@@ -150,7 +150,7 @@ class YourApplicationScreen extends GetWidget<YourApplicationController> {
                     ),
                     SizedBox(height: 27.v),
                     Text(
-                      "1bl_job_details".tr,
+                      "lbl_job_details".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                     SizedBox(height: 21.v),

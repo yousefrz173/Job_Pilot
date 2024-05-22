@@ -56,7 +56,7 @@ class AddAJobScreen extends GetWidget<AddAJobController> {
             bottom: 3.v,
           ),
           child: Text(
-            "1bl_post".tr,
+            "lbl_post".tr,
             style: CustomTextStyles.labelLargeOrange400,
           ),
         )

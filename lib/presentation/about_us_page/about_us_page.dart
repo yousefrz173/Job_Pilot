@@ -31,7 +31,7 @@ class AboutUsPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 20.h),
                       child: Text(
-                        "1bl_about_company".tr,
+                        "lbl_about_company".tr,
                         style: theme.textTheme.titleSmall,
                       ),
                     ),
@@ -136,7 +136,7 @@ class AboutUsPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 20.h),
                       child: Text(
-                        "1bl_type".tr,
+                        "lbl_type".tr,
                         style: theme.textTheme.titleSmall,
                       ),
                     ),
@@ -190,7 +190,7 @@ class AboutUsPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 20.h),
                       child: Text(
-                        "1bl_company_gallery".tr,
+                        "lbl_company_gallery".tr,
                         style: CustomTextStyles.titleSmall0penSansff150b3d,
                       ),
                     ),
@@ -262,7 +262,7 @@ class AboutUsPage extends StatelessWidget {
           ),
           Expanded(
             child: CustomElevatedButton(
-              text: "1bl_apply_now".tr.toUpperCase(),
+              text: "lbl_apply_now".tr.toUpperCase(),
               margin: EdgeInsets.only(left: 15.h),
             ),
           )

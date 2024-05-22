@@ -54,7 +54,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                           flex: 33,
                         ),
                         Text(
-                          "1bl_postion".tr,
+                          "lbl_postion".tr,
                           style: CustomTextStyles.bodyMediumDMSansGray90002,
                         ),
                       ],
@@ -185,7 +185,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1bl_informations".tr,
+                      "lbl_informations".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                   ),
@@ -251,7 +251,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1bl_job_type".tr,
+                      "lbl_job_type".tr,
                       style: theme.textTheme.labelLarge,
                     ),
                   ),
@@ -259,7 +259,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1bl_full_time3".tr,
+                      "lbl_full_time3".tr,
                       style: theme.textTheme.bodySmall,
                     ),
                   ),
@@ -405,7 +405,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                         Padding(
                           padding: EdgeInsets.only(left: 11.h),
                           child: Text(
-                            "1bl_meal_allowance".tr,
+                            "lbl_meal_allowance".tr,
                             style: theme.textTheme.bodySmall,
                           ),
                         ),
@@ -460,7 +460,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                         Padding(
                           padding: EdgeInsets.only(left: 11.h),
                           child: Text(
-                            "1bl_regular_hours".tr,
+                            "lbl_regular_hours".tr,
                             style: theme.textTheme.bodySmall,
                           ),
                         ),
@@ -566,7 +566,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                 children: [
                   SizedBox(height: 16.v),
                   Text(
-                    "1bl_ui_ux_designer".tr,
+                    "lbl_ui_ux_designer".tr,
                     style: CustomTextStyles.titleMediumGray90002,
                   ),
                   SizedBox(height: 14.v),
@@ -660,7 +660,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
     return CustomElevatedButton(
       height: 30.v,
       width: 91.h,
-      text: "1bl_read_more".tr,
+      text: "lbl_read_more".tr,
       margin: EdgeInsets.only(left: 20.h),
       buttonStyle: CustomButtonStyles.fillOnPrimary,
       buttonTextStyle: CustomTextStyles.bodySmall0penSansGray90002,

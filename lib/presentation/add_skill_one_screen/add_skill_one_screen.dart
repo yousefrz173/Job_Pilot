@@ -31,7 +31,7 @@ class AddSkillOneScreen extends GetWidget<AddSkillOneController> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "1bl_add_skill".tr,
+                  "lbl_add_skill".tr,
                   style: theme.textTheme.titleMedium,
                 ),
               ),

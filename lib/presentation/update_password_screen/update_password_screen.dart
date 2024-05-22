@@ -28,7 +28,7 @@ class UpdatePasswordScreen extends GetWidget<UpdatePasswordController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "1bl_update_password".tr,
+                "lbl_update_password".tr,
                 style: CustomTextStyles.titleMediumGray90003Medium,
               ),
               SizedBox(height: 24.v),
@@ -158,7 +158,7 @@ class UpdatePasswordScreen extends GetWidget<UpdatePasswordController> {
   Widget _buildUpdate() {
     return CustomElevatedButton(
       width: 213.h,
-      text: "1bl_update".tr.toUpperCase(),
+      text: "lbl_update".tr.toUpperCase(),
       alignment: Alignment.center,
     );
   }

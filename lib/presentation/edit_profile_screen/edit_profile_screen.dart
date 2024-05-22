@@ -145,7 +145,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: "1bl_120k".tr,
+                          text: "lbl_120k".tr,
                           style: CustomTextStyles.titleSmallffffffff,
                         ),
                         TextSpan(
@@ -171,7 +171,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                           style: CustomTextStyles.titleSmallffffffff,
                         ),
                         TextSpan(
-                          text: "1bl_following".tr,
+                          text: "lbl_following".tr,
                           style: CustomTextStyles.bodySmallffffffff,
                         ),
                       ],
@@ -222,7 +222,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
           SizedBox(height: 3.v),
           _buildClose(
             close: ImageConstant.imgSettingsOrange400,
-            skill: "1bl_about_me".tr,
+            skill: "lbl_about_me".tr,
           ),
           SizedBox(height: 20.v),
           Divider(
@@ -261,7 +261,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
           SizedBox(height: 5.v),
           _buildSettings(
             settings: ImageConstant.imgThumbsUpOrange40024x24,
-            education: "1bl_work_experience".tr,
+            education: "lbl_work_experience".tr,
           ),
           SizedBox(height: 20.v),
           Column(
@@ -451,7 +451,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
           SizedBox(height: 2.v),
           _buildClose(
             close: ImageConstant.imgClose24x24,
-            skill: "1bl_skill".tr,
+            skill: "lbl_skill".tr,
           ),
           SizedBox(height: 20.v),
           Divider(
@@ -481,7 +481,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
           ),
           SizedBox(height: 29.v),
           Text(
-            "1bl_see_more".tr,
+            "lbl_see_more".tr,
             style: CustomTextStyles.bodySmallOnPrimary,
           ),
         ],
@@ -562,7 +562,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                     top: 3.v,
                   ),
                   child: Text(
-                    "1bl_language".tr,
+                    "lbl_language".tr,
                     style: theme.textTheme.titleSmall,
                   ),
                 ),
@@ -691,7 +691,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                             bottom: 2.v,
                           ),
                           child: Text(
-                            "1bl_appreciation".tr,
+                            "lbl_appreciation".tr,
                             style: theme.textTheme.titleSmall,
                           ),
                         ),

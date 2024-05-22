@@ -30,7 +30,7 @@ class AddEducationScreen extends GetWidget<AddEducationController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "1bl_add_education".tr,
+                "lbl_add_education".tr,
                 style: theme.textTheme.titleMedium,
               ),
               SizedBox(height: 30.v),
@@ -154,7 +154,7 @@ class AddEducationScreen extends GetWidget<AddEducationController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "1bl_end_date".tr,
+                  "lbl_end_date".tr,
                   style: theme.textTheme.labelLarge,
                 ),
                 SizedBox(height: 10.v),

@@ -29,7 +29,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                 Padding(
                   padding: EdgeInsets.only(left: 20.h),
                   child: Text(
-                    "1bl_about_company".tr,
+                    "lbl_about_company".tr,
                     style: theme.textTheme.titleSmall,
                   ),
                 ),
@@ -79,7 +79,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                 Padding(
                   padding: EdgeInsets.only(left: 20.h),
                   child: Text(
-                    "1bl_website".tr,
+                    "lbl_website".tr,
                     style: theme.textTheme.titleSmall,
                   ),
                 ),
@@ -150,7 +150,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                 Padding(
                   padding: EdgeInsets.only(left: 20.h),
                   child: Text(
-                    "1bl_specialization".tr,
+                    "lbl_specialization".tr,
                     style: CustomTextStyles.titleSmallOpenSans,
                   ),
                 ),
@@ -376,7 +376,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
     return CustomElevatedButton(
       height: 40.v,
       width: 162.h,
-      text: "1bl_company".tr,
+      text: "lbl_company".tr,
       margin: EdgeInsets.only(left: 14.h),
       buttonStyle: CustomButtonStyles.fillDeepPurple,
       buttonTextStyle: CustomTextStyles.titleSmallPrimary,
@@ -427,7 +427,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "1bl_head_office".tr,
+                    "lbl_head_office".tr,
                     style: CustomTextStyles.titleSmallOpenSans,
                   ),
                   SizedBox(height: 4.v),
@@ -437,7 +437,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                   ),
                   SizedBox(height: 20.v),
                   Text(
-                    "1bl_type".tr,
+                    "lbl_type".tr,
                     style: CustomTextStyles.titleSmallOpenSans,
                   ),
                   Text(

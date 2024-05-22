@@ -39,7 +39,7 @@ class EndDateDialog extends StatelessWidget {
                 ),
                 SizedBox(height: 46.v),
                 Text(
-                  "1bl_end_date2".tr,
+                  "lbl_end_date2".tr,
                   style: CustomTextStyles.titleMediumOpenSans,
                 ),
                 SizedBox(height: 57.v),

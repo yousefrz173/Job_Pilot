@@ -28,7 +28,7 @@ class AddResumeVtwoScreen extends GetWidget<AddResumeVtwoController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_fullname2".tr,
+                  "lbl_fullname2".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -48,7 +48,7 @@ class AddResumeVtwoScreen extends GetWidget<AddResumeVtwoController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_gender".tr,
+                  "lbl_gender".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -73,7 +73,7 @@ class AddResumeVtwoScreen extends GetWidget<AddResumeVtwoController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_location".tr,
+                  "lbl_location".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -316,7 +316,7 @@ class AddResumeVtwoScreen extends GetWidget<AddResumeVtwoController> {
   Widget _buildSave() {
     return CustomElevatedButton(
       width: 213.h,
-      text: "1bl_save".tr.toUpperCase(),
+      text: "lbl_save".tr.toUpperCase(),
       margin: EdgeInsets.only(
         left: 81.h,
         right: 81.h,

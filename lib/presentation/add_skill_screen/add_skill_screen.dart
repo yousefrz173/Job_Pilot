@@ -62,12 +62,12 @@ class AddSkillScreen extends GetWidget<AddSkillController> {
               ),
               SizedBox(height: 30.v),
               Text(
-                "1bl_indesign".tr,
+                "lbl_indesign".tr,
                 style: theme.textTheme.bodySmall,
               ),
               SizedBox(height: 30.v),
               Text(
-                "1bl_canva_design".tr,
+                "lbl_canva_design".tr,
                 style: theme.textTheme.bodySmall,
               ),
               SizedBox(height: 30.v),

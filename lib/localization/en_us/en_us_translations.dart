@@ -47,10 +47,10 @@ final Map<String, String> enUs = {
   "lbl_50_off": "50% off",
   "lbl_66_8k": "66.8k",
   "lb1_find_your_job": "Find Your Job",
-  "1bl_join_now": "Join Now",
+  "lbl_join_now": "Join Now",
   "lbl_part_time": "Part Time",
   "lbl_recent_job_list": "Recent Job List",
-  "1bl_remote_job": "Remote Job",
+  "lbl_remote_job": "Remote Job",
 
   "msg_hello_orlando_diggs": "Hello ?Orlando Diggs.",
   "msg_product_designer": "Product Designer",
@@ -81,7 +81,7 @@ final Map<String, String> enUs = {
   "msg_find_a_similar_job": "Find a similar job",
 
 // Search - Tab Container Screen
-  "lbl_designer": "Designer", "1bl_full_time4": "Full-time",
+  "lbl_designer": "Designer", "lbl_full_time4": "Full-time",
 
 // Specialization Screen
   "lbl_120_jobs": "120 Jobs",
@@ -114,7 +114,7 @@ final Map<String, String> enUs = {
   "lbl_last_update": "Last update",
   "lbl_last_week": "Last week",
   "lbl_leader": "Leader",
-  "1bl_new_york_usa": "New York, USA",
+  "lbl_new_york_usa": "New York, USA",
   "lbl_no_experience": "No experience",
   "lb1_part_time3": "Part-time",
   "lb1_position_level": "Position level",
@@ -122,7 +122,7 @@ final Map<String, String> enUs = {
   "lbl_recent": "Recent",
   "lbl_reset": "Reset",
   "lb1_restuarant": "Restuarant",
-  "1bl_senior": "Senior",
+  "lbl_senior": "Senior",
   "lbl_texaz_usa": "Texaz, USA",
   "msg_less_than_a_year": "Less than a year",
   "msg_more_than_10_years": "More than 10 years",
@@ -138,7 +138,7 @@ final Map<String, String> enUs = {
   "lbl_45_minuts_ago": "45 minuts ago",
   "lbl_afwan_noemarnov": "Afwan Noemarnov",
   "lbl_arnold_leonardo": "Arnold Leonardo",
-  "1bl monica": "Monica",
+  "lbl monica": "Monica",
 
   "msg_because_i_always":
       "Because I always find fake job calls so I'm confused which job to take can you share your knowledge ge here? thank you",
@@ -151,12 +151,12 @@ final Map<String, String> enUs = {
 // My connection Screen
   "lbl_1m_followers": "1M Followers",
   "lbl_dribbble_inc2": "Dribbble Inc",
-  "1bl_facebook_inc": "Facebook Inc",
+  "lbl_facebook_inc": "Facebook Inc",
   "lbl_microsoft_inc": "Microsoft Inc",
   "lbl_twitter_inc2": "Twitter Inc",
 
 // About us - Tab Container Screen
-  "lbl_about_us": "About us", "1bl_jobs": "Jobs",
+  "lbl_about_us": "About us", "lbl_jobs": "Jobs",
   "lbl_visit_website": "Visit website",
 
 // Post Screen
@@ -184,7 +184,7 @@ final Map<String, String> enUs = {
 
 // Job Position Screen
   "lbl_account_manager": "Account Manager",
-  "1bl_accountant": "Accountant",
+  "lbl_accountant": "Accountant",
   "lbl_analyst": "Analyst",
   "lbl_assistant": "Assistant",
   "lbl_associate": "Associate",
@@ -220,7 +220,7 @@ final Map<String, String> enUs = {
   "lbl_insurance": "Insurance",
 
   "lbl_internet": "Internet",
-  "1bl_microsoft": "Microsoft",
+  "lbl_microsoft": "Microsoft",
   "lbl_twitter": "Twitter",
   "msg_computer_software": "Computer software",
   "msg_electronic_goods": "Electronic goods",
@@ -261,7 +261,7 @@ final Map<String, String> enUs = {
   "lbl_09_35_am": "09:35 am",
   "lbl_867_kb_pdf": "867 Kb PDF",
   "lbl_online": "Online",
-  "1bl_today": "Today",
+  "lbl_today": "Today",
   "msg_i_saw_the_ui_ux2":
       "I saw the UI/UX Designer vacancy that you uploaded on linkedin yesterday and I am interested in joining your company.",
   "msg_jamet_cv_ui_ux": "Jamet- CV - UI/UX Designer. PDF",
@@ -277,7 +277,7 @@ final Map<String, String> enUs = {
   "lbl_delete_all": "Delete all",
 
 // Options Screen
-  "lbl_send_message": "Send message", "1bl_shared": "Shared",
+  "lbl_send_message": "Send message", "lbl_shared": "Shared",
 
 // No Savings Screen
   "lbl_find_a_job": "Find a job",
@@ -332,7 +332,7 @@ final Map<String, String> enUs = {
   "lbl_italy": "Italy",
   "lbl_mandarin": "Mandarin",
   "lbl_see_more": "See more",
-  "1bl_spanish": "Spanish",
+  "lbl_spanish": "Spanish",
   "msg_jan_2015_feb_2022": "Jan 2015 - Feb 2022",
   "msg_sep_2010_aug_2013": "Sep 2010 - Aug 2013 ",
 
@@ -340,7 +340,7 @@ final Map<String, String> enUs = {
   "msg_tell_me_about_you": "Tell me about you.",
 
 // Change work experience Screen
-  "lbl_feb_2022": "Feb 2022", "1bl_jan_2015": "Jan 2015",
+  "lbl_feb_2022": "Feb 2022", "lbl_jan_2015": "Jan 2015",
 
 // Remove Work Experience ? Screen
   "msg_are_you_sure_you2":
@@ -389,7 +389,7 @@ final Map<String, String> enUs = {
 
 // Add Skill Screen
   "lbl_adobe_indesign": "Adobe Indesign",
-  "1bl_canva_design": "Canva Design",
+  "lbl_canva_design": "Canva Design",
   "lb1_graphic_design": "Graphic Design",
   "lbl_indesign": "InDesign",
   "lbl_product_design": "Product Design",
@@ -428,7 +428,7 @@ final Map<String, String> enUs = {
   "msg_proficiency_level": "Proficiency level : 0 - Poor, 10 - Very good",
 
   // Oral Screen
-  "1bl_done": "Done",
+  "lbl_done": "Done",
   "lb1_level_0": "Level 0",
   "lbl_level_1": "Level 1",
   "lbl_level_102": "Level 10",
@@ -451,10 +451,10 @@ final Map<String, String> enUs = {
   "msg_remove_appreciation": "Remove Appreciation ?",
 
 // Settings Screen
-  "lbl_dark_mode": "Dark mode", "1bl_logout": "Logout",
+  "lbl_dark_mode": "Dark mode", "lbl_logout": "Logout",
 
   // Update Password Screen
-  "lb1_new_password": "New Password", "1bl_old_password": "Old Password",
+  "lb1_new_password": "New Password", "lbl_old_password": "Old Password",
   "lbl_update": "Update", "msg_confirm_password": "Confirm Password",
 
 // Log out Screen
@@ -494,11 +494,11 @@ final Map<String, String> enUs = {
   "lbl_619_3456_7890": "619 3456 7890",
   "lbl_6_hours": "6 Hours",
   "lbl_867_kb": "867 Kb",
-  "1bl_a": "A",
-  "1bl_about_company": "About Company",
-  "1bl_about_me": "About me",
+  "lbl_a": "A",
+  "lbl_about_company": "About Company",
+  "lbl_about_me": "About me",
   "lbl_add_a_job": "Add a job",
-  "1bl_add_education": "Add Education",
+  "lbl_add_education": "Add Education",
   "lbl_add_hashtag": "Add hashtag",
   "lbl_add_language": "Add Language",
   "lbl_add_post": "Add Post",
@@ -521,8 +521,8 @@ final Map<String, String> enUs = {
   "lbl_cancel": "Cancel",
   "lbl_change_image": "Change image",
   "lbl_check_out": "Check out ",
-  "1bl_company": "Company",
-  "1bl_company_gallery": "Company Gallery",
+  "lbl_company": "Company",
+  "lbl_company_gallery": "Company Gallery",
   "lbl_consistent": "Consistent",
   "lb1_date_of_birth": "Date of birth",
   "lbl_delete": "Delete",
@@ -537,27 +537,27 @@ final Map<String, String> enUs = {
   "lbl_employment_type": "Employment type",
   "lbl_end_date": "End date",
   "lbl_end_date2": "End Date",
-  "1bl_english": "English",
+  "lbl_english": "English",
   "lbl_experience": "Experience",
   "lbl_facebook": "Facebook",
   "lbl_female": "Female",
   "lbl_field_of_study": "Field of study",
   "lbl_filter": "Filter",
-  "1bl_finance": "Finance",
-  "1bl_follow": "Follow",
+  "lbl_finance": "Finance",
+  "lbl_follow": "Follow",
   "lbl_follower": " Follower",
   "lbl_following": " Following",
   "lbl_full_time": "Full Time",
   "lbl_full_time2": "Full time",
-  "1bl_fullname2": "Fullname",
+  "lbl_fullname2": "Fullname",
   "lbl_gender": "Gender",
   "lbl_german": "German",
   "lbl_google": "Google",
   "lbl_google_inc": "Google inc",
   "lbl_google_inc2": "Google Inc",
   "lbl_head_office": "Head office",
-  "1bl_health": "Health",
-  "1bl_hybrid": "Hybrid",
+  "lbl_health": "Health",
+  "lbl_hybrid": "Hybrid",
   "lbl_in": " in ",
   "lbl_indonesian": "Indonesian",
   "lbl_industry": "Industry",
@@ -573,7 +573,7 @@ final Map<String, String> enUs = {
   "lb1_language": "Language",
   "lbl_lead_designer": "Lead Designer",
   "lbl_leadership": "Leadership",
-  "1bl_location": "Location",
+  "lbl_location": "Location",
   "lbl_login": "Login",
   "lbl_male": "Male",
   "lbl_manager": "Manager",
@@ -588,12 +588,12 @@ final Map<String, String> enUs = {
   "lbl_orlando_diggs": "Orlando Diggs",
   "lbl_password": "Password",
   "lbl_pdf": "PDF",
-  "1bl_phone_number": "Phone number",
+  "lbl_phone_number": "Phone number",
   "lbl_post": "Post",
   "lb1_posting": "Posting",
   "lbl_programmer": "Programmer",
-  "1bl_read_all": "Read all",
-  "1bl_read_more": "Read more",
+  "lbl_read_all": "Read all",
+  "lbl_read_more": "Read more",
   "lbl_remember_me": "Remember me",
   "lbl_remote": "Remote",
   "lbl_remove": "Remove",
@@ -729,7 +729,7 @@ final Map<String, String> enUs = {
   "lbl_edit_profile2": "Edit Profile",
   "lbl_filter_one": "Filter One",
   "lb1_forgot_password": "Forgot Password",
-  "1bl_home_screen": "Home Screen",
+  "lbl_home_screen": "Home Screen",
   "lbl_logo": "Logo",
   "lbl_message": "Message",
   "lbl_my_profile_vone": "My Profile VOne",
@@ -740,7 +740,7 @@ final Map<String, String> enUs = {
   "lbl_splash_screen": "Splash Screen",
   "lbl_start_date2": "Start Date",
   "lb1_upload_cv_one": "Upload CV One",
-  "1bl_upload_resume": "Upload resume",
+  "lbl_upload_resume": "Upload resume",
   "msg_about_us_tab_container": "About us - Tab Container",
   "msg_check_your_app_s":
       "Check your app's UI from the below demo screens of your app.",

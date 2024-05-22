@@ -82,7 +82,7 @@ class MessageScreen extends GetWidget<MessageController> {
     return CustomAppBar(
       centerTitle: true,
       title: AppbarTitle(
-        text: "1bl_messages".tr,
+        text: "lbl_messages".tr,
       ),
       actions: [
         AppbarTrailingImage(

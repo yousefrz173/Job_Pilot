@@ -37,7 +37,7 @@ class LogOutBottomsheet extends StatelessWidget {
           ),
           SizedBox(height: 47.v),
           Text(
-            "1bl_log_out2".tr,
+            "lbl_log_out2".tr,
             style: theme.textTheme.titleMedium,
           ),
           SizedBox(height: 10.v),

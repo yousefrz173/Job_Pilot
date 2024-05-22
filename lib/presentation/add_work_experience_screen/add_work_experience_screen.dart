@@ -140,7 +140,7 @@ class AddWorkExperienceScreen extends GetWidget<AddWorkExperienceController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "1bl_end_date".tr,
+                  "lbl_end_date".tr,
                   style: theme.textTheme.labelLarge,
                 ),
                 SizedBox(height: 10.v),
@@ -206,7 +206,7 @@ class AddWorkExperienceScreen extends GetWidget<AddWorkExperienceController> {
   Widget _buildSave() {
     return CustomElevatedButton(
       width: 213.h,
-      text: "1bl_save".tr.toUpperCase(),
+      text: "lbl_save".tr.toUpperCase(),
       alignment: Alignment.center,
     );
   }

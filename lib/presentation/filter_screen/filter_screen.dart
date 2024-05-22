@@ -258,7 +258,7 @@ class FilterScreen extends GetWidget<FilterController> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "1bl_salary".tr,
+            "lbl_salary".tr,
             style: CustomTextStyles.titleSmall0penSansff150b3d,
           ),
           CustomImageView(
@@ -300,7 +300,7 @@ class FilterScreen extends GetWidget<FilterController> {
   Widget _buildApplyNow() {
     return CustomElevatedButton(
       width: 245.h,
-      text: "1bl_apply_now".tr.toUpperCase(),
+      text: "lbl_apply_now".tr.toUpperCase(),
       margin: EdgeInsets.only(
         left: 65.h,
         right: 65.h,

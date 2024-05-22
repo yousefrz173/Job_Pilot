@@ -74,7 +74,7 @@ class OptionsBottomsheet extends StatelessWidget {
                     bottom: 2.v,
                   ),
                   child: Text(
-                    "1bl_shared".tr,
+                    "lbl_shared".tr,
                     style: CustomTextStyles.bodyMediumDMSansGray90004,
                   ),
                 ),
@@ -107,7 +107,7 @@ class OptionsBottomsheet extends StatelessWidget {
           ),
           SizedBox(height: 12.v),
           CustomElevatedButton(
-            text: "1bl_apply".tr,
+            text: "lbl_apply".tr,
             margin: EdgeInsets.only(left: 1.h),
             leftIcon: Container(
               margin: EdgeInsets.only(right: 15.h),

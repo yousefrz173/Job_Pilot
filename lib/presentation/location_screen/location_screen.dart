@@ -27,7 +27,7 @@ class LocationScreen extends GetWidget<LocationController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "1bl_location".tr,
+                "lbl_location".tr,
                 style: theme.textTheme.titleMedium,
               ),
               SizedBox(height: 31.v),

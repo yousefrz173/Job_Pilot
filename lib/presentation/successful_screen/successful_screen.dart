@@ -34,7 +34,7 @@ class SuccessfulScreen extends GetWidget<SuccessfulController> {
               Container(
                 decoration: AppDecoration.outlineIndigo2002d,
                 child: Text(
-                  "1bl_successful".tr,
+                  "lbl_successful".tr,
                   style: CustomTextStyles.titleMediumPrimaryContainer,
                 ),
               ),

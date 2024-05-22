@@ -83,7 +83,7 @@ class AboutUsTabContainerScreen
                         children: [
                           SizedBox(height: 15.v),
                           Text(
-                            "1bl_ui_ux_designer".tr,
+                            "lbl_ui_ux_designer".tr,
                             style: CustomTextStyles.titleMediumGray90002,
                           ),
                           SizedBox(height: 14.v),

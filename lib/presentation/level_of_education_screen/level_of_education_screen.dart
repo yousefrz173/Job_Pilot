@@ -33,7 +33,7 @@ class LevelOfEducationScreen extends GetWidget<LevelOfEducationController> {
               SizedBox(height: 31.v),
               CustomSearchView(
                 controller: controller.searchController,
-                hintText: "1bl_bachelor".tr,
+                hintText: "lbl_bachelor".tr,
               ),
               SizedBox(height: 40.v),
               Column(

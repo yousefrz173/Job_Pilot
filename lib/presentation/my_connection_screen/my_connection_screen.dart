@@ -70,7 +70,7 @@ class MyConnectionScreen extends GetWidget<MyConnectionController> {
     return Expanded(
       child: CustomElevatedButton(
         height: 40.v,
-        text: "1bl_posting".tr,
+        text: "lbl_posting".tr,
         margin: EdgeInsets.only(right: 7.h),
         buttonStyle: CustomButtonStyles.fillDeepPurple,
         buttonTextStyle: CustomTextStyles.titleSmallOpenSansPrimary,
@@ -83,7 +83,7 @@ class MyConnectionScreen extends GetWidget<MyConnectionController> {
     return Expanded(
       child: CustomElevatedButton(
         height: 40.v,
-        text: "1bl_my_connection".tr,
+        text: "lbl_my_connection".tr,
         margin: EdgeInsets.only(left: 7.h),
         buttonStyle: CustomButtonStyles.fillPrimary,
         buttonTextStyle: CustomTextStyles.titleSmallOnPrimaryContainer_2,

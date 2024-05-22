@@ -29,7 +29,7 @@ class SharedAJobScreen extends GetWidget<SharedAJobController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "1bl_shared_a_job".tr,
+                "lbl_shared_a_job".tr,
                 style: CustomTextStyles.titleMediumGray90001,
               ),
               SizedBox(height: 33.v),
@@ -55,7 +55,7 @@ class SharedAJobScreen extends GetWidget<SharedAJobController> {
                         Padding(
                           padding: EdgeInsets.only(left: 2.h),
                           child: Text(
-                            "1bl_orlando_diggs".tr,
+                            "lbl_orlando_diggs".tr,
                             style: theme.textTheme.titleSmall,
                           ),
                         ),
@@ -99,7 +99,7 @@ class SharedAJobScreen extends GetWidget<SharedAJobController> {
       ),
       actions: [
         AppbarSubtitleTwo(
-          text: "1bl_post".tr,
+          text: "lbl_post".tr,
           margin: EdgeInsets.fromLTRB(20.h, 20.v, 20.h, 19.v),
         ),
       ],
@@ -145,7 +145,7 @@ class SharedAJobScreen extends GetWidget<SharedAJobController> {
                     style: CustomTextStyles.bodySmal10penSansff514a6b,
                   ),
                   TextSpan(
-                    text: "1bl_apple_company".tr,
+                    text: "lbl_apple_company".tr,
                     style: CustomTextStyles.labelLargeff150b3d,
                   ),
                   TextSpan(
@@ -200,7 +200,7 @@ class SharedAJobScreen extends GetWidget<SharedAJobController> {
                         Row(
                           children: [
                             Text(
-                              "1bl_california_usa".tr,
+                              "lbl_california_usa".tr,
                               style: theme.textTheme.bodySmall,
                             ),
                             Container(
@@ -278,7 +278,7 @@ class SharedAJobScreen extends GetWidget<SharedAJobController> {
               bottom: 2.v,
             ),
             child: Text(
-              "1bl_add_hashtag".tr,
+              "lbl_add_hashtag".tr,
               style: CustomTextStyles.labelLargeOrange400,
             ),
           ),

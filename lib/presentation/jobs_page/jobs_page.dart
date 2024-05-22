@@ -106,7 +106,7 @@ class JobsPage extends StatelessWidget {
           ),
           SizedBox(height: 10.v),
           Text(
-            "1bl_graphic_dsigner".tr,
+            "lbl_graphic_dsigner".tr,
             style: CustomTextStyles.titleSmallOpenSansGray90001,
           ),
           SizedBox(height: 3.v),
@@ -154,7 +154,7 @@ class JobsPage extends StatelessWidget {
                   borderRadius: BorderRadiusStyle.roundedBorder6,
                 ),
                 child: Text(
-                  "1bl_design".tr,
+                  "lbl_design".tr,
                   style: CustomTextStyles.bodySmall0penSansBluegray30003_1,
                 ),
               ),
@@ -206,7 +206,7 @@ class JobsPage extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "1bl_15k".tr,
+                      text: "lbl_15k".tr,
                       style: CustomTextStyles.titleSmallOpenSansff000000,
                     ),
                     TextSpan(
@@ -214,7 +214,7 @@ class JobsPage extends StatelessWidget {
                       style: CustomTextStyles.labelLargeOpenSansffa9a5b8,
                     ),
                     TextSpan(
-                      text: "1bl_mo".tr,
+                      text: "lbl_mo".tr,
                       style: CustomTextStyles.bodySmal10penSansff514a6b,
                     ),
                   ],

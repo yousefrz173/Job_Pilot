@@ -29,7 +29,7 @@ class UploadCvScreen extends GetWidget<UploadCvController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_upload_cv".tr,
+                  "lbl_upload_cv".tr,
                   style: theme.textTheme.titleSmall,
                 ),
               ),
@@ -198,7 +198,7 @@ class UploadCvScreen extends GetWidget<UploadCvController> {
                         Padding(
                           padding: EdgeInsets.only(left: 24.h),
                           child: Text(
-                            "1bl_1_day_ago".tr,
+                            "lbl_1_day_ago".tr,
                             style: theme.textTheme.bodyLarge,
                           ),
                         ),

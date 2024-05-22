@@ -52,14 +52,14 @@ class EditAppreciationScreen extends GetWidget<EditAppreciationController> {
               _buildYoungScientist(),
               SizedBox(height: 19.v),
               Text(
-                "1bl_end_date".tr,
+                "lbl_end_date".tr,
                 style: CustomTextStyles.labelLargeGray90003,
               ),
               SizedBox(height: 10.v),
               _buildDate(),
               SizedBox(height: 21.v),
               Text(
-                "1bl_description".tr,
+                "lbl_description".tr,
                 style: CustomTextStyles.labelLargeGray90003,
               ),
               SizedBox(height: 9.v),

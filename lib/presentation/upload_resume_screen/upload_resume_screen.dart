@@ -212,7 +212,7 @@ class UploadResumeScreen extends GetWidget<UploadResumeController> {
                     bottom: 3.v,
                   ),
                   child: Text(
-                    "1bl_remove_file".tr,
+                    "lbl_remove_file".tr,
                     style: CustomTextStyles.bodySmal10penSansOrange400,
                   ),
                 ),

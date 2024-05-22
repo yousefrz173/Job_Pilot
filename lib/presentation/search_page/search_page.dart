@@ -130,7 +130,7 @@ class SearchPage extends StatelessWidget {
                   borderRadius: BorderRadiusStyle.roundedBorder6,
                 ),
                 child: Text(
-                  "1bl_design".tr,
+                  "lbl_design".tr,
                   style: CustomTextStyles.bodySmal110,
                 ),
               ),
@@ -144,7 +144,7 @@ class SearchPage extends StatelessWidget {
                   borderRadius: BorderRadiusStyle.roundedBorder6,
                 ),
                 child: Text(
-                  "1bl_full_time2".tr,
+                  "lbl_full_time2".tr,
                   style: CustomTextStyles.bodySmal110,
                 ),
               ),
@@ -190,7 +190,7 @@ class SearchPage extends StatelessWidget {
                       style: CustomTextStyles.labelLargeOpenSansffa9a5b8,
                     ),
                     TextSpan(
-                      text: "1bl_mo".tr,
+                      text: "lbl_mo".tr,
                       style: CustomTextStyles.bodySmal10penSansff333030,
                     ),
                   ],

@@ -47,7 +47,7 @@ class AddAppreciationScreen extends GetWidget<AddAppreciationController> {
               _buildEditText(),
               SizedBox(height: 19.v),
               Text(
-                "1bl_end_date".tr,
+                "lbl_end_date".tr,
                 style: CustomTextStyles.labelLargeGray90003,
               ),
               SizedBox(height: 10.v),

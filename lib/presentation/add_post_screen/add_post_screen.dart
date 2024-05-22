@@ -53,7 +53,7 @@ class AddPostScreen extends GetWidget<AddPostController> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "1bl_orlando_diggs".tr,
+                      "lbl_orlando_diggs".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                     SizedBox(height: 3.v),
@@ -82,7 +82,7 @@ class AddPostScreen extends GetWidget<AddPostController> {
                     Padding(
                       padding: EdgeInsets.only(left: 2.h),
                       child: Text(
-                        "1bl_description".tr,
+                        "lbl_description".tr,
                         style: theme.textTheme.labelLarge,
                       ),
                     ),
@@ -127,7 +127,7 @@ class AddPostScreen extends GetWidget<AddPostController> {
       ),
       actions: [
         AppbarSubtitleTwo(
-          text: "1bl_post".tr,
+          text: "lbl_post".tr,
           margin: EdgeInsets.fromLTRB(20.h, 20.v, 20.h, 19.v),
         ),
       ],

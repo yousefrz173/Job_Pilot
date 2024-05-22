@@ -24,7 +24,7 @@ class NoSavingsScreen extends GetWidget<NoSavingsController> {
             children: [
               SizedBox(height: 37.v),
               Text(
-                "1bl_no_savings".tr,
+                "lbl_no_savings".tr,
                 style: CustomTextStyles.titleMediumOpenSansGray90001,
               ),
               SizedBox(height: 18.v),

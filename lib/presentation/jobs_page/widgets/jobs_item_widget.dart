@@ -164,7 +164,7 @@ class JobsItemWidget extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "1bl_15k".tr,
+                      text: "lbl_15k".tr,
                       style: CustomTextStyles.titleSmallOpenSansff000000,
                     ),
                     TextSpan(
@@ -172,7 +172,7 @@ class JobsItemWidget extends StatelessWidget {
                       style: CustomTextStyles.labelLargeOpenSansffa9a5b8,
                     ),
                     TextSpan(
-                      text: "1bl_mo".tr,
+                      text: "lbl_mo".tr,
                       style: CustomTextStyles.bodySmall0penSansffa9a5b8,
                     ),
                   ],

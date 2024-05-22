@@ -28,7 +28,7 @@ class MyProfileVoneScreen extends GetWidget<MyProfileVoneController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_fullname2".tr,
+                  "lbl_fullname2".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -38,7 +38,7 @@ class MyProfileVoneScreen extends GetWidget<MyProfileVoneController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_date_of_birth".tr,
+                  "lbl_date_of_birth".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -48,7 +48,7 @@ class MyProfileVoneScreen extends GetWidget<MyProfileVoneController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_gender".tr,
+                  "lbl_gender".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -68,7 +68,7 @@ class MyProfileVoneScreen extends GetWidget<MyProfileVoneController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_phone_number".tr,
+                  "lbl_phone_number".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -83,7 +83,7 @@ class MyProfileVoneScreen extends GetWidget<MyProfileVoneController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_location".tr,
+                  "lbl_location".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -252,7 +252,7 @@ class MyProfileVoneScreen extends GetWidget<MyProfileVoneController> {
           () => Row(
             children: [
               CustomRadioButton(
-                text: "1bl_male".tr,
+                text: "lbl_male".tr,
                 value:
                     controller.myProfileVoneModelObj.value.radioList.value[0],
                 groupValue: controller.gender.value,
@@ -328,7 +328,7 @@ class MyProfileVoneScreen extends GetWidget<MyProfileVoneController> {
   Widget _buildSave() {
     return CustomElevatedButton(
       width: 213.h,
-      text: "1bl_save".tr.toUpperCase(),
+      text: "lbl_save".tr.toUpperCase(),
       margin: EdgeInsets.only(
         left: 81.h,
         right: 81.h,

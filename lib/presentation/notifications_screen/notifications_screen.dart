@@ -28,7 +28,7 @@ class NotificationsScreen extends GetWidget<NotificationsController> {
             children: [
               SizedBox(height: 4.v),
               Text(
-                "1bl_notifications".tr,
+                "lbl_notifications".tr,
                 style: theme.textTheme.titleLarge,
               ),
               SizedBox(height: 43.v),

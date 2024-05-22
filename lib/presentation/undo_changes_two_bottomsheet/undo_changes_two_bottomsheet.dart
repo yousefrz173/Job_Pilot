@@ -47,7 +47,7 @@ class UndoChangesTwoBottomsheet extends StatelessWidget {
           ),
           SizedBox(height: 10.v),
           CustomElevatedButton(
-            text: "1bl_undo_changes2".tr.toUpperCase(),
+            text: "lbl_undo_changes2".tr.toUpperCase(),
             buttonStyle: CustomButtonStyles.fillDeepPurple,
           ),
         ],

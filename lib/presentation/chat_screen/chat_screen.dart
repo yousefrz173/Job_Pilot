@@ -35,7 +35,7 @@ class ChatScreen extends GetWidget<ChatController> {
                     Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "1bl_today".tr,
+                        "lbl_today".tr,
                         style: CustomTextStyles.bodySmallBluegray30003,
                       ),
                     ),
@@ -254,7 +254,7 @@ class ChatScreen extends GetWidget<ChatController> {
                                         ),
                                         SizedBox(height: 10.v),
                                         Text(
-                                          "1bl_pdf".tr,
+                                          "lbl_pdf".tr,
                                           style: CustomTextStyles
                                               .labelMediumExtraBold,
                                         ),
@@ -395,7 +395,7 @@ class ChatScreen extends GetWidget<ChatController> {
                           Padding(
                             padding: EdgeInsets.only(left: 5.h),
                             child: Text(
-                              "1bl_online".tr,
+                              "lbl_online".tr,
                               style: theme.textTheme.bodySmall,
                             ),
                           ),

@@ -43,7 +43,7 @@ class SaveJobScreen extends GetWidget<SaveJobController> {
                           bottom: 9.v,
                         ),
                         child: Text(
-                          "1bl_delete_all".tr,
+                          "lbl_delete_all".tr,
                           style: CustomTextStyles.bodySmal10penSansOrange400,
                         ),
                       ),

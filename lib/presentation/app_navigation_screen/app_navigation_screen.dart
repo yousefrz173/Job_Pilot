@@ -58,7 +58,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                     child: Column(
                       children: [
                         _buildScreenTitle(
-                          screenTitle: "1bl_logo".tr,
+                          screenTitle: "lbl_logo".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.logoScreen),
                         ),
@@ -68,7 +68,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.splashScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_login".tr,
+                          screenTitle: "lbl_login".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.loginScreen),
                         ),
@@ -78,7 +78,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.signUpScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_forgot_password".tr,
+                          screenTitle: "lbl_forgot_password".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.forgotPasswordScreen),
                         ),
@@ -108,17 +108,17 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.descriptionOneScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_company".tr,
+                          screenTitle: "lbl_company".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.companyScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_company_one".tr,
+                          screenTitle: "lbl_company_one".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.companyOneScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_upload_cv".tr,
+                          screenTitle: "lbl_upload_cv".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.uploadCvScreen),
                         ),
@@ -128,7 +128,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.uploadCvOneScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_successful".tr,
+                          screenTitle: "lbl_successful".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.successfulScreen),
                         ),
@@ -163,7 +163,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               AppRoutes.postingContainerScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_my_connection".tr,
+                          screenTitle: "lbl_my_connection".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.myConnectionScreen),
                         ),
@@ -180,12 +180,12 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                   Get.put(CreatJobOrPostController()))),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_add_post".tr,
+                          screenTitle: "lbl_add_post".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.addPostScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_add_a_job".tr,
+                          screenTitle: "lbl_add_a_job".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.addAJobScreen),
                         ),
@@ -195,7 +195,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.editAddAJobScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_job_position2".tr,
+                          screenTitle: "lbl_job_position2".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.jobPositionScreen),
                         ),
@@ -212,7 +212,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.locationScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_company_two".tr,
+                          screenTitle: "lbl_company_two".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.companyTwoScreen),
                         ),
@@ -229,7 +229,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.sharedAJobScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_message".tr,
+                          screenTitle: "lbl_message".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.messageScreen),
                         ),
@@ -239,7 +239,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.chatScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_no_message".tr,
+                          screenTitle: "lbl_no_message".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.noMessageScreen),
                         ),
@@ -301,7 +301,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.editProfileScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_about_me".tr,
+                          screenTitle: "lbl_about_me".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.aboutMeScreen),
                         ),
@@ -452,22 +452,22 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                                   Get.put(RemoveAppreciationController()))),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_add_resume".tr,
+                          screenTitle: "lbl_add_resume".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.addResumeScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_upload_resume".tr,
+                          screenTitle: "lbl_upload_resume".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.uploadResumeScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_my_profile_vone".tr,
+                          screenTitle: "lbl_my_profile_vone".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.myProfileVoneScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "1bl_add_resume_vtwo".tr,
+                          screenTitle: "lbl_add_resume_vtwo".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.addResumeVtwoScreen),
                         ),

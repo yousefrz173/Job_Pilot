@@ -158,7 +158,7 @@ class ChangeEducationScreen extends GetWidget<ChangeEducationController> {
                       Padding(
                         padding: EdgeInsets.only(top: 2.v),
                         child: Text(
-                          "1bl_sep_2010".tr,
+                          "lbl_sep_2010".tr,
                           style: theme.textTheme.bodySmall,
                         ),
                       ),
@@ -176,14 +176,14 @@ class ChangeEducationScreen extends GetWidget<ChangeEducationController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "1bl_end_date".tr,
+                  "lbl_end_date".tr,
                   style: theme.textTheme.labelLarge,
                 ),
                 SizedBox(height: 10.v),
                 CustomTextFormField(
                   width: 160.h,
                   controller: controller.dateController,
-                  hintText: "1bl_aug_2013".tr,
+                  hintText: "lbl_aug_2013".tr,
                   hintStyle: theme.textTheme.bodySmall!,
                 ),
               ],

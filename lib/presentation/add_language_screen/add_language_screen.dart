@@ -29,7 +29,7 @@ class AddLanguageScreen extends GetWidget<AddLanguageController> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "1bl_add_language".tr,
+                  "lbl_add_language".tr,
                   style: CustomTextStyles.titleMediumGray90003,
                 ),
               ),
@@ -158,12 +158,12 @@ class AddLanguageScreen extends GetWidget<AddLanguageController> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "1bl_oral".tr,
+            "lbl_oral".tr,
             style: theme.textTheme.labelLarge,
           ),
           SizedBox(height: 15.v),
           Text(
-            "1bl_level_10".tr,
+            "lbl_level_10".tr,
             style: CustomTextStyles.bodySmallBluegray30003,
           ),
           SizedBox(height: 20.v),

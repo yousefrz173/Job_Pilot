@@ -84,7 +84,7 @@ class OralDialog extends StatelessWidget {
                         padding: EdgeInsets.only(top: 24.v),
                         child: CustomRadioButton(
                           width: 275.h,
-                          text: "1bl_level_3".tr,
+                          text: "lbl_level_3".tr,
                           value:
                               controller.oralModelObj.value.radioList.value[3],
                           groupValue: controller.radioGroup.value,
@@ -99,7 +99,7 @@ class OralDialog extends StatelessWidget {
                         padding: EdgeInsets.only(top: 24.v),
                         child: CustomRadioButton(
                           width: 275.h,
-                          text: "1bl_level_4".tr,
+                          text: "lbl_level_4".tr,
                           value:
                               controller.oralModelObj.value.radioList.value[4],
                           groupValue: controller.radioGroup.value,
@@ -129,7 +129,7 @@ class OralDialog extends StatelessWidget {
                         padding: EdgeInsets.only(top: 24.v),
                         child: CustomRadioButton(
                           width: 275.h,
-                          text: "1bl_level_6".tr,
+                          text: "lbl_level_6".tr,
                           value:
                               controller.oralModelObj.value.radioList.value[6],
                           groupValue: controller.radioGroup.value,

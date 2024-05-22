@@ -28,7 +28,7 @@ class NoMessageScreen extends GetWidget<NoMessageController> {
               ),
               SizedBox(height: 44.v),
               Text(
-                "1bl_no_message".tr,
+                "lbl_no_message".tr,
                 style: CustomTextStyles.titleMediumGray90001,
               ),
               SizedBox(height: 19.v),

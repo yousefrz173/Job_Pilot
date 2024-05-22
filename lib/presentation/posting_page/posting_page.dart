@@ -85,7 +85,7 @@ class PostingPage extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(left: 1.h),
                         child: Text(
-                          "1bl_arnold_leonardo".tr,
+                          "lbl_arnold_leonardo".tr,
                           style: theme.textTheme.labelLarge,
                         ),
                       ),

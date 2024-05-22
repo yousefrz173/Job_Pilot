@@ -69,7 +69,7 @@ class MyconnectionItemWidget extends StatelessWidget {
     return CustomOutlinedButton(
       height: 30.v,
       width: 100.h,
-      text: "1bl_follow".tr,
+      text: "lbl_follow".tr,
     );
   }
 }

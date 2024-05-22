@@ -56,7 +56,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                       Obx(
                         () => CustomTextFormField(
                           controller: controller.passwordController,
-                          hintText: "1bl_password".tr,
+                          hintText: "lbl_password".tr,
                           hintStyle: CustomTextStyles.bodySmallGray90004,
                           textInputType: TextInputType.visiblePassword,
                           prefix: Container(
@@ -113,7 +113,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                       SizedBox(height: 10.v),
                       CustomTextFormField(
                         controller: controller.logOutController,
-                        hintText: "1bl_logout".tr,
+                        hintText: "lbl_logout".tr,
                         hintStyle: CustomTextStyles.bodySmallGray90004,
                         textInputAction: TextInputAction.done,
                         prefix: Container(
@@ -248,7 +248,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
               bottom: 4.v,
             ),
             child: Text(
-              "1bl_dark_mode".tr,
+              "lbl_dark_mode".tr,
               style: CustomTextStyles.bodySmallGray90004,
             ),
           ),

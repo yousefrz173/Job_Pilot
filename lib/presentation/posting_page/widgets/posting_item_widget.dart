@@ -33,7 +33,7 @@ class PostingItemWidget extends StatelessWidget {
         Expanded(
           child: CustomElevatedButton(
             height: 40.v,
-            text: "1bl_my_connection".tr,
+            text: "lbl_my_connection".tr,
             margin: EdgeInsets.only(left: 5.h),
             buttonStyle: CustomButtonStyles.fillPrimary,
             buttonTextStyle: CustomTextStyles.titleSmallOnPrimaryContainer_2,

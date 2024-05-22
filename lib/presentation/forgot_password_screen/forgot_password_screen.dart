@@ -198,7 +198,7 @@ class ForgotPasswordScreen extends GetWidget<ForgotPasswordController> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "1bl_email".tr,
+                  "lbl_email".tr,
                   style: theme.textTheme.labelLarge,
                 ),
               ),

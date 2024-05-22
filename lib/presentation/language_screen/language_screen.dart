@@ -67,7 +67,7 @@ class LanguageScreen extends GetWidget<LanguageController> {
         Padding(
           padding: EdgeInsets.only(bottom: 3.v),
           child: Text(
-            "1bl_add".tr,
+            "lbl_add".tr,
             style: CustomTextStyles.titleSmallOnPrimary,
           ),
         ),

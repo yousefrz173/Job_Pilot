@@ -122,7 +122,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
                               children: [
                                 SizedBox(height: 5.v),
                                 Text(
-                                  "1bl_aug".tr,
+                                  "lbl_aug".tr,
                                   style: CustomTextStyles.titleSmallPrimary_1,
                                 )
                               ],
@@ -268,7 +268,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
     return CustomTextFormField(
       width: 160.h,
       controller: controller.dateController,
-      hintText: "1bl_sep_2010".tr,
+      hintText: "lbl_sep_2010".tr,
       hintStyle: theme.textTheme.bodySmall!,
     );
   }
@@ -278,7 +278,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
     return CustomTextFormField(
       width: 160.h,
       controller: controller.date1Controller,
-      hintText: "1bl_aug_2013".tr,
+      hintText: "lbl_aug_2013".tr,
       hintStyle: theme.textTheme.bodySmall!,
       textInputAction: TextInputAction.done,
     );
@@ -312,7 +312,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "1bl_end_date".tr,
+                  "lbl_end_date".tr,
                   style: theme.textTheme.labelLarge,
                 ),
                 SizedBox(height: 10.v),
@@ -404,7 +404,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
     return CustomElevatedButton(
       height: 52.v,
       width: 30.h,
-      text: "1bl_sep".tr,
+      text: "lbl_sep".tr,
       margin: EdgeInsets.only(
         left: 5.h,
         top: 28.v,

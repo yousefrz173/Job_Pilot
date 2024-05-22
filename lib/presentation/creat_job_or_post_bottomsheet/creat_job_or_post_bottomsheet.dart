@@ -58,7 +58,7 @@ class CreatJobOrPostBottomsheet extends StatelessWidget {
             ),
             SizedBox(height: 27.v),
             CustomElevatedButton(
-              text: "1bl_post".tr.toUpperCase(),
+              text: "lbl_post".tr.toUpperCase(),
             ),
             SizedBox(height: 10.v),
             CustomElevatedButton(

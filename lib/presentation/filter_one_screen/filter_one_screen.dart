@@ -31,7 +31,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
               child: Column(
                 children: [
                   Text(
-                    "1bl_filter".tr,
+                    "lbl_filter".tr,
                     style: CustomTextStyles.titleLargeBlack900,
                   ),
                   SizedBox(height: 49.v),
@@ -391,7 +391,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
       child: Obx(
         () => CustomCheckboxButton(
           alignment: Alignment.centerLeft,
-          text: "1bl_new_york_usa".tr,
+          text: "lbl_new_york_usa".tr,
           value: controller.newYorkUSA.value,
           padding: EdgeInsets.symmetric(vertical: 1.v),
           onChange: (value) {
@@ -432,7 +432,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
               Padding(
                 padding: EdgeInsets.only(right: 24.h),
                 child: CustomRadioButton(
-                  text: "1bl_no_experience".tr,
+                  text: "lbl_no_experience".tr,
                   value: controller.filterOneModelObj.value.radioList2.value[0],
                   groupValue: controller.experience.value,
                   onChange: (value) {
@@ -521,7 +521,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
       child: Obx(
         () => CustomCheckboxButton(
           alignment: Alignment.centerLeft,
-          text: "1bl_design".tr,
+          text: "lbl_design".tr,
           value: controller.design.value,
           onChange: (value) {
             controller.design.value = value;
@@ -641,7 +641,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
           ),
           Expanded(
             child: CustomElevatedButton(
-              text: "1bl_apply_now".tr.toUpperCase(),
+              text: "lbl_apply_now".tr.toUpperCase(),
               margin: EdgeInsets.only(left: 15.h),
               buttonTextStyle: CustomTextStyles.titleSmallOnPrimaryContainer,
             ),

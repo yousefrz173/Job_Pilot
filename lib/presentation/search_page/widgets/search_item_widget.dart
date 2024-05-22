@@ -173,7 +173,7 @@ class SearchItemWidget extends StatelessWidget {
                       style: CustomTextStyles.labelLargeffa9a5b8,
                     ),
                     TextSpan(
-                      text: "1bl_mo".tr,
+                      text: "lbl_mo".tr,
                       style: CustomTextStyles.bodySmallffa9a5b8,
                     ),
                   ],

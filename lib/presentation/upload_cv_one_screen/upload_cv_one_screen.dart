@@ -29,7 +29,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_upload_cv".tr,
+                  "lbl_upload_cv".tr,
                   style: theme.textTheme.titleSmall,
                 ),
               ),
@@ -47,7 +47,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_information".tr,
+                  "lbl_information".tr,
                   style: theme.textTheme.titleSmall,
                 ),
               ),
@@ -142,7 +142,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
                 children: [
                   SizedBox(height: 16.v),
                   Text(
-                    "1bl_ui_ux_designer".tr,
+                    "lbl_ui_ux_designer".tr,
                     style: CustomTextStyles.titleMediumGray90002,
                   ),
                   SizedBox(height: 14.v),
@@ -153,7 +153,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          "1bl_google".tr,
+                          "lbl_google".tr,
                           style: theme.textTheme.bodyLarge,
                         ),
                         Container(
@@ -398,7 +398,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
   /// Section Widget
   Widget _buildApplyNow() {
     return CustomElevatedButton(
-      text: "1bl_apply_now".tr.toUpperCase(),
+      text: "lbl_apply_now".tr.toUpperCase(),
       margin: EdgeInsets.only(
         left: 29.h,
         right: 29.h,

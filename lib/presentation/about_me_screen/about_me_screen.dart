@@ -29,7 +29,7 @@ class AboutMeScreen extends GetWidget<AboutMeController> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "1bl_about_me".tr,
+                  "lbl_about_me".tr,
                   style: CustomTextStyles.titleMediumOpenSansSemiBold,
                 ),
               ),

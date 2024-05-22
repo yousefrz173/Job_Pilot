@@ -54,7 +54,7 @@ class DescriptionScreen extends GetWidget<DescriptionController> {
               CustomElevatedButton(
                 height: 30.v,
                 width: 91.h,
-                text: "1bl_read_more".tr,
+                text: "lbl_read_more".tr,
                 margin: EdgeInsets.only(left: 20.h),
                 buttonStyle: CustomButtonStyles.fillOnPrimary,
                 buttonTextStyle: CustomTextStyles.bodySmall0penSansGray90002,
@@ -63,7 +63,7 @@ class DescriptionScreen extends GetWidget<DescriptionController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1bl_requirements".tr,
+                  "lbl_requirements".tr,
                   style: CustomTextStyles.titleSmallOpenSans,
                 ),
               ),
