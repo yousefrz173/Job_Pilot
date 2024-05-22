@@ -94,7 +94,7 @@ class AddLanguageScreen extends GetWidget<AddLanguageController> {
                   bottom: 5.v,
                 ),
                 child: Text(
-                  "1b1_language".tr,
+                  "lbl_language".tr,
                   style: theme.textTheme.labelLarge,
                 ),
               ),

@@ -42,7 +42,7 @@ class ChangeWorkExperienceScreen
               _buildManager(),
               SizedBox(height: 21.v),
               Text(
-                "1b1_company".tr,
+                "lbl_company".tr,
                 style: theme.textTheme.labelLarge,
               ),
               SizedBox(height: 8.v),
@@ -125,7 +125,7 @@ class ChangeWorkExperienceScreen
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Text(
-                        "1b1_jan_2015".tr,
+                        "lbl_jan_2015".tr,
                         style: theme.textTheme.bodySmall,
                       ),
                     ],

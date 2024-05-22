@@ -58,7 +58,7 @@ class AddResumeVtwoScreen extends GetWidget<AddResumeVtwoController> {
               Padding(
                 padding: EdgeInsets.only(left: 20.h),
                 child: Text(
-                  "1b1_phone_number".tr,
+                  "lbl_phone_number".tr,
                   style: CustomTextStyles.labelLargeGray90003,
                 ),
               ),
@@ -215,7 +215,7 @@ class AddResumeVtwoScreen extends GetWidget<AddResumeVtwoController> {
             Padding(
               padding: EdgeInsets.only(top: 2.v),
               child: Text(
-                "1b1_06_august_1992".tr,
+                "lbl_06_august_1992".tr,
                 style: theme.textTheme.bodySmall,
               ),
             ),

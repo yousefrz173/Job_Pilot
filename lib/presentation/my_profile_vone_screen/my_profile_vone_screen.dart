@@ -227,7 +227,7 @@ class MyProfileVoneScreen extends GetWidget<MyProfileVoneController> {
                 bottom: 2.v,
               ),
               child: Text(
-                "1b1_06_august_1992".tr,
+                "lbl_06_august_1992".tr,
                 style: theme.textTheme.bodySmall,
               ),
             ),

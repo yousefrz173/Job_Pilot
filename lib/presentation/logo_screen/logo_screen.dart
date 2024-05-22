@@ -25,7 +25,7 @@ class LogoScreen extends GetWidget<LogoController> {
               ),
               SizedBox(height: 3.v),
               Text(
-                "1b1_jobspot".tr,
+                "lbl_jobspot".tr,
                 style: theme.textTheme.headlineMedium,
               ),
               SizedBox(height: 2.v),

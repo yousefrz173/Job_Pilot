@@ -122,7 +122,7 @@ class SharedAJobScreen extends GetWidget<SharedAJobController> {
         children: [
           SizedBox(height: 11.v),
           Text(
-            "1b1_hey_guys".tr,
+            "lbl_hey_guys".tr,
             style: theme.textTheme.bodySmall,
           ),
           SizedBox(height: 13.v),

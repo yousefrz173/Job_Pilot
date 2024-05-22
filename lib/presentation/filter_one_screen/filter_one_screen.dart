@@ -121,11 +121,11 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "1b1_13k".tr,
+                          "lbl_13k".tr,
                           style: theme.textTheme.labelLarge,
                         ),
                         Text(
-                          "1b1_25k".tr,
+                          "lbl_25k".tr,
                           style: theme.textTheme.labelLarge,
                         ),
                       ],
@@ -273,7 +273,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
                   right: 5.h,
                 ),
                 child: CustomRadioButton(
-                  text: "1b1_hybrid".tr,
+                  text: "lbl_hybrid".tr,
                   value: controller.filterOneModelObj.value.radioList1.value[1],
                   groupValue: controller.typeOfWorkplace.value,
                   onChange: (value) {
@@ -460,7 +460,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
                   right: 55.h,
                 ),
                 child: CustomRadioButton(
-                  text: "lb1_1_3_years".tr,
+                  text: "lbl_1_3_years".tr,
                   value: controller.filterOneModelObj.value.radioList2.value[2],
                   groupValue: controller.experience.value,
                   onChange: (value) {
@@ -474,7 +474,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
                   right: 51.h,
                 ),
                 child: CustomRadioButton(
-                  text: "1b1_3_5_years".tr,
+                  text: "lbl_3_5_years".tr,
                   value: controller.filterOneModelObj.value.radioList2.value[3],
                   groupValue: controller.experience.value,
                   onChange: (value) {
@@ -488,7 +488,7 @@ class FilterOneScreen extends GetWidget<FilterOneController> {
                   right: 46.h,
                 ),
                 child: CustomRadioButton(
-                  text: "lb1_5_10_years".tr,
+                  text: "lbl_5_10_years".tr,
                   value: controller.filterOneModelObj.value.radioList2.value[4],
                   groupValue: controller.experience.value,
                   onChange: (value) {

@@ -80,7 +80,7 @@ class CustomPhoneNumber extends StatelessWidget {
               child: CustomTextFormField(
                 width: 229.h,
                 controller: controller,
-                hintText: "1b1_619_3456_7890".tr,
+                hintText: "lbl_619_3456_7890".tr,
                 hintStyle: theme.textTheme.bodySmall!,
               ),
             ),

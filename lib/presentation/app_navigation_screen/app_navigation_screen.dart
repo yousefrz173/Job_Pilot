@@ -510,7 +510,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.h),
               child: Text(
-                "1b1_app_navigation".tr,
+                "lbl_app_navigation".tr,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: appTheme.black900,

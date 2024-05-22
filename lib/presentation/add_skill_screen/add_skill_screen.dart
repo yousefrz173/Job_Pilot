@@ -27,7 +27,7 @@ class AddSkillScreen extends GetWidget<AddSkillController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "1b1_add_skill".tr,
+                "lbl_add_skill".tr,
                 style: theme.textTheme.titleMedium,
               ),
               SizedBox(height: 31.v),
@@ -52,12 +52,12 @@ class AddSkillScreen extends GetWidget<AddSkillController> {
               ),
               SizedBox(height: 30.v),
               Text(
-                "1b1_adobe_indesign".tr,
+                "lbl_adobe_indesign".tr,
                 style: theme.textTheme.bodySmall,
               ),
               SizedBox(height: 30.v),
               Text(
-                "1b1_web_design".tr,
+                "lbl_web_design".tr,
                 style: theme.textTheme.bodySmall,
               ),
               SizedBox(height: 30.v),

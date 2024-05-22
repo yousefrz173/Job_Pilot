@@ -49,7 +49,7 @@ class ChatScreen extends GetWidget<ChatController> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Text(
-                          "1b1_09_30_am".tr,
+                          "lbl_09_30_am".tr,
                           style: CustomTextStyles.bodySmallBluegray3000310,
                         ),
                         CustomImageView(
@@ -95,7 +95,7 @@ class ChatScreen extends GetWidget<ChatController> {
                       child: Padding(
                         padding: EdgeInsets.only(left: 45.h),
                         child: Text(
-                          "1b1_09_31_am".tr,
+                          "lbl_09_31_am".tr,
                           style: CustomTextStyles.bodySmallBluegray3000310,
                         ),
                       ),
@@ -131,7 +131,7 @@ class ChatScreen extends GetWidget<ChatController> {
                     ),
                     SizedBox(height: 4.v),
                     _buildTime(
-                      time: "1b1_09_33_am".tr,
+                      time: "lbl_09_33_am".tr,
                       checkmark: ImageConstant.imgCheckmark,
                     ),
                     SizedBox(height: 10.v),
@@ -196,7 +196,7 @@ class ChatScreen extends GetWidget<ChatController> {
                                     ),
                                     SizedBox(height: 4.v),
                                     Text(
-                                      "1b1_09_35_am".tr,
+                                      "lbl_09_35_am".tr,
                                       style: CustomTextStyles
                                           .bodySmallBluegray3000310,
                                     ),
@@ -285,7 +285,7 @@ class ChatScreen extends GetWidget<ChatController> {
                                 ),
                                 SizedBox(height: 2.v),
                                 Text(
-                                  "1b1_867_kb_pdf".tr,
+                                  "lbl_867_kb_pdf".tr,
                                   style:
                                       CustomTextStyles.bodySmallBluegray10001,
                                 ),
@@ -307,7 +307,7 @@ class ChatScreen extends GetWidget<ChatController> {
                     ),
                     SizedBox(height: 5.v),
                     _buildTime(
-                      time: "1b1_09_33_am".tr,
+                      time: "lbl_09_33_am".tr,
                       checkmark: ImageConstant.imgCheckmarkBlueGray40001,
                     ),
                     SizedBox(height: 5.v),

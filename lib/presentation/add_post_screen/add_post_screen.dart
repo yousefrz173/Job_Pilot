@@ -65,7 +65,7 @@ class AddPostScreen extends GetWidget<AddPostController> {
                     Padding(
                       padding: EdgeInsets.only(left: 2.h),
                       child: Text(
-                        "1b1_post_title".tr,
+                        "lbl_post_title".tr,
                         style: CustomTextStyles.labelLargeOpenSans,
                       ),
                     ),
@@ -162,7 +162,7 @@ class AddPostScreen extends GetWidget<AddPostController> {
           Padding(
             padding: EdgeInsets.only(top: 5.v),
             child: Text(
-              "1b1_add_hashtag".tr,
+              "lbl_add_hashtag".tr,
               style: CustomTextStyles.labelLargeOpenSansOrange400,
             ),
           ),

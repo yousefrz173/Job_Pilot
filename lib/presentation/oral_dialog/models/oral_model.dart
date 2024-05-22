@@ -5,15 +5,15 @@ import '../../../core/app_export.dart';
 class OralModel {
   Rx<List<String>> radioList = Rx([
     "lbl_level_0",
-    "1b1_level_1",
-    "1b1_level_2",
+    "lbl_level_1",
+    "lbl_level_2",
     "lbl_level_3",
     "lbl_level_4",
-    "1b1_level_5",
-    "1b1_level_6",
-    "1b1_level_7",
-    "1b1_level_8",
-    "1b1_level_9",
-    "1b1_level_102"
+    "lbl_level_5",
+    "lbl_level_6",
+    "lbl_level_7",
+    "lbl_level_8",
+    "lbl_level_9",
+    "lbl_level_102"
   ]);
 }

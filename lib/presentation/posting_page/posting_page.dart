@@ -113,7 +113,7 @@ class PostingPage extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.only(left: 9.h),
                             child: Text(
-                              "1b1_21_minuts_ago".tr,
+                              "lbl_21_minuts_ago".tr,
                               style: CustomTextStyles.bodySmallBluegray3000310,
                             ),
                           ),
@@ -178,7 +178,7 @@ class PostingPage extends StatelessWidget {
                     bottom: 6.v,
                   ),
                   child: Text(
-                    "1b1_12".tr,
+                    "lbl_12".tr,
                     style: CustomTextStyles.bodySmal10penSansGray90004,
                   ),
                 ),
@@ -195,7 +195,7 @@ class PostingPage extends StatelessWidget {
                     bottom: 6.v,
                   ),
                   child: Text(
-                    "1b1_10".tr,
+                    "lbl_10".tr,
                     style: CustomTextStyles.bodySmal10penSansBluegray40001,
                   ),
                 ),
@@ -208,7 +208,7 @@ class PostingPage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.fromLTRB(5.h, 3.v, 5.h, 6.v),
                   child: Text(
-                    "1b1_22".tr,
+                    "lbl_22".tr,
                     style: CustomTextStyles.bodySmal10penSansBluegray40001,
                   ),
                 ),

@@ -29,7 +29,7 @@ class SearchLanguageScreen extends GetWidget<SearchLanguageController> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "1b1_add_language".tr,
+                    "lbl_add_language".tr,
                     style: theme.textTheme.titleMedium,
                   ),
                   SizedBox(height: 29.v),
@@ -117,7 +117,7 @@ class SearchLanguageScreen extends GetWidget<SearchLanguageController> {
               bottom: 7.v,
             ),
             child: Text(
-              "1b1_korean".tr,
+              "lbl_korean".tr,
               style: CustomTextStyles.bodySmallGray90004,
             ),
           ),

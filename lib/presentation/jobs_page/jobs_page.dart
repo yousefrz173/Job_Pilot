@@ -113,7 +113,7 @@ class JobsPage extends StatelessWidget {
           Row(
             children: [
               Text(
-                "lb1_google_inc".tr,
+                "lbl_google_inc".tr,
                 style: CustomTextStyles.bodySmall0penSans,
               ),
               Container(
@@ -198,7 +198,7 @@ class JobsPage extends StatelessWidget {
                   bottom: 3.v,
                 ),
                 child: Text(
-                  "1b1_25_minute_ago".tr,
+                  "lbl_25_minute_ago".tr,
                   style: CustomTextStyles.bodySmal10penSansBluegray40001,
                 ),
               ),
@@ -210,7 +210,7 @@ class JobsPage extends StatelessWidget {
                       style: CustomTextStyles.titleSmallOpenSansff000000,
                     ),
                     TextSpan(
-                      text: "1b12".tr,
+                      text: "lbl2".tr,
                       style: CustomTextStyles.labelLargeOpenSansffa9a5b8,
                     ),
                     TextSpan(

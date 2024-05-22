@@ -153,7 +153,7 @@ class UploadCvScreen extends GetWidget<UploadCvController> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          "1b1_google".tr,
+                          "lbl_google".tr,
                           style: theme.textTheme.bodyLarge,
                         ),
                         Container(

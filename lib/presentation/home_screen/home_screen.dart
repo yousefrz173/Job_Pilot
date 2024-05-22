@@ -33,7 +33,7 @@ class HomeScreen extends GetWidget<HomeController> {
               _buildFindYourJob(),
               SizedBox(height: 18.v),
               Text(
-                "1b1_recent_job_list".tr,
+                "lbl_recent_job_list".tr,
                 style: theme.textTheme.titleMedium,
               ),
               SizedBox(height: 16.v),
@@ -88,7 +88,7 @@ class HomeScreen extends GetWidget<HomeController> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "1b1_50_off".tr,
+                            "lbl_50_off".tr,
                             style:
                                 CustomTextStyles.titleMediumOnPrimaryContainer,
                           ),
@@ -149,7 +149,7 @@ class HomeScreen extends GetWidget<HomeController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "1b1_find_your_job".tr,
+                "lbl_find_your_job".tr,
                 style: CustomTextStyles.titleMediumBlack900,
               ),
               SizedBox(height: 31.v),
@@ -172,12 +172,12 @@ class HomeScreen extends GetWidget<HomeController> {
                     ),
                     SizedBox(height: 13.v),
                     Text(
-                      "1b1_44_5k".tr,
+                      "lbl_44_5k".tr,
                       style: CustomTextStyles.titleMediumGray90002,
                     ),
                     SizedBox(height: 5.v),
                     Text(
-                      "1b1_remote_job".tr,
+                      "lbl_remote_job".tr,
                       style: CustomTextStyles.bodyMediumDMSansGray90002,
                     ),
                     SizedBox(height: 2.v),
@@ -191,12 +191,12 @@ class HomeScreen extends GetWidget<HomeController> {
             child: Column(
               children: [
                 _buildFortyFive(
-                  k: "1b1_66_8k".tr,
+                  k: "lbl_66_8k".tr,
                   partTime: "lbl_full_time".tr,
                 ),
                 SizedBox(height: 20.v),
                 _buildFortyFive(
-                  k: "1b1_38_9k".tr,
+                  k: "lbl_38_9k".tr,
                   partTime: "lbl_part_time".tr,
                 ),
               ],
@@ -305,7 +305,7 @@ class HomeScreen extends GetWidget<HomeController> {
                     style: CustomTextStyles.titleSmall0penSansff150b3d,
                   ),
                   TextSpan(
-                    text: "1b12".tr,
+                    text: "lbl2".tr,
                     style: CustomTextStyles.labelLargeOpenSansffa9a5b8,
                   ),
                   TextSpan(

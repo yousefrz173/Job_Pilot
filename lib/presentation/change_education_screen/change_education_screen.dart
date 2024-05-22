@@ -48,7 +48,7 @@ class ChangeEducationScreen extends GetWidget<ChangeEducationController> {
               _buildName(),
               SizedBox(height: 21.v),
               Text(
-                "1b1_field_of_study".tr,
+                "lbl_field_of_study".tr,
                 style: theme.textTheme.labelLarge,
               ),
               SizedBox(height: 9.v),

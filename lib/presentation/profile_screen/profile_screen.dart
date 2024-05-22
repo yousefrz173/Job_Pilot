@@ -125,7 +125,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: "1b1_120k".tr,
+                          text: "lbl_120k".tr,
                           style: CustomTextStyles.titleSmallffffffff,
                         ),
                         TextSpan(
@@ -147,7 +147,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: "1b1_23k".tr,
+                          text: "lbl_23k".tr,
                           style: CustomTextStyles.titleSmallffffffff,
                         ),
                         TextSpan(
@@ -262,7 +262,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
               top: 3.v,
             ),
             child: Text(
-              "1b1_language".tr,
+              "lbl_language".tr,
               style: CustomTextStyles.titleSmallGray90001,
             ),
           ),
@@ -351,7 +351,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
               top: 3.v,
             ),
             child: Text(
-              "1b1_appreciation".tr,
+              "lbl_appreciation".tr,
               style: CustomTextStyles.titleSmallGray90001,
             ),
           ),

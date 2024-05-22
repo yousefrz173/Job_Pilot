@@ -41,7 +41,7 @@ class AddWorkExperienceScreen extends GetWidget<AddWorkExperienceController> {
               _buildEditText(),
               SizedBox(height: 21.v),
               Text(
-                "1b1_company".tr,
+                "lbl_company".tr,
                 style: theme.textTheme.labelLarge,
               ),
               SizedBox(height: 8.v),

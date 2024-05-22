@@ -33,14 +33,14 @@ class UpdatePasswordScreen extends GetWidget<UpdatePasswordController> {
               ),
               SizedBox(height: 24.v),
               Text(
-                "1b1_old_password".tr,
+                "lbl_old_password".tr,
                 style: CustomTextStyles.labelLargeGray90003,
               ),
               SizedBox(height: 10.v),
               _buildPassword(),
               SizedBox(height: 14.v),
               Text(
-                "1b1_new_password".tr,
+                "lbl_new_password".tr,
                 style: CustomTextStyles.labelLargeGray90003,
               ),
               SizedBox(height: 10.v),

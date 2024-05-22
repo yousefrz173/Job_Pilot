@@ -34,7 +34,7 @@ class SaveJobScreen extends GetWidget<SaveJobController> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "lb1_save_job".tr,
+                        "lbl_save_job".tr,
                         style: theme.textTheme.titleLarge,
                       ),
                       Padding(

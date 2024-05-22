@@ -198,7 +198,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
                         Padding(
                           padding: EdgeInsets.only(left: 24.h),
                           child: Text(
-                            "1b1_1_day_ago".tr,
+                            "lbl_1_day_ago".tr,
                             style: theme.textTheme.bodyLarge,
                           ),
                         ),
@@ -297,7 +297,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
                                     ),
                                     SizedBox(height: 10.v),
                                     Text(
-                                      "1b1_pdf".tr,
+                                      "lbl_pdf".tr,
                                       style:
                                           CustomTextStyles.labelMediumExtraBold,
                                     ),
@@ -329,7 +329,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
                                 child: Row(
                                   children: [
                                     Text(
-                                      "1b1_867_kb".tr,
+                                      "lbl_867_kb".tr,
                                       style: CustomTextStyles
                                           .bodySmal10penSansBluegray40001,
                                     ),
@@ -381,7 +381,7 @@ class UploadCvOneScreen extends GetWidget<UploadCvOneController> {
                         bottom: 3.v,
                       ),
                       child: Text(
-                        "1b1_remove_file".tr,
+                        "lbl_remove_file".tr,
                         style: CustomTextStyles.bodySmal10penSansOrange400,
                       ),
                     ),

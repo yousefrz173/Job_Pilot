@@ -58,7 +58,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
                       _buildUniversityOfoxford(),
                       SizedBox(height: 21.v),
                       Text(
-                        "1b1_field_of_study".tr,
+                        "lbl_field_of_study".tr,
                         style: theme.textTheme.labelLarge,
                       ),
                       SizedBox(height: 9.v),
@@ -100,7 +100,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
                       ),
                       SizedBox(height: 46.v),
                       Text(
-                        "1b1_end_date2".tr,
+                        "lbl_end_date2".tr,
                         style: CustomTextStyles.titleMediumOpenSans,
                       ),
                       SizedBox(height: 57.v),
@@ -156,7 +156,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
                               borderRadius: BorderRadiusStyle.roundedBorder10,
                             ),
                             child: Text(
-                              "1b1_2012".tr,
+                              "lbl_2012".tr,
                               style: theme.textTheme.labelMedium,
                             ),
                           ),
@@ -170,7 +170,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
                               borderRadius: BorderRadiusStyle.roundedBorder15,
                             ),
                             child: Text(
-                              "1b1_2013".tr,
+                              "lbl_2013".tr,
                               style: CustomTextStyles
                                   .titleSmallOpenSansOnPrimaryContainer,
                             ),
@@ -189,7 +189,7 @@ class StartDateScreen extends GetWidget<StartDateController> {
                               borderRadius: BorderRadiusStyle.roundedBorder10,
                             ),
                             child: Text(
-                              "1b1_2014".tr,
+                              "lbl_2014".tr,
                               style: theme.textTheme.labelMedium,
                             ),
                           )

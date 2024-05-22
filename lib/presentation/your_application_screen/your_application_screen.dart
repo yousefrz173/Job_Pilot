@@ -62,7 +62,7 @@ class YourApplicationScreen extends GetWidget<YourApplicationController> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "1b1_google_inc".tr,
+                          "lbl_google_inc".tr,
                           style:
                               CustomTextStyles.bodySmal10penSansBluegray40001,
                         ),
@@ -200,7 +200,7 @@ class YourApplicationScreen extends GetWidget<YourApplicationController> {
                         Padding(
                           padding: EdgeInsets.only(left: 10.h),
                           child: Text(
-                            "1b1_full_time2".tr,
+                            "lbl_full_time2".tr,
                             style: theme.textTheme.bodySmall,
                           ),
                         ),
@@ -258,7 +258,7 @@ class YourApplicationScreen extends GetWidget<YourApplicationController> {
                         Padding(
                           padding: EdgeInsets.only(left: 10.h),
                           child: Text(
-                            "1b1_cv_resume".tr,
+                            "lbl_cv_resume".tr,
                             style: CustomTextStyles.bodySmall0penSans,
                           ),
                         ),
@@ -350,7 +350,7 @@ class YourApplicationScreen extends GetWidget<YourApplicationController> {
                             ),
                             SizedBox(height: 10.v),
                             Text(
-                              "1b1_pdf".tr,
+                              "lbl_pdf".tr,
                               style: CustomTextStyles.labelMediumExtraBold,
                             ),
                           ],
@@ -378,7 +378,7 @@ class YourApplicationScreen extends GetWidget<YourApplicationController> {
                       Row(
                         children: [
                           Text(
-                            "1b1_867_kb".tr,
+                            "lbl_867_kb".tr,
                             style: CustomTextStyles.bodySmallGray40003,
                           ),
                           Container(

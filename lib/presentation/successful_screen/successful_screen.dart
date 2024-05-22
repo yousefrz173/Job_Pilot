@@ -120,7 +120,7 @@ class SuccessfulScreen extends GetWidget<SuccessfulController> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          "1b1_google".tr,
+                          "lbl_google".tr,
                           style: theme.textTheme.bodyLarge,
                         ),
                         Container(
@@ -165,7 +165,7 @@ class SuccessfulScreen extends GetWidget<SuccessfulController> {
                         Padding(
                           padding: EdgeInsets.only(left: 24.h),
                           child: Text(
-                            "1b1_1_day_ago".tr,
+                            "lbl_1_day_ago".tr,
                             style: theme.textTheme.bodyLarge,
                           ),
                         ),
@@ -241,7 +241,7 @@ class SuccessfulScreen extends GetWidget<SuccessfulController> {
                         ),
                         SizedBox(height: 10.v),
                         Text(
-                          "1b1_pdf".tr,
+                          "lbl_pdf".tr,
                           style: CustomTextStyles.labelMediumExtraBold,
                         ),
                       ],
@@ -268,7 +268,7 @@ class SuccessfulScreen extends GetWidget<SuccessfulController> {
                 Row(
                   children: [
                     Text(
-                      "1b1_867_kb".tr,
+                      "lbl_867_kb".tr,
                       style: CustomTextStyles.bodySmal10penSansBluegray40001,
                     ),
                     Container(

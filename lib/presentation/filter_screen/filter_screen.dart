@@ -59,7 +59,7 @@ class FilterScreen extends GetWidget<FilterController> {
                 child: Padding(
                   padding: EdgeInsets.only(left: 2.h),
                   child: Text(
-                    "1b1_category".tr,
+                    "lbl_category".tr,
                     style: CustomTextStyles.titleSmallOpenSans,
                   ),
                 ),
@@ -80,7 +80,7 @@ class FilterScreen extends GetWidget<FilterController> {
                 child: Padding(
                   padding: EdgeInsets.only(left: 5.h),
                   child: Text(
-                    "1b1_sub_category".tr,
+                    "lbl_sub_category".tr,
                     style: CustomTextStyles.titleSmallOpenSans,
                   ),
                 ),
@@ -130,11 +130,11 @@ class FilterScreen extends GetWidget<FilterController> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "1b1_13k".tr,
+                      "lbl_13k".tr,
                       style: theme.textTheme.labelLarge,
                     ),
                     Text(
-                      "1b1_25k".tr,
+                      "lbl_25k".tr,
                       style: theme.textTheme.labelLarge,
                     ),
                   ],
@@ -148,7 +148,7 @@ class FilterScreen extends GetWidget<FilterController> {
                 child: Padding(
                   padding: EdgeInsets.only(left: 6.h),
                   child: Text(
-                    "1b1_job_type".tr,
+                    "lbl_job_type".tr,
                     style: theme.textTheme.titleSmall,
                   ),
                 ),
@@ -237,12 +237,12 @@ class FilterScreen extends GetWidget<FilterController> {
           Padding(
             padding: EdgeInsets.only(bottom: 1.v),
             child: Text(
-              "1b1_minimum_salary".tr,
+              "lbl_minimum_salary".tr,
               style: CustomTextStyles.bodyMediumDMSansBlack900,
             ),
           ),
           Text(
-            "1b1_minimum_salary".tr,
+            "lbl_minimum_salary".tr,
             style: CustomTextStyles.bodyMediumDMSansBlack900,
           ),
         ],

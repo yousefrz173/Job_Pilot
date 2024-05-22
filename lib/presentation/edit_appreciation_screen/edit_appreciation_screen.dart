@@ -97,7 +97,7 @@ class EditAppreciationScreen extends GetWidget<EditAppreciationController> {
     return CustomTextFormField(
       width: 160.h,
       controller: controller.dateController,
-      hintText: "1b1_2014".tr,
+      hintText: "lbl_2014".tr,
       hintStyle: theme.textTheme.bodySmall!,
     );
   }

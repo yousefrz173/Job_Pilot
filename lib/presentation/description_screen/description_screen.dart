@@ -29,7 +29,7 @@ class DescriptionScreen extends GetWidget<DescriptionController> {
               Padding(
                 padding: EdgeInsets.only(left: 18.h),
                 child: Text(
-                  "1b1_job_description".tr,
+                  "lbl_job_description".tr,
                   style: CustomTextStyles.titleSmallOpenSans,
                 ),
               ),
@@ -215,7 +215,7 @@ class DescriptionScreen extends GetWidget<DescriptionController> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          "1b1_google".tr,
+                          "lbl_google".tr,
                           style: theme.textTheme.bodyLarge,
                         ),
                         Container(
@@ -260,7 +260,7 @@ class DescriptionScreen extends GetWidget<DescriptionController> {
                         Padding(
                           padding: EdgeInsets.only(left: 24.h),
                           child: Text(
-                            "1b1_1_day_ago".tr,
+                            "lbl_1_day_ago".tr,
                             style: theme.textTheme.bodyLarge,
                           ),
                         ),

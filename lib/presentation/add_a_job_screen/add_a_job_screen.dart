@@ -25,7 +25,7 @@ class AddAJobScreen extends GetWidget<AddAJobController> {
               _buildClose(),
               SizedBox(height: 41.v),
               Text(
-                "1b1_add_a_job".tr,
+                "lbl_add_a_job".tr,
                 style: theme.textTheme.titleMedium,
               ),
               SizedBox(height: 29.v),

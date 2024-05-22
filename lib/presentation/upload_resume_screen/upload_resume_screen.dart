@@ -28,7 +28,7 @@ class UploadResumeScreen extends GetWidget<UploadResumeController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "1b1_add_resume".tr,
+                "lbl_add_resume".tr,
                 style: CustomTextStyles.titleMediumOpenSansGray90003,
               ),
               SizedBox(height: 29.v),
@@ -131,7 +131,7 @@ class UploadResumeScreen extends GetWidget<UploadResumeController> {
                                 ),
                                 SizedBox(height: 10.v),
                                 Text(
-                                  "1b1_pdf".tr,
+                                  "lbl_pdf".tr,
                                   style: CustomTextStyles.labelMediumExtraBold,
                                 ),
                               ],
@@ -160,7 +160,7 @@ class UploadResumeScreen extends GetWidget<UploadResumeController> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  "1b1_867_kb".tr,
+                                  "lbl_867_kb".tr,
                                   style: CustomTextStyles
                                       .bodySmal10penSansBluegray40001,
                                 ),

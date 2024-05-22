@@ -116,7 +116,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                 Padding(
                   padding: EdgeInsets.only(left: 20.h),
                   child: Text(
-                    "1b1_employee_size".tr,
+                    "lbl_employee_size".tr,
                     style: theme.textTheme.titleSmall,
                   ),
                 ),
@@ -142,7 +142,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                 Padding(
                   padding: EdgeInsets.only(left: 20.h),
                   child: Text(
-                    "1b1_1998".tr,
+                    "lbl_1998".tr,
                     style: CustomTextStyles.bodySmall0penSans,
                   ),
                 ),
@@ -250,7 +250,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        "lb1_google".tr,
+                        "lbl_google".tr,
                         style: theme.textTheme.bodyLarge,
                       ),
                       Container(
@@ -280,7 +280,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             Text(
-                              "lb1_google".tr,
+                              "lbl_google".tr,
                               style: theme.textTheme.bodyLarge,
                             ),
                             Container(
@@ -325,7 +325,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
                             Padding(
                               padding: EdgeInsets.only(left: 24.h),
                               child: Text(
-                                "1b1_1_day_ago".tr,
+                                "lbl_1_day_ago".tr,
                                 style: theme.textTheme.bodyLarge,
                               ),
                             )
@@ -488,7 +488,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
     return CustomElevatedButton(
       height: 54.v,
       width: 102.h,
-      text: "1b1_5_pictures".tr,
+      text: "lbl_5_pictures".tr,
       buttonStyle: CustomButtonStyles.fillTeal,
       buttonTextStyle: CustomTextStyles.labelLargeOpenSansOnPrimaryContainer,
       alignment: Alignment.center,
@@ -508,7 +508,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "1b1_company_gallery".tr,
+                  "lbl_company_gallery".tr,
                   style: CustomTextStyles.titleSmallOpenSans,
                 ),
                 SizedBox(height: 20.v),

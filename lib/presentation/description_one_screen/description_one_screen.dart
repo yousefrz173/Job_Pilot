@@ -47,7 +47,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                           flex: 66,
                         ),
                         Text(
-                          "1b1_job_type".tr,
+                          "lbl_job_type".tr,
                           style: CustomTextStyles.bodyMediumDMSansGray90002,
                         ),
                         Spacer(
@@ -64,7 +64,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1b1_job_description".tr,
+                      "lbl_job_description".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                   ),
@@ -193,7 +193,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "lb1_position".tr,
+                      "lbl_position".tr,
                       style: theme.textTheme.labelLarge,
                     ),
                   ),
@@ -235,7 +235,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1b1_3_years".tr,
+                      "lbl_3_years".tr,
                       style: theme.textTheme.bodySmall,
                     ),
                   ),
@@ -318,7 +318,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                         Padding(
                           padding: EdgeInsets.only(left: 11.h),
                           child: Text(
-                            "1b1_medical".tr,
+                            "lbl_medical".tr,
                             style: theme.textTheme.bodySmall,
                           ),
                         ),
@@ -486,7 +486,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                         Padding(
                           padding: EdgeInsets.only(left: 11.h),
                           child: Text(
-                            "1b1_mondays_fridays".tr,
+                            "lbl_mondays_fridays".tr,
                             style: theme.textTheme.bodySmall,
                           ),
                         ),
@@ -577,7 +577,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          "1b1_google".tr,
+                          "lbl_google".tr,
                           style: theme.textTheme.bodyLarge,
                         ),
                         Container(
@@ -622,7 +622,7 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
                         Padding(
                           padding: EdgeInsets.only(left: 24.h),
                           child: Text(
-                            "1b1_1_day_ago".tr,
+                            "lbl_1_day_ago".tr,
                             style: theme.textTheme.bodyLarge,
                           ),
                         ),

@@ -174,7 +174,7 @@ class SearchPage extends StatelessWidget {
                   bottom: 2.v,
                 ),
                 child: Text(
-                  "1b1_25_minute_ago".tr,
+                  "lbl_25_minute_ago".tr,
                   style: CustomTextStyles.bodySmal10penSansBluegray40001,
                 ),
               ),
@@ -182,11 +182,11 @@ class SearchPage extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "1b1_12k".tr,
+                      text: "lbl_12k".tr,
                       style: CustomTextStyles.titleSmallOpenSansff000000,
                     ),
                     TextSpan(
-                      text: "1b12".tr,
+                      text: "lbl2".tr,
                       style: CustomTextStyles.labelLargeOpenSansffa9a5b8,
                     ),
                     TextSpan(

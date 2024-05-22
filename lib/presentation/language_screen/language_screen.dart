@@ -60,7 +60,7 @@ class LanguageScreen extends GetWidget<LanguageController> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "1b1_language".tr,
+          "lbl_language".tr,
           style: theme.textTheme.titleMedium,
         ),
         Spacer(),

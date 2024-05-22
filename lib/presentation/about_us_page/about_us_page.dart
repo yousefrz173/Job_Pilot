@@ -67,7 +67,7 @@ class AboutUsPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 20.h),
                       child: Text(
-                        "1b1_website".tr,
+                        "lbl_website".tr,
                         style: theme.textTheme.titleSmall,
                       ),
                     ),
@@ -88,7 +88,7 @@ class AboutUsPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 20.h),
                       child: Text(
-                        "lb1_industry".tr,
+                        "lbl_industry".tr,
                         style: theme.textTheme.titleSmall,
                       ),
                     ),
@@ -104,7 +104,7 @@ class AboutUsPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 20.h),
                       child: Text(
-                        "lb1_employee_size".tr,
+                        "lbl_employee_size".tr,
                         style: theme.textTheme.titleSmall,
                       ),
                     ),
@@ -160,7 +160,7 @@ class AboutUsPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 20.h),
                       child: Text(
-                        "1b1_1998".tr,
+                        "lbl_1998".tr,
                         style: theme.textTheme.bodySmall,
                       ),
                     ),

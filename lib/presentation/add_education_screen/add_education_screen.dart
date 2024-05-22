@@ -49,7 +49,7 @@ class AddEducationScreen extends GetWidget<AddEducationController> {
               _buildName(),
               SizedBox(height: 21.v),
               Text(
-                "1b1_field_of_study".tr,
+                "lbl_field_of_study".tr,
                 style: theme.textTheme.labelLarge,
               ),
               SizedBox(height: 9.v),
@@ -60,7 +60,7 @@ class AddEducationScreen extends GetWidget<AddEducationController> {
               _buildThisismypositionnow(),
               SizedBox(height: 21.v),
               Text(
-                "1b1_description".tr,
+                "lbl_description".tr,
                 style: theme.textTheme.labelLarge,
               ),
               SizedBox(height: 9.v),

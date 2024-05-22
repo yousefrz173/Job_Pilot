@@ -168,7 +168,7 @@ class JobsItemWidget extends StatelessWidget {
                       style: CustomTextStyles.titleSmallOpenSansff000000,
                     ),
                     TextSpan(
-                      text: "1b12".tr,
+                      text: "lbl2".tr,
                       style: CustomTextStyles.labelLargeOpenSansffa9a5b8,
                     ),
                     TextSpan(

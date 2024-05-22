@@ -50,7 +50,7 @@ class OptionsBottomsheet extends StatelessWidget {
                     top: 4.v,
                   ),
                   child: Text(
-                    "1b1_send_message".tr,
+                    "lbl_send_message".tr,
                     style: CustomTextStyles.bodyMediumDMSansGray90004,
                   ),
                 ),

@@ -28,7 +28,7 @@ class ChooseJobTypeBottomsheet extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(top: 3.v),
                 child: Text(
-                  "1b1_job_location".tr,
+                  "lbl_job_location".tr,
                   style: CustomTextStyles.titleSmallOpenSansGray90001,
                 ),
               ),

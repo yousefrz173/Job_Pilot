@@ -27,7 +27,7 @@ class AddResumeScreen extends GetWidget<AddResumeController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "1b1_add_resume".tr,
+                "lbl_add_resume".tr,
                 style: CustomTextStyles.titleMediumOpenSansGray90003,
               ),
               SizedBox(height: 30.v),

@@ -164,11 +164,11 @@ class SavejobItemWidget extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "1b1_15k".tr,
+                      text: "lbl_15k".tr,
                       style: CustomTextStyles.titleSmallff000000,
                     ),
                     TextSpan(
-                      text: "1b12".tr,
+                      text: "lbl2".tr,
                       style: CustomTextStyles.labelLargeffa9a5b8,
                     ),
                     TextSpan(

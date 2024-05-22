@@ -94,7 +94,7 @@ class AboutUsTabContainerScreen
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text(
-                                  "1b1_google".tr,
+                                  "lbl_google".tr,
                                   style: theme.textTheme.bodyLarge,
                                 ),
                                 Container(
@@ -139,7 +139,7 @@ class AboutUsTabContainerScreen
                                 Padding(
                                   padding: EdgeInsets.only(left: 24.h),
                                   child: Text(
-                                    "1b1_1_day_ago".tr,
+                                    "lbl_1_day_ago".tr,
                                     style: theme.textTheme.bodyLarge,
                                   ),
                                 ),
@@ -303,7 +303,7 @@ class AboutUsTabContainerScreen
         tabs: [
           Tab(
             child: Text(
-              "1b1_about_us".tr,
+              "lbl_about_us".tr,
             ),
           ),
           Tab(
@@ -313,7 +313,7 @@ class AboutUsTabContainerScreen
           ),
           Tab(
             child: Text(
-              "1b1_jobs".tr,
+              "lbl_jobs".tr,
             ),
           ),
         ],

@@ -19,9 +19,9 @@ class FilterOneModel {
   Rx<List<String>> radioList2 = Rx([
     "lbl_no_experience",
     "msg_less_than_a_year",
-    "1b1_1_3_years",
-    "1b1_3_5_years",
-    "1b1_5_10_years",
+    "lbl_1_3_years",
+    "lbl_3_5_years",
+    "lbl_5_10_years",
     "msg_more_than_10_years"
   ]);
 }

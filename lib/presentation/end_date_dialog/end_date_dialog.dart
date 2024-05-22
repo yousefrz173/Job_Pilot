@@ -68,7 +68,7 @@ class EndDateDialog extends StatelessWidget {
                         children: [
                           SizedBox(height: 5.v),
                           Text(
-                            "1b1_aug".tr,
+                            "lbl_aug".tr,
                             style: CustomTextStyles
                                 .titleSmallOpenSansOnPrimaryContainer,
                           ),
@@ -114,7 +114,7 @@ class EndDateDialog extends StatelessWidget {
                         borderRadius: BorderRadiusStyle.roundedBorder10,
                       ),
                       child: Text(
-                        "1b1_2012".tr,
+                        "lbl_2012".tr,
                         style: theme.textTheme.labelMedium,
                       ),
                     ),
@@ -128,7 +128,7 @@ class EndDateDialog extends StatelessWidget {
                         borderRadius: BorderRadiusStyle.roundedBorder15,
                       ),
                       child: Text(
-                        "1b1_2013".tr,
+                        "lbl_2013".tr,
                         style: CustomTextStyles
                             .titleSmallOpenSansOnPrimaryContainer,
                       ),
@@ -147,7 +147,7 @@ class EndDateDialog extends StatelessWidget {
                         borderRadius: BorderRadiusStyle.roundedBorder10,
                       ),
                       child: Text(
-                        "1b1_2014".tr,
+                        "lbl_2014".tr,
                         style: theme.textTheme.labelMedium,
                       ),
                     ),

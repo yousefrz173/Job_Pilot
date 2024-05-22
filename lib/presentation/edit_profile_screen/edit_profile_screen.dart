@@ -102,7 +102,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                       ),
                       SizedBox(height: 1.v),
                       Text(
-                        "lb1_california_usa".tr,
+                        "lbl_california_usa".tr,
                         style: CustomTextStyles.bodySmallOnPrimaryContainer,
                       ),
                     ],
@@ -167,7 +167,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: "1b1_23k".tr,
+                          text: "lbl_23k".tr,
                           style: CustomTextStyles.titleSmallffffffff,
                         ),
                         TextSpan(
@@ -280,12 +280,12 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "1b1_manager".tr,
+                          "lbl_manager".tr,
                           style: theme.textTheme.titleSmall,
                         ),
                         SizedBox(height: 8.v),
                         Text(
-                          "1b1_amazon_inc".tr,
+                          "lbl_amazon_inc".tr,
                           style: theme.textTheme.bodySmall,
                         ),
                         SizedBox(height: 5.v),
@@ -314,7 +314,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                                 ),
                               ),
                               Text(
-                                "1b1_5_years".tr,
+                                "lbl_5_years".tr,
                                 style: CustomTextStyles.bodySmall0penSans,
                               ),
                             ],
@@ -412,7 +412,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                                 ),
                               ),
                               Text(
-                                "1b1_5_years".tr,
+                                "lbl_5_years".tr,
                                 style: CustomTextStyles.bodySmall0penSans,
                               ),
                             ],
@@ -747,12 +747,12 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                           ),
                           SizedBox(height: 10.v),
                           Text(
-                            "1b1_young_scientist".tr,
+                            "lbl_young_scientist".tr,
                             style: theme.textTheme.bodySmall,
                           ),
                           SizedBox(height: 3.v),
                           Text(
-                            "1b1_2014".tr,
+                            "lbl_2014".tr,
                             style: theme.textTheme.bodySmall,
                           ),
                         ],
@@ -854,7 +854,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                             ),
                             SizedBox(height: 10.v),
                             Text(
-                              "1b1_pdf".tr,
+                              "lbl_pdf".tr,
                               style: CustomTextStyles.labelMediumExtraBold,
                             ),
                           ],
@@ -880,7 +880,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                     Row(
                       children: [
                         Text(
-                          "1b1_867_kb".tr,
+                          "lbl_867_kb".tr,
                           style: CustomTextStyles.bodySmallBluegray400,
                         ),
                         Container(

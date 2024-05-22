@@ -33,7 +33,7 @@ class UndoChangesTwoBottomsheet extends StatelessWidget {
           ),
           SizedBox(height: 47.v),
           Text(
-            "1b1_undo_changes".tr,
+            "lbl_undo_changes".tr,
             style: theme.textTheme.titleMedium,
           ),
           SizedBox(height: 10.v),

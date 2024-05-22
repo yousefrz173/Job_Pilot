@@ -33,7 +33,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1b1_about_company".tr,
+                      "lbl_about_company".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                   ),
@@ -104,7 +104,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1b1_industry".tr,
+                      "lbl_industry".tr,
                       style: theme.textTheme.titleSmall,
                     ),
                   ),
@@ -176,7 +176,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1b1_1998".tr,
+                      "lbl_1998".tr,
                       style: theme.textTheme.bodySmall,
                     ),
                   ),
@@ -206,7 +206,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
                   Padding(
                     padding: EdgeInsets.only(left: 20.h),
                     child: Text(
-                      "1b1_company_gallery".tr,
+                      "lbl_company_gallery".tr,
                       style: CustomTextStyles.titleSmallOpenSans,
                     ),
                   ),
@@ -305,7 +305,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          "1b1_google".tr,
+                          "lbl_google".tr,
                           style: theme.textTheme.bodyLarge,
                         ),
                         Container(
@@ -350,7 +350,7 @@ class CompanyOneScreen extends GetWidget<CompanyOneController> {
                         Padding(
                           padding: EdgeInsets.only(left: 24.h),
                           child: Text(
-                            "1b1_1_day_ago".tr,
+                            "lbl_1_day_ago".tr,
                             style: theme.textTheme.bodyLarge,
                           ),
                         )

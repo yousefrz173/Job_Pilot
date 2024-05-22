@@ -153,7 +153,7 @@ class SearchTabContainerScreen extends GetWidget<SearchTabContainerController> {
           ),
           Tab(
             child: Text(
-              "1b1_full_time4".tr,
+              "lbl_full_time4".tr,
             ),
           ),
         ],

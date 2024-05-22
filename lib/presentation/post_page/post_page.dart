@@ -67,15 +67,15 @@ class PostPage extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(left: 1.h),
                         child: Text(
-                          "lb1_google_inc2".tr,
+                          "lbl_google_inc2".tr,
                           style: theme.textTheme.labelLarge,
                         ),
                       ),
                       SizedBox(height: 3.v),
                       Obx(
                         () => CustomRadioButton(
-                          text: "1b1_21_minuts_ago".tr,
-                          value: "1b1_21_minuts_ago".tr,
+                          text: "lbl_21_minuts_ago".tr,
+                          value: "lbl_21_minuts_ago".tr,
                           groupValue: controller.radioGroup.value,
                           textStyle:
                               CustomTextStyles.bodySmallOpenSansGray60002,
@@ -148,7 +148,7 @@ class PostPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 6.h),
             child: Text(
-              "1b1_youtube_com".tr,
+              "lbl_youtube_com".tr,
               style: CustomTextStyles.bodySmallGray9000410,
             ),
           ),

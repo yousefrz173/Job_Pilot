@@ -22,7 +22,7 @@ class SuccessfullyScreen extends GetWidget<SuccessfullyController> {
           child: Column(
             children: [
               Text(
-                "1b1_successfully".tr,
+                "lbl_successfully".tr,
                 style: theme.textTheme.headlineLarge,
               ),
               SizedBox(height: 2.v),

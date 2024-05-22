@@ -30,7 +30,7 @@ class Skill8Screen extends GetWidget<Skill8Controller> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "1b1_skill_8".tr,
+                  "lbl_skill_8".tr,
                   style: theme.textTheme.titleMedium,
                 ),
               ),

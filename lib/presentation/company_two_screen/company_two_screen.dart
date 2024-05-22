@@ -28,7 +28,7 @@ class CompanyTwoScreen extends GetWidget<CompanyTwoController> {
               child: Column(
                 children: [
                   Text(
-                    "1b1_company".tr,
+                    "lbl_company".tr,
                     style: CustomTextStyles.titleLargeOpenSans,
                   ),
                   SizedBox(height: 39.v),
