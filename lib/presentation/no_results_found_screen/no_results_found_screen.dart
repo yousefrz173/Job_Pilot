@@ -42,6 +42,7 @@ class NoResultsFoundScreen extends GetWidget<NoResultsFoundController> {
                 imagePath: ImageConstant.imgIllustrasi,
                 height: 176.v,
                 width: 156.h,
+                fit: BoxFit.fill,
               ),
               SizedBox(height: 59.v),
               Text(

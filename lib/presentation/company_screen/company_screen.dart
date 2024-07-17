@@ -129,8 +129,36 @@ class CompanyScreen extends GetWidget<CompanyController> {
                   ),
                 ),
                 SizedBox(height: 18.v),
-                _buildApplyNow1(),
-                SizedBox(height: 23.v),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.h),
+                  child: Text(
+                    "lbl_head_office".tr,
+                    style: CustomTextStyles.titleSmallOpenSans,
+                  ),
+                ),
+                SizedBox(height: 4.v),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.h),
+                  child: Text(
+                    "msg_mountain_view_california".tr,
+                    style: CustomTextStyles.bodySmall0penSans,
+                  ),
+                ),
+                SizedBox(height: 20.v),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.h),
+                  child: Text(
+                    "lbl_type".tr,
+                    style: CustomTextStyles.titleSmallOpenSans,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.h),
+                  child: Text(
+                    "msg_multinational_company".tr,
+                    style: CustomTextStyles.bodySmall0penSans,
+                  ),
+                ),
                 Padding(
                   padding: EdgeInsets.only(left: 20.h),
                   child: Text(
@@ -169,7 +197,9 @@ class CompanyScreen extends GetWidget<CompanyController> {
                   ),
                 ),
                 SizedBox(height: 20.v),
-                _buildPictures1()
+                _buildPictures1(),
+                SizedBox(height: 20.v),
+                _buildApplyNow1(),
               ],
             ),
           ),
@@ -425,26 +455,7 @@ class CompanyScreen extends GetWidget<CompanyController> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "lbl_head_office".tr,
-                    style: CustomTextStyles.titleSmallOpenSans,
-                  ),
-                  SizedBox(height: 4.v),
-                  Text(
-                    "msg_mountain_view_california".tr,
-                    style: CustomTextStyles.bodySmall0penSans,
-                  ),
-                  SizedBox(height: 20.v),
-                  Text(
-                    "lbl_type".tr,
-                    style: CustomTextStyles.titleSmallOpenSans,
-                  ),
-                  Text(
-                    "msg_multinational_company".tr,
-                    style: CustomTextStyles.bodySmall0penSans,
-                  )
-                ],
+                children: [],
               ),
             ),
           ),

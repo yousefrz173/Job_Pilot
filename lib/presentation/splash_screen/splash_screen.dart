@@ -29,7 +29,7 @@ class SplashScreen extends GetWidget<SplashController> {
               SizedBox(height: 65.v),
               CustomImageView(
                 imagePath: ImageConstant.imgGroup75,
-                height: 301.v,
+                height: 330.v,
                 width: 311.h,
                 margin: EdgeInsets.only(left: 4.h),
               ),

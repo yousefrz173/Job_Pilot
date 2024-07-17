@@ -5,6 +5,7 @@ import 'package:jobpilot/widgets/custom_text_form_field.dart';
 import 'package:jobpilot/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:jobpilot/core/app_export.dart';
+import '../../widgets/app_bar/appbar_leading_image.dart';
 import 'controller/upload_cv_controller.dart';
 
 // ignore_for_file: must_be_immutable
@@ -21,52 +22,55 @@ class UploadCvScreen extends GetWidget<UploadCvController> {
         appBar: _buildAppBar(),
         body: SizedBox(
           width: double.maxFinite,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _buildFortySeven(),
-              SizedBox(height: 11.v),
-              Padding(
-                padding: EdgeInsets.only(left: 20.h),
-                child: Text(
-                  "lbl_upload_cv".tr,
-                  style: theme.textTheme.titleSmall,
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildFortySeven(),
+                SizedBox(height: 11.v),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.h),
+                  child: Text(
+                    "lbl_upload_cv".tr,
+                    style: theme.textTheme.titleSmall,
+                  ),
                 ),
-              ),
-              SizedBox(height: 9.v),
-              Padding(
-                padding: EdgeInsets.only(left: 20.h),
-                child: Text(
-                  "msg_add_your_cv_resume".tr,
-                  style: theme.textTheme.bodySmall,
+                SizedBox(height: 9.v),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.h),
+                  child: Text(
+                    "msg_add_your_cv_resume".tr,
+                    style: theme.textTheme.bodySmall,
+                  ),
                 ),
-              ),
-              SizedBox(height: 19.v),
-              _buildUploadCVResume(),
-              SizedBox(height: 29.v),
-              Padding(
-                padding: EdgeInsets.only(left: 20.h),
-                child: Text(
-                  "lbl_information".tr,
-                  style: theme.textTheme.titleSmall,
+                SizedBox(height: 19.v),
+                _buildUploadCVResume(),
+                SizedBox(height: 29.v),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.h),
+                  child: Text(
+                    "lbl_information".tr,
+                    style: theme.textTheme.titleSmall,
+                  ),
                 ),
-              ),
-              SizedBox(height: 15.v),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20.h),
-                child: CustomTextFormField(
-                  controller: controller.fiftySixController,
-                  hintText: "msg_explain_why_you".tr,
-                  hintStyle: CustomTextStyles.bodySmallBluegray30003,
-                  textInputAction: TextInputAction.done,
-                  alignment: Alignment.center,
-                  maxLines: 12,
-                  contentPadding: EdgeInsets.all(20.h),
-                  borderDecoration: TextFormFieldStyleHelper.outlineIndigoDTL20,
+                SizedBox(height: 15.v),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20.h),
+                  child: CustomTextFormField(
+                    controller: controller.fiftySixController,
+                    hintText: "msg_explain_why_you".tr,
+                    hintStyle: CustomTextStyles.bodySmallBluegray30003,
+                    textInputAction: TextInputAction.done,
+                    alignment: Alignment.center,
+                    maxLines: 12,
+                    contentPadding: EdgeInsets.all(20.h),
+                    borderDecoration:
+                        TextFormFieldStyleHelper.outlineIndigoDTL20,
+                  ),
                 ),
-              ),
-              SizedBox(height: 5.v),
-            ],
+                SizedBox(height: 5.v),
+              ],
+            ),
           ),
         ),
         bottomNavigationBar: _buildApplyNow(),
@@ -77,45 +81,22 @@ class UploadCvScreen extends GetWidget<UploadCvController> {
   /// Section Widget
   PreferredSizeWidget _buildAppBar() {
     return CustomAppBar(
-      leadingWidth: 46.h,
-      leading: Container(
-        height: 29.v,
-        width: 26.h,
+      leadingWidth: 47.h,
+      leading: AppbarLeadingImage(
+        imagePath: ImageConstant.imgArrowDownGray90002,
         margin: EdgeInsets.only(
-          left: 20.h,
-          top: 13.v,
-          bottom: 13.v,
-        ),
-        child: Stack(
-          alignment: Alignment.bottomLeft,
-          children: [
-            CustomImageView(
-              imagePath: ImageConstant.imgArrowDownGray90002,
-              height: 24.adaptSize,
-              width: 24.adaptSize,
-              alignment: Alignment.topRight,
-              margin: EdgeInsets.only(
-                left: 2.h,
-                bottom: 5.v,
-              ),
-            ),
-            CustomImageView(
-              imagePath: ImageConstant.imgArrowDown,
-              height: 24.adaptSize,
-              width: 24.adaptSize,
-              alignment: Alignment.bottomLeft,
-              margin: EdgeInsets.only(
-                top: 5.v,
-                right: 2.h,
-              ),
-            ),
-          ],
+          left: 23.h,
+          top: 16.v,
+          bottom: 16.v,
         ),
       ),
       actions: [
         AppbarTrailingImage(
           imagePath: ImageConstant.imgNotificationGray90002,
-          margin: EdgeInsets.fromLTRB(20.h, 13.v, 20.h, 18.v),
+          margin: EdgeInsets.symmetric(
+            horizontal: 19.h,
+            vertical: 16.v,
+          ),
         ),
       ],
     );

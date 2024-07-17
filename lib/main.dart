@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         fallbackLocale: Locale('en', 'US'),
         title: 'jobpilot',
         initialBinding: InitialBindings(),
-        initialRoute: AppRoutes.notificationsScreen,
+        initialRoute: AppRoutes.splashScreen,
         getPages: AppRoutes.pages,
       );
     });

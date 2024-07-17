@@ -27,8 +27,12 @@ class PostingPage extends StatelessWidget {
               child: Column(
                 children: [
                   _buildArnoldLeonardo(),
+                  // SizedBox(height: 34.v),
+                  // _buildPosting(),
                   SizedBox(height: 34.v),
-                  _buildPosting(),
+                  _buildArnoldLeonardo(),
+                  SizedBox(height: 34.v),
+                  _buildArnoldLeonardo(),
                 ],
               ),
             ),

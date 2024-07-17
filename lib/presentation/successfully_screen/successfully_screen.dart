@@ -27,10 +27,10 @@ class SuccessfullyScreen extends GetWidget<SuccessfullyController> {
               ),
               SizedBox(height: 2.v),
               Align(
-                alignment: Alignment.centerRight,
+                alignment: Alignment.center,
                 child: Container(
                   width: 298.h,
-                  margin: EdgeInsets.only(left: 35.h),
+                  margin: EdgeInsets.only(left: 2.h),
                   child: Text(
                     "msg_your_password_has".tr,
                     maxLines: 2,

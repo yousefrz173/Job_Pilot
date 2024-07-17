@@ -27,19 +27,21 @@ class SpecializationScreen extends GetWidget<SpecializationController> {
             horizontal: 20.h,
             vertical: 24.v,
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              _buildHeader(),
-              SizedBox(height: 41.v),
-              Text(
-                "lbl_specialization".tr,
-                style: CustomTextStyles.titleMediumGray90003,
-              ),
-              SizedBox(height: 19.v),
-              _buildSpecialization(),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _buildHeader(),
+                SizedBox(height: 41.v),
+                Text(
+                  "lbl_specialization".tr,
+                  style: CustomTextStyles.titleMediumGray90003,
+                ),
+                SizedBox(height: 19.v),
+                _buildSpecialization(),
+              ],
+            ),
           ),
         ),
       ),
@@ -95,7 +97,7 @@ class SpecializationScreen extends GetWidget<SpecializationController> {
       () => GridView.builder(
         shrinkWrap: true,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          mainAxisExtent: 181.v,
+          mainAxisExtent: 231.v,
           crossAxisCount: 2,
           mainAxisSpacing: 15.h,
           crossAxisSpacing: 15.h,

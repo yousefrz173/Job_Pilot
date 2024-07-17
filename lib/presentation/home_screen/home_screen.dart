@@ -24,8 +24,8 @@ class HomeScreen extends GetWidget<HomeController> {
             horizontal: 20.h,
             vertical: 5.v,
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 40.v),
               _buildJoinNow(),

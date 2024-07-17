@@ -21,138 +21,140 @@ class DescriptionScreen extends GetWidget<DescriptionController> {
         body: Container(
           width: double.maxFinite,
           padding: EdgeInsets.symmetric(vertical: 1.v),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _buildFortySeven(),
-              SizedBox(height: 63.v),
-              Padding(
-                padding: EdgeInsets.only(left: 18.h),
-                child: Text(
-                  "lbl_job_description".tr,
-                  style: CustomTextStyles.titleSmallOpenSans,
-                ),
-              ),
-              SizedBox(height: 13.v),
-              Align(
-                alignment: Alignment.center,
-                child: Container(
-                  width: 326.h,
-                  margin: EdgeInsets.only(
-                    left: 20.h,
-                    right: 28.h,
-                  ),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildFortySeven(),
+                SizedBox(height: 63.v),
+                Padding(
+                  padding: EdgeInsets.only(left: 18.h),
                   child: Text(
-                    "msg_sed_ut_perspiciatis".tr,
-                    maxLines: 5,
-                    overflow: TextOverflow.ellipsis,
-                    style: CustomTextStyles.bodySmall0penSans,
+                    "lbl_job_description".tr,
+                    style: CustomTextStyles.titleSmallOpenSans,
                   ),
                 ),
-              ),
-              SizedBox(height: 6.v),
-              CustomElevatedButton(
-                height: 30.v,
-                width: 91.h,
-                text: "lbl_read_more".tr,
-                margin: EdgeInsets.only(left: 20.h),
-                buttonStyle: CustomButtonStyles.fillOnPrimary,
-                buttonTextStyle: CustomTextStyles.bodySmall0penSansGray90002,
-              ),
-              SizedBox(height: 26.v),
-              Padding(
-                padding: EdgeInsets.only(left: 20.h),
-                child: Text(
-                  "lbl_requirements".tr,
-                  style: CustomTextStyles.titleSmallOpenSans,
+                SizedBox(height: 13.v),
+                Align(
+                  alignment: Alignment.center,
+                  child: Container(
+                    width: 326.h,
+                    margin: EdgeInsets.only(
+                      left: 20.h,
+                      right: 28.h,
+                    ),
+                    child: Text(
+                      "msg_sed_ut_perspiciatis".tr,
+                      maxLines: 5,
+                      overflow: TextOverflow.ellipsis,
+                      style: CustomTextStyles.bodySmall0penSans,
+                    ),
+                  ),
                 ),
-              ),
-              SizedBox(height: 13.v),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 21.h,
-                  right: 58.h,
+                SizedBox(height: 6.v),
+                CustomElevatedButton(
+                  height: 30.v,
+                  width: 91.h,
+                  text: "lbl_read_more".tr,
+                  margin: EdgeInsets.only(left: 20.h),
+                  buttonStyle: CustomButtonStyles.fillOnPrimary,
+                  buttonTextStyle: CustomTextStyles.bodySmall0penSansGray90002,
                 ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 4.adaptSize,
-                      width: 4.adaptSize,
-                      margin: EdgeInsets.only(
-                        top: 5.v,
-                        bottom: 7.v,
-                      ),
-                      decoration: BoxDecoration(
-                        color: appTheme.blueGray70001,
-                        borderRadius: BorderRadius.circular(
-                          2.h,
+                SizedBox(height: 26.v),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.h),
+                  child: Text(
+                    "lbl_requirements".tr,
+                    style: CustomTextStyles.titleSmallOpenSans,
+                  ),
+                ),
+                SizedBox(height: 13.v),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 21.h,
+                    right: 58.h,
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 4.adaptSize,
+                        width: 4.adaptSize,
+                        margin: EdgeInsets.only(
+                          top: 5.v,
+                          bottom: 7.v,
+                        ),
+                        decoration: BoxDecoration(
+                          color: appTheme.blueGray70001,
+                          borderRadius: BorderRadius.circular(
+                            2.h,
+                          ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 11.h),
-                      child: Text(
-                        "msg_sed_ut_perspiciatis2".tr,
-                        style: CustomTextStyles.bodySmall0penSans,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 13.v),
-              _buildNine(),
-              SizedBox(height: 12.v),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 21.h,
-                  right: 74.h,
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 4.adaptSize,
-                      width: 4.adaptSize,
-                      margin: EdgeInsets.only(
-                        top: 6.v,
-                        bottom: 24.v,
-                      ),
-                      decoration: BoxDecoration(
-                        color: appTheme.blueGray70001,
-                        borderRadius: BorderRadius.circular(
-                          2.h,
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        width: 264.h,
-                        margin: EdgeInsets.only(left: 11.h),
+                      Padding(
+                        padding: EdgeInsets.only(left: 11.h),
                         child: Text(
-                          "msg_nemo_enim_ipsam".tr,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
+                          "msg_sed_ut_perspiciatis2".tr,
                           style: CustomTextStyles.bodySmall0penSans,
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-              SizedBox(height: 12.v),
-              _buildTen(),
-              SizedBox(height: 35.v),
-              CustomElevatedButton(
-                text: "lbl_apply_now".tr.toUpperCase(),
-                margin: EdgeInsets.only(
-                  left: 47.h,
-                  right: 58.h,
+                SizedBox(height: 13.v),
+                _buildNine(),
+                SizedBox(height: 12.v),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 21.h,
+                    right: 74.h,
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 4.adaptSize,
+                        width: 4.adaptSize,
+                        margin: EdgeInsets.only(
+                          top: 6.v,
+                          bottom: 24.v,
+                        ),
+                        decoration: BoxDecoration(
+                          color: appTheme.blueGray70001,
+                          borderRadius: BorderRadius.circular(
+                            2.h,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          width: 264.h,
+                          margin: EdgeInsets.only(left: 11.h),
+                          child: Text(
+                            "msg_nemo_enim_ipsam".tr,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: CustomTextStyles.bodySmall0penSans,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-                alignment: Alignment.center,
-              ),
-              SizedBox(height: 5.v),
-            ],
+                SizedBox(height: 12.v),
+                _buildTen(),
+                SizedBox(height: 35.v),
+                CustomElevatedButton(
+                  text: "lbl_apply_now".tr.toUpperCase(),
+                  margin: EdgeInsets.only(
+                    left: 47.h,
+                    right: 58.h,
+                  ),
+                  alignment: Alignment.center,
+                ),
+                SizedBox(height: 5.v),
+              ],
+            ),
           ),
         ),
       ),
