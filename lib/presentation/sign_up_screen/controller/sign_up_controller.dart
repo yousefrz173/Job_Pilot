@@ -19,6 +19,8 @@ class SignUpController extends GetxController {
 
   Rx<bool> rememberme = false.obs;
 
+  late final role = Get.arguments['role'];
+
   @override
   void onClose() {
     super.onClose();

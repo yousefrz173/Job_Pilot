@@ -7,10 +7,11 @@ import 'controller/sign_up_controller.dart';
 import 'package:jobpilot/domain/googleauth/google_auth_helper.dart'; // ignore_for_file: must_be_immutable
 
 class SignUpScreen extends GetWidget<SignUpController> {
-  const SignUpScreen({Key? key})
+  SignUpScreen({Key? key})
       : super(
           key: key,
         );
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import '../presentation/splash_screen/binding/splash_binding.dart';
 import '../presentation/sign_up_screen/binding/sign_up_binding.dart';
+import '../presentation/sign_up_as/sign_up_as_screen.dart';
+import '../presentation/sign_up_as/binding/sign_up_as_binding.dart';
 import '../presentation/check_your_email_screen/binding/check_your_email_binding.dart';
 import '../presentation/successfully_screen/successfully_screen.dart';
 import '../presentation/description_screen/description_screen.dart';
@@ -140,6 +142,8 @@ class AppRoutes {
   static const String loginScreen = '/login_screen';
 
   static const String signUpScreen = '/sign_up_screen';
+
+  static const String signUpAsScreen = '/sign_up_as_screen';
 
   static const String forgotPasswordScreen = '/forgot_password_screen';
 
@@ -306,6 +310,13 @@ class AppRoutes {
       page: () => SignUpScreen(),
       bindings: [
         SignUpBinding(),
+      ],
+    ),
+    GetPage(
+      name: signUpAsScreen,
+      page: () => SignUpAsScreen(),
+      bindings: [
+        SignUpAsBinding(),
       ],
     ),
     GetPage(

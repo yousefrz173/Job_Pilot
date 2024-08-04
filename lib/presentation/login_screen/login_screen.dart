@@ -7,6 +7,8 @@ import 'package:jobpilot/widgets/custom_checkbox_button.dart';
 import 'package:jobpilot/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:jobpilot/core/app_export.dart';
+import '../sign_up_as/binding/sign_up_as_binding.dart';
+import '../sign_up_as/sign_up_as_screen.dart';
 import 'controller/login_controller.dart';
 import 'package:jobpilot/domain/googleauth/google_auth_helper.dart'; // ignore_for_file: must_be_immutable
 
@@ -96,8 +98,8 @@ class LoginScreen extends GetWidget<LoginController> {
                       ),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () => Get.to(
-                              () => SignUpScreen(),
-                              binding: SignUpBinding(),
+                              () => SignUpAsScreen(),
+                              binding: SignUpAsBinding(),
                             ),
                     ),
                   ],

@@ -18,6 +18,12 @@ final Map<String, String> enUs = {
   "msg_sign_up_with_google": "Sign up with Google",
   "msg_you_don_t_have_an3": "You don't have an account yet? Sign in",
 
+// Sign Up Screen
+  "lbl_sign_up_as": "Sign Up As",
+  "lbl_company": "Company",
+  "lbl_job_seeker": "Job Seeker",
+  "lbl_customer": "Customer",
+
 // Forgot Password Screen
   "lbl": "?",
   "lbl_reset_password": "Reset Password",

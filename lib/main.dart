@@ -10,11 +10,13 @@ void main() {
     DeviceOrientation.portraitUp,
   ]).then((value) {
     Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
-    runApp(MyApp());
+    runApp(const JobPilot());
   });
 }
 
-class MyApp extends StatelessWidget {
+class JobPilot extends StatelessWidget {
+  const JobPilot({super.key});
+
 // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
         fallbackLocale: Locale('en', 'US'),
         title: 'jobpilot',
         initialBinding: InitialBindings(),
-        initialRoute: AppRoutes.splashScreen,
+        initialRoute: AppRoutes.signUpAsScreen,
         getPages: AppRoutes.pages,
       );
     });

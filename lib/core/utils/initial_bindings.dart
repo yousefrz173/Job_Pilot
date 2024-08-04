@@ -1,11 +1,11 @@
 import 'package:jobpilot/core/app_export.dart';
-import 'package:jobpilot/data/apiClient/api_client.dart';
+import 'package:jobpilot/data/apiClient/http_util.dart';
 
 class InitialBindings extends Bindings {
   @override
   void dependencies() {
     Get.put(PrefUtils());
-    Get.put(ApiClient());
+    Get.put(HttpUtil());
     Connectivity connectivity = Connectivity();
     Get.put(NetworkInfo(connectivity));
   }
