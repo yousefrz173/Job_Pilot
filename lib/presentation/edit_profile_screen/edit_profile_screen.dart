@@ -695,7 +695,9 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                             style: theme.textTheme.titleSmall,
                           ),
                         ),
-                        Spacer(),
+                        Spacer(
+                          flex: 1,
+                        ),
                         CustomIconButton(
                           height: 24.adaptSize,
                           width: 24.adaptSize,
@@ -721,7 +723,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 65.v,
+                height: 75.v,
                 width: 188.h,
                 child: Stack(
                   alignment: Alignment.center,
@@ -745,7 +747,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                             "msg_wireless_symposium".tr,
                             style: theme.textTheme.titleSmall,
                           ),
-                          SizedBox(height: 10.v),
+                          SizedBox(height: 2.v),
                           Text(
                             "lbl_young_scientist".tr,
                             style: theme.textTheme.bodySmall,
@@ -918,6 +920,7 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
                   top: 7.v,
                   bottom: 13.v,
                 ),
+                onTap: () => print('hello'),
               ),
             ],
           ),

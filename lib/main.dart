@@ -29,7 +29,7 @@ class JobPilot extends StatelessWidget {
         fallbackLocale: Locale('en', 'US'),
         title: 'jobpilot',
         initialBinding: InitialBindings(),
-        initialRoute: AppRoutes.signUpAsScreen,
+        initialRoute: AppRoutes.uploadCvScreen,
         getPages: AppRoutes.pages,
       );
     });

@@ -642,12 +642,22 @@ class DescriptionOneScreen extends GetWidget<DescriptionOneController> {
               decoration: AppDecoration.fillLightBlue.copyWith(
                 borderRadius: BorderRadiusStyle.circleBorder41,
               ),
-              child: CustomImageView(
-                imagePath: ImageConstant.imgGoogle220x15,
-                height: 54.adaptSize,
+              child: Container(
+                // margin: EdgeInsets.only(right: 40, bottom: 20),
+                child: Icon(
+                  Icons.g_mobiledata,
+                  size: 40.adaptSize,
+                ),
+                // height: 54.adaptSize,
                 width: 54.adaptSize,
-                alignment: Alignment.center,
+                // alignment: Alignment.center,
               ),
+              // CustomImageView(
+              //   imagePath: ImageConstant.imgGoogle220x15,
+              //   height: 54.adaptSize,
+              //   width: 54.adaptSize,
+              //   alignment: Alignment.center,
+              // ),
             ),
           ),
         ],

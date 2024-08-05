@@ -7,12 +7,12 @@ class SignUpAsItemModel {
     this.close,
     this.id,
   }) {
-    jobPosition = jobPosition ?? Rx("Job position*");
+    jobPosition = jobPosition ?? Rx(UserRole.NOUSER);
     close = close ?? Rx(ImageConstant.imgAirbusLogo);
     id = id ?? Rx(0);
   }
 
-  Rx<String>? jobPosition;
+  Rx<UserRole>? jobPosition;
 
   Rx<String>? close;
 

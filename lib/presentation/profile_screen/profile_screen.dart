@@ -20,43 +20,45 @@ class ProfileScreen extends GetWidget<ProfileController> {
       child: Scaffold(
         body: SizedBox(
           width: double.maxFinite,
-          child: Column(
-            children: [
-              _buildSixtyThree(),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 20.h),
-                child: Column(
-                  children: [
-                    SizedBox(height: 20.v),
-                    _buildWorkExperience(
-                      thumbsUp: ImageConstant.imgSettingsOrange400,
-                      workExperience: "lbl_about_me".tr,
-                    ),
-                    SizedBox(height: 10.v),
-                    _buildWorkExperience(
-                      thumbsUp: ImageConstant.imgThumbsUpOrange40024x24,
-                      workExperience: "lbl_work_experience".tr,
-                    ),
-                    SizedBox(height: 10.v),
-                    _buildWorkExperience(
-                      thumbsUp: ImageConstant.imgSettingsOrange40026x24,
-                      workExperience: "lbl_education".tr,
-                    ),
-                    SizedBox(height: 10.v),
-                    _buildWorkExperience(
-                      thumbsUp: ImageConstant.imgClose24x24,
-                      workExperience: "lbl_skill".tr,
-                    ),
-                    SizedBox(height: 10.v),
-                    _buildLanguage(),
-                    SizedBox(height: 10.v),
-                    _buildAppreciation(),
-                    SizedBox(height: 10.v),
-                    _buildResume(),
-                  ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                _buildSixtyThree(),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 20.h),
+                  child: Column(
+                    children: [
+                      SizedBox(height: 20.v),
+                      _buildWorkExperience(
+                        thumbsUp: ImageConstant.imgSettingsOrange400,
+                        workExperience: "lbl_about_me".tr,
+                      ),
+                      SizedBox(height: 10.v),
+                      _buildWorkExperience(
+                        thumbsUp: ImageConstant.imgThumbsUpOrange40024x24,
+                        workExperience: "lbl_work_experience".tr,
+                      ),
+                      SizedBox(height: 10.v),
+                      _buildWorkExperience(
+                        thumbsUp: ImageConstant.imgSettingsOrange40026x24,
+                        workExperience: "lbl_education".tr,
+                      ),
+                      SizedBox(height: 10.v),
+                      _buildWorkExperience(
+                        thumbsUp: ImageConstant.imgClose24x24,
+                        workExperience: "lbl_skill".tr,
+                      ),
+                      SizedBox(height: 10.v),
+                      _buildLanguage(),
+                      SizedBox(height: 10.v),
+                      _buildAppreciation(),
+                      SizedBox(height: 10.v),
+                      _buildResume(),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
         bottomNavigationBar: _buildBottomBar(),

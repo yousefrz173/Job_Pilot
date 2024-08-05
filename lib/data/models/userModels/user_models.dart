@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:jobpilot/core/utils/date_time_utils.dart';
 
 class User {
   String? token;
@@ -35,4 +36,37 @@ class User {
       'email': email,
     };
   }
+}
+
+class Company extends User {
+  Company({
+    this.employeeNumber,
+    this.establishmentDate,
+    required super.password,
+    required super.email,
+  });
+  final DateTime? establishmentDate;
+  final String? employeeNumber;
+}
+
+class JobSeeker extends User {
+  JobSeeker({
+    this.fullName,
+    this.birthDate,
+    required super.password,
+    required super.email,
+  });
+  final DateTime? birthDate;
+  final String? fullName;
+}
+
+class Customer extends User {
+  Customer({
+    this.fullName,
+    this.birthDate,
+    required super.password,
+    required super.email,
+  });
+  final DateTime? birthDate;
+  final String? fullName;
 }

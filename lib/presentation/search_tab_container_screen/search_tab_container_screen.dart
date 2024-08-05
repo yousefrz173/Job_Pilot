@@ -135,15 +135,20 @@ class SearchTabContainerScreen extends GetWidget<SearchTabContainerController> {
                     imagePath: ImageConstant.imgClock,
                   ),
                 ),
-                CustomElevatedButton(
-                  height: 40.v,
-                  width: 114.h,
-                  text: "lbl_senior_designer".tr,
-                  margin: EdgeInsets.only(left: 15.h),
-                  buttonStyle: CustomButtonStyles.fillBlueGray,
-                  buttonTextStyle: theme.textTheme.bodySmall!,
-                ),
+                // CustomElevatedButton(
+                //   height: 40.v,
+                //   width: 114.h,
+                //   text: "lbl_senior_designer".tr,
+                //   margin: EdgeInsets.only(left: 15.h),
+                //   buttonStyle: CustomButtonStyles.fillBlueGray,
+                //   buttonTextStyle: theme.textTheme.bodySmall!,
+                // ),
               ],
+            ),
+          ),
+          Tab(
+            child: Text(
+              "lbl_senior_designer".tr,
             ),
           ),
           Tab(

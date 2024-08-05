@@ -13,24 +13,26 @@ class SignUpAsScreen extends GetWidget<SignUpAsController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
-          width: double.maxFinite,
-          padding: EdgeInsets.symmetric(
-            horizontal: 20.h,
-            vertical: 30.v,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              _buildClose(),
-              SizedBox(height: 41.v),
-              Text(
-                "lbl_sign_up_as".tr,
-                style: theme.textTheme.headlineLarge,
-              ),
-              SizedBox(height: 110.v),
-              _buildSignUpAs()
-            ],
+        body: SingleChildScrollView(
+          child: Container(
+            width: double.maxFinite,
+            padding: EdgeInsets.symmetric(
+              horizontal: 20.h,
+              vertical: 30.v,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                _buildClose(),
+                SizedBox(height: 41.v),
+                Text(
+                  "lbl_sign_up_as".tr,
+                  style: theme.textTheme.headlineLarge,
+                ),
+                SizedBox(height: 110.v),
+                _buildSignUpAs()
+              ],
+            ),
           ),
         ),
       ),

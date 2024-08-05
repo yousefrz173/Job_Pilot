@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:jobpilot/presentation/login_screen/binding/login_binding.dart';
 import 'package:jobpilot/presentation/sign_up_screen/binding/sign_up_binding.dart';
@@ -6,11 +7,12 @@ import 'package:jobpilot/widgets/custom_text_form_field.dart';
 import 'package:jobpilot/widgets/custom_checkbox_button.dart';
 import 'package:jobpilot/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
+import './models/login_model.dart';
 import 'package:jobpilot/core/app_export.dart';
 import '../sign_up_as/binding/sign_up_as_binding.dart';
 import '../sign_up_as/sign_up_as_screen.dart';
 import 'controller/login_controller.dart';
-import 'package:jobpilot/domain/googleauth/google_auth_helper.dart'; // ignore_for_file: must_be_immutable
+import 'package:jobpilot/authHelper/googleauth/google_auth_helper.dart'; // ignore_for_file: must_be_immutable
 
 class LoginScreen extends GetWidget<LoginController> {
   const LoginScreen({Key? key})
@@ -50,7 +52,21 @@ class LoginScreen extends GetWidget<LoginController> {
                   ),
                 ),
               ),
-              SizedBox(height: 61.v),
+              Obx(
+                () => DropdownButton<UserRole>(
+                  value: controller.role.value,
+                  items: LoginModel.userRolesDropdownItems,
+                  onChanged: (newValue) {
+                    controller.selectRole(newValue!);
+                    if (kDebugMode) {
+                      print(
+                        enumToString(controller.role),
+                      );
+                    }
+                  },
+                ),
+              ),
+              SizedBox(height: 21.v),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
@@ -137,8 +153,13 @@ class LoginScreen extends GetWidget<LoginController> {
       padding: EdgeInsets.symmetric(horizontal: 8.h),
       child: Obx(
         () => CustomTextFormField(
+          textStyle: TextStyle(
+            color: Colors.orange,
+          ),
           controller: controller.passwordController,
           textInputAction: TextInputAction.done,
+          hintText: 'yourpassword123',
+          hintStyle: CustomTextStyles.bodySmal10penSansGray90004,
           suffix: InkWell(
             onTap: () {
               controller.isShowPassword.value =
@@ -146,10 +167,10 @@ class LoginScreen extends GetWidget<LoginController> {
             },
             child: Container(
               margin: EdgeInsets.fromLTRB(30.h, 13.v, 11.h, 13.v),
-              child: CustomImageView(
-                imagePath: ImageConstant.imgEye,
-                height: 24.adaptSize,
-                width: 24.adaptSize,
+              child: Icon(
+                controller.isShowPassword.value
+                    ? Icons.visibility
+                    : Icons.visibility_off,
               ),
             ),
           ),
@@ -198,6 +219,7 @@ class LoginScreen extends GetWidget<LoginController> {
   /// Section Widget
   Widget _buildLogin() {
     return CustomElevatedButton(
+      onPressed: () => controller.login(),
       text: "lbl_login".tr.toUpperCase(),
       margin: EdgeInsets.only(
         left: 36.h,

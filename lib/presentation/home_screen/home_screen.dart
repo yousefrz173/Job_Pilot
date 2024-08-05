@@ -60,7 +60,7 @@ class HomeScreen extends GetWidget<HomeController> {
             child: Padding(
               padding: EdgeInsets.only(top: 17.v),
               child: Text(
-                "msg_hello_orlando_diggs".tr,
+                "msg_hello".tr,
                 style: CustomTextStyles.titleLargeGray90002,
               ),
             ),
@@ -124,6 +124,7 @@ class HomeScreen extends GetWidget<HomeController> {
             ),
           ),
           CustomImageView(
+            onTap: () => Get.toNamed(AppRoutes.profileScreen),
             imagePath: ImageConstant.imgPlay36x36,
             height: 36.adaptSize,
             width: 36.adaptSize,

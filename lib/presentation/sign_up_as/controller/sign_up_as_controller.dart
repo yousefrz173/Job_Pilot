@@ -8,7 +8,7 @@ import '../models/sign_up_as_model.dart';
 class SignUpAsController extends GetxController {
   Rx<SignUpAsModel> signUpAsModelObj = SignUpAsModel().obs;
 
-  to(String role) {
+  to(UserRole role) {
     Get.toNamed(
       AppRoutes.signUpScreen,
       arguments: {'role': role},

@@ -6,15 +6,15 @@ import 'signupas_item_model.dart';
 class SignUpAsModel {
   Rx<List<SignUpAsItemModel>> signUpAsItemList = Rx([
     SignUpAsItemModel(
-        jobPosition: "company".obs,
+        jobPosition: UserRole.Company.obs,
         close: ImageConstant.imgArrowright.obs,
         id: 1.obs),
     SignUpAsItemModel(
-        jobPosition: "seeker".obs,
+        jobPosition: UserRole.Seeker.obs,
         close: ImageConstant.imgArrowright.obs,
         id: 2.obs),
     SignUpAsItemModel(
-        jobPosition: "customer".obs,
+        jobPosition: UserRole.Customer.obs,
         close: ImageConstant.imgArrowright.obs,
         id: 3.obs),
   ]);

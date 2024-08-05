@@ -13,12 +13,17 @@ final Map<String, String> enUs = {
 
 // Sign Up Screen
   "lbl_full_name": "Full name",
+  "lbl_user_name": "Username",
+  "lbl_name": "Name of the company",
   "lbl_sign_in": "Sign in",
+  "lbl_birth_date": "Birth Date",
+  "lbl_establishment_date": "Establishment Date",
+  "lbl_epmloyee_number": "Number of Employees",
   "msg_create_an_account": "Create an Account",
   "msg_sign_up_with_google": "Sign up with Google",
   "msg_you_don_t_have_an3": "You don't have an account yet? Sign in",
 
-// Sign Up Screen
+// Sign Up As Screen
   "lbl_sign_up_as": "Sign Up As",
   "lbl_company": "Company",
   "lbl_job_seeker": "Job Seeker",
@@ -58,7 +63,7 @@ final Map<String, String> enUs = {
   "lbl_recent_job_list": "Recent Job List",
   "lbl_remote_job": "Remote Job",
 
-  "msg_hello_orlando_diggs": "Hello ?Orlando Diggs.",
+  "msg_hello": "Hello",
   "msg_product_designer": "Product Designer",
   "msg_take_any_courses": "take any courses",
 
@@ -485,7 +490,7 @@ final Map<String, String> enUs = {
   "lbl_1_hour": "1 Hour",
   "lbl_2012": "2012",
   "lbl_2013": "2013",
-  "lbl 2014": "2014",
+  "lbl_2014": "2014",
 
   "lbl_20k": "\$20K",
   "lbl_20k_mo": "\$20K/Mo",
@@ -684,8 +689,7 @@ final Map<String, String> enUs = {
   "msg_jobs_similar_to": " jobs similar to the one you saw recently : ",
   "msg_level_of_education": "Level of education",
   "msg_level_of_education2": "Level of Education",
-  "msg_lorem_ipsum_dolor":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+  "msg_lorem_ipsum_dolor": "Please Fill this form below to create your account",
   "msg_lorem_ipsum_dolor3":
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus id commodo egestas metus interdum dolor.",
   "msg_mountain_view_california": "Mountain View, California, Amerika Serikat",

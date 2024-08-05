@@ -46,12 +46,20 @@ class SearchItemWidget extends StatelessWidget {
                   ),
                 ),
               ),
-              CustomImageView(
-                imagePath: ImageConstant.imgBookmark,
+              Container(
                 height: 24.adaptSize,
                 width: 24.adaptSize,
                 margin: EdgeInsets.only(bottom: 15.v),
+                child: Icon(
+                  Icons.bookmark,
+                ),
               ),
+              // CustomImageView(
+              //   imagePath: ImageConstant.imgBookmark,
+              //   height: 24.adaptSize,
+              //   width: 24.adaptSize,
+              //   margin: EdgeInsets.only(bottom: 15.v),
+              // ),
             ],
           ),
           SizedBox(height: 10.v),

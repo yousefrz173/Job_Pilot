@@ -33,7 +33,7 @@ class SignUpAsItemWidget extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 2.v),
             child: Obx(
               () => Text(
-                signUpAsItemModelObj.jobPosition!.value,
+                enumToString(signUpAsItemModelObj.jobPosition!.value),
                 style: CustomTextStyles.titleSmallGray90001,
               ),
             ),

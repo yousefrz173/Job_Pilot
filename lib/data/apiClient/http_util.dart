@@ -152,7 +152,9 @@ class HttpUtil {
   }
 
   void onError(ErrorEntity eInfo) {
-    print('error.code -> ${eInfo.code}, error.message -> ${eInfo.message}');
+    if (kDebugMode) {
+      print('error.code -> ${eInfo.code}, error.message -> ${eInfo.message}');
+    }
     switch (eInfo.code) {
       case 400:
         print("Server syntax error");
@@ -167,5 +169,8 @@ class HttpUtil {
         print("Unknown error");
         break;
     }
+    throw Exception(
+      eInfo.message,
+    );
   }
 }
