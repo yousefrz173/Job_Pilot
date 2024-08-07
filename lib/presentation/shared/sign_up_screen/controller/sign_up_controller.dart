@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:get_storage/get_storage.dart';
 
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 import '../models/sign_up_model.dart';
 import 'package:flutter/material.dart';
 

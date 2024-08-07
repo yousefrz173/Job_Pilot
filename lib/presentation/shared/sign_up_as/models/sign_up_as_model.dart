@@ -1,4 +1,4 @@
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 import 'signupas_item_model.dart';
 
 /// This class defines the variables used in the [add_a_job_screen],

@@ -1,7 +1,6 @@
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 import '../models/login_model.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 
 /// A controller class for the LoginScreen.
 
