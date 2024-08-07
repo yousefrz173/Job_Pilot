@@ -23,7 +23,7 @@ class MyconnectionItemWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(
         horizontal: 30.h,
-        vertical: 15.v,
+        vertical: 10.v,
       ),
       decoration: AppDecoration.fillOnPrimaryContainer.copyWith(
         borderRadius: BorderRadiusStyle.circleBorder21,

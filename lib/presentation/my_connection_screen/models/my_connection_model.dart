@@ -22,6 +22,14 @@ class MyConnectionModel {
         googleInc: "Apple Inc".obs,
         distance: "1M Followers".obs),
     MyconnectionItemModel(
+        iconButton: ImageConstant.imgAppleLogo.obs,
+        googleInc: "Apple Inc".obs,
+        distance: "1M Followers".obs),
+    MyconnectionItemModel(
+        iconButton: ImageConstant.imgAppleLogo.obs,
+        googleInc: "Apple Inc".obs,
+        distance: "1M Followers".obs),
+    MyconnectionItemModel(
         googleInc: "Facebook Inc".obs, distance: "1M Followers".obs),
     MyconnectionItemModel(
         googleInc: "Microsoft Inc".obs, distance: "1M Followers".obs)

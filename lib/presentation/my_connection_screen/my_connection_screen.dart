@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
 import 'package:jobpilot/presentation/posting_page/posting_page.dart';
 import 'widgets/myconnection_item_widget.dart';
 import 'models/myconnection_item_model.dart';
@@ -23,12 +25,23 @@ class MyConnectionScreen extends GetWidget<MyConnectionController> {
             horizontal: 16.h,
             vertical: 23.v,
           ),
-          child: Column(
+          child: Stack(
             children: [
-              SizedBox(height: 27.v),
-              _buildMyConnection(),
-              SizedBox(height: 24.v),
-              _buildPosting1(),
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: 27.v),
+                    _buildMyConnection(),
+                    SizedBox(height: 24.v),
+                  ],
+                ),
+              ),
+              Positioned(
+                right: 0,
+                left: 0,
+                bottom: 0.0,
+                child: _buildPosting1(),
+              ),
             ],
           ),
         ),
