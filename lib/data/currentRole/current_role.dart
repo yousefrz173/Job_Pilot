@@ -1,6 +1,6 @@
-enum UserRole { Company, Seeker, Customer, NOUSER }
+enum UserRole { company, job_seeker, customer, NOUSER }
 
-var currentRole = UserRole.Company;
+var currentRole = UserRole.company;
 
 String enumToString(Object enumValue) {
   return enumValue.toString().split('.').last;

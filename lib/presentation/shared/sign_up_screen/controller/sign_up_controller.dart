@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:jobpilot/data/models/userModels/user_models.dart';
 
-import '../../../../core/app_export.dart';
+import '../../../../core/my_app_export.dart';
 import '../models/sign_up_model.dart';
 import 'package:flutter/material.dart';
 
@@ -65,11 +66,11 @@ class SignUpController extends GetxController {
 
   @override
   void onInit() {
-    if (role == UserRole.Company) {
+    if (role == UserRole.company) {
       nameUsernameLabel = Rx(labels["name"]!);
       dateBirthEstablishmentLabel = Rx(labels["establishment_date"]!);
     }
-    if (role == UserRole.Seeker || role == UserRole.Customer) {
+    if (role == UserRole.job_seeker || role == UserRole.customer) {
       nameUsernameLabel = Rx(labels["username"]!);
       dateBirthEstablishmentLabel = Rx(labels["birth_date"]!);
     }
@@ -101,15 +102,15 @@ class SignUpController extends GetxController {
   }
 
   Future<String?> register() async {
-    String path = role == UserRole.Company
+    String path = role == UserRole.company
         ? AppConstants.COMPANY_PATH
-        : role == UserRole.Seeker
+        : role == UserRole.job_seeker
             ? AppConstants.SEEKER_PATH
             : AppConstants.CUSTOMER_PATH;
 
     Map<String, dynamic> data = {};
     switch (role) {
-      case UserRole.Company:
+      case UserRole.company:
         data = {
           'name': nameUsernameController.text,
           'password': passwordController.text,
@@ -135,6 +136,37 @@ class SignUpController extends GetxController {
         path: '$path${AppConstants.REGISTER_PATH}',
         data: data,
       );
+      if (response['statusNumber'] == 200) {
+        UserPreferences.saveUser(
+          role == UserRole.company
+              ? Company(
+                  name: nameUsernameController.text,
+                  email: emailController.text,
+                  password: passwordController.text,
+                  employeeNumber: employeeNumberController.text,
+                  establishmentDate:
+                      DateTime.parse(dateBirthEstablishmentController.text),
+                )
+              : role == UserRole.job_seeker
+                  ? JobSeeker(
+                      name: nameUsernameController.text,
+                      email: emailController.text,
+                      password: passwordController.text,
+                      birthDate:
+                          DateTime.parse(dateBirthEstablishmentController.text),
+                      fullName: fullNameController.text,
+                    )
+                  : Customer(
+                      name: nameUsernameController.text,
+                      email: emailController.text,
+                      password: passwordController.text,
+                      birthDate:
+                          DateTime.parse(dateBirthEstablishmentController.text),
+                      fullName: fullNameController.text,
+                    ),
+        );
+        Get.offNamed(AppRoutes.loginScreen);
+      }
       if (kDebugMode) {
         print(response['password']);
       }

@@ -12,29 +12,29 @@ class CustomBottomBar extends StatelessWidget {
 
   List<BottomMenuModel> bottomMenuList = [
     BottomMenuModel(
-      icon: ImageConstant.imgHomeBlueGray30005,
-      activeIcon: ImageConstant.imgHomeBlueGray30005,
-      type: BottomBarEnum.Homebluegray30005,
+      icon: Icons.home,
+      activeIcon: Icons.home,
+      type: BottomBarEnum.Home,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgSettings,
-      activeIcon: ImageConstant.imgSettings,
-      type: BottomBarEnum.Settings,
+      icon: Icons.connect_without_contact,
+      activeIcon: Icons.connect_without_contact,
+      type: BottomBarEnum.Connections,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgAdd,
-      activeIcon: ImageConstant.imgAdd,
+      icon: Icons.add_circle,
+      activeIcon: Icons.add_circle,
       type: BottomBarEnum.Add,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgBookmarkBlueGray30006,
-      activeIcon: ImageConstant.imgBookmarkBlueGray30006,
-      type: BottomBarEnum.Bookmarkbluegray30006,
+      icon: Icons.message,
+      activeIcon: Icons.message,
+      type: BottomBarEnum.Chat,
     ),
     BottomMenuModel(
-      icon: ImageConstant.imgBookmarkBlueGray3000624x24,
-      activeIcon: ImageConstant.imgBookmarkBlueGray3000624x24,
-      type: BottomBarEnum.Bookmarkbluegray3000624x24,
+      icon: Icons.bookmark,
+      activeIcon: Icons.bookmark,
+      type: BottomBarEnum.Bookmark,
     )
   ];
   Function(BottomBarEnum)? onChanged;
@@ -68,16 +68,14 @@ class CustomBottomBar extends StatelessWidget {
           type: BottomNavigationBarType.fixed,
           items: List.generate(bottomMenuList.length, (index) {
             return BottomNavigationBarItem(
-              icon: CustomImageView(
-                imagePath: bottomMenuList[index].icon,
-                height: 24.adaptSize,
-                width: 24.adaptSize,
+              icon: Icon(
+                bottomMenuList[index].icon,
+                size: 44.adaptSize,
                 color: appTheme.orangeA20001,
               ),
-              activeIcon: CustomImageView(
-                imagePath: bottomMenuList[index].activeIcon,
-                height: 24.adaptSize,
-                width: 24.adaptSize,
+              activeIcon: Icon(
+                bottomMenuList[index].icon,
+                size: 34.adaptSize,
                 color: appTheme.blueGray30005,
               ),
               label: '',
@@ -94,11 +92,11 @@ class CustomBottomBar extends StatelessWidget {
 }
 
 enum BottomBarEnum {
-  Homebluegray30005,
-  Settings,
+  Home,
+  Connections,
   Add,
-  Bookmarkbluegray30006,
-  Bookmarkbluegray3000624x24,
+  Chat,
+  Bookmark,
 }
 
 class BottomMenuModel {
@@ -108,9 +106,9 @@ class BottomMenuModel {
     required this.type,
   });
 
-  String icon;
+  IconData icon;
 
-  String activeIcon;
+  IconData activeIcon;
 
   BottomBarEnum type;
 }

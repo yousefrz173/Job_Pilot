@@ -1,4 +1,4 @@
-import 'package:jobpilot/presentation/sign_up_screen/controller/sign_up_controller.dart';
+import '../controller/sign_up_controller.dart';
 import 'package:get/get.dart';
 
 /// A binding class for the SignUpScreen.

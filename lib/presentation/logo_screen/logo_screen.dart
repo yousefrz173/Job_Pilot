@@ -19,9 +19,9 @@ class LogoScreen extends GetWidget<LogoController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomImageView(
-                imagePath: ImageConstant.imgClose,
-                height: 60.adaptSize,
-                width: 60.adaptSize,
+                imagePath: "assets/icons/logo - screen.png",
+                height: 200.adaptSize,
+                width: 200.adaptSize,
               ),
               SizedBox(height: 3.v),
               Text(

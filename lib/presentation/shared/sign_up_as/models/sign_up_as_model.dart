@@ -1,4 +1,4 @@
-import '../../../../core/app_export.dart';
+import '../../../../core/my_app_export.dart';
 import 'signupas_item_model.dart';
 
 /// This class defines the variables used in the [add_a_job_screen],
@@ -6,15 +6,15 @@ import 'signupas_item_model.dart';
 class SignUpAsModel {
   Rx<List<SignUpAsItemModel>> signUpAsItemList = Rx([
     SignUpAsItemModel(
-        jobPosition: UserRole.Company.obs,
+        jobPosition: UserRole.company.obs,
         close: ImageConstant.imgArrowright.obs,
         id: 1.obs),
     SignUpAsItemModel(
-        jobPosition: UserRole.Seeker.obs,
+        jobPosition: UserRole.job_seeker.obs,
         close: ImageConstant.imgArrowright.obs,
         id: 2.obs),
     SignUpAsItemModel(
-        jobPosition: UserRole.Customer.obs,
+        jobPosition: UserRole.customer.obs,
         close: ImageConstant.imgArrowright.obs,
         id: 3.obs),
   ]);

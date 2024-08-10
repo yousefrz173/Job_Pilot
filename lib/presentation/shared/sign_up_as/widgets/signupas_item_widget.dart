@@ -1,8 +1,8 @@
 import '../models/signupas_item_model.dart';
 import '../controller/sign_up_as_controller.dart';
-import 'package:jobpilot/widgets/custom_icon_button.dart';
+import '../../../../widgets/custom_icon_button.dart';
 import 'package:flutter/material.dart';
-import 'package:jobpilot/core/app_export.dart';
+import '../../../../core/my_app_export.dart';
 
 // ignore: must_be_immutable
 class SignUpAsItemWidget extends StatelessWidget {

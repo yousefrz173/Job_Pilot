@@ -54,7 +54,7 @@ class SignUpScreen extends GetWidget<SignUpController> {
                   ),
                 ),
                 SizedBox(height: 31.v),
-                if (controller.role != UserRole.Company) ...[
+                if (controller.role != UserRole.company) ...[
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
@@ -76,7 +76,7 @@ class SignUpScreen extends GetWidget<SignUpController> {
                 SizedBox(height: 10.v),
                 _buildFullName(
                     textController: controller.nameUsernameController),
-                if (controller.role == UserRole.Company) ...[
+                if (controller.role == UserRole.company) ...[
                   SizedBox(height: 10.v),
                   Align(
                     alignment: Alignment.centerLeft,

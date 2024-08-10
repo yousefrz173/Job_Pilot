@@ -346,7 +346,13 @@ class HomeScreen extends GetWidget<HomeController> {
   Widget _buildBottomBar() {
     return CustomBottomBar(
       onChanged: (BottomBarEnum type) {
-        Get.toNamed(getCurrentRoute(type), id: 1);
+        print(type);
+        print(
+          getCurrentRoute(type),
+        );
+        Get.toNamed(
+          getCurrentRoute(type),
+        );
       },
     );
   }
@@ -395,18 +401,18 @@ class HomeScreen extends GetWidget<HomeController> {
   ///Handling route based on bottom click actions
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
-      case BottomBarEnum.Homebluegray30005:
+      case BottomBarEnum.Home:
         return AppRoutes.postingPage;
-      case BottomBarEnum.Settings:
-        return "/";
+      case BottomBarEnum.Connections:
+        return AppRoutes.myConnectionScreen;
       case BottomBarEnum.Add:
         return "/";
-      case BottomBarEnum.Bookmarkbluegray30006:
-        return "/";
-      case BottomBarEnum.Bookmarkbluegray3000624x24:
+      case BottomBarEnum.Chat:
+        return AppRoutes.chatScreen;
+      case BottomBarEnum.Bookmark:
         return "/";
       default:
-        return "/";
+        return AppRoutes.chatScreen;
     }
   }
 

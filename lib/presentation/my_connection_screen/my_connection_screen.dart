@@ -122,7 +122,9 @@ class MyConnectionScreen extends GetWidget<MyConnectionController> {
   Widget _buildBottomBar() {
     return CustomBottomBar(
       onChanged: (BottomBarEnum type) {
-        Get.toNamed(getCurrentRoute(type), id: 1);
+        Get.toNamed(
+          getCurrentRoute(type),
+        );
       },
     );
   }
@@ -130,15 +132,15 @@ class MyConnectionScreen extends GetWidget<MyConnectionController> {
   ///Handling route based on bottom click actions
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
-      case BottomBarEnum.Homebluegray30005:
-        return AppRoutes.postingPage;
-      case BottomBarEnum.Settings:
-        return "/";
+      case BottomBarEnum.Home:
+        return AppRoutes.homeScreen;
+      case BottomBarEnum.Connections:
+        return AppRoutes.myConnectionScreen;
       case BottomBarEnum.Add:
-        return "/";
-      case BottomBarEnum.Bookmarkbluegray30006:
-        return "/";
-      case BottomBarEnum.Bookmarkbluegray3000624x24:
+        return AppRoutes.postingContainerScreen;
+      case BottomBarEnum.Chat:
+        return AppRoutes.messageScreen;
+      case BottomBarEnum.Bookmark:
         return "/";
       default:
         return "/";

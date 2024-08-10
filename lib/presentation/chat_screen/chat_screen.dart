@@ -1,10 +1,12 @@
+import 'package:flutter/widgets.dart';
 import 'package:jobpilot/widgets/app_bar/custom_app_bar.dart';
 import 'package:jobpilot/widgets/app_bar/appbar_leading_image.dart';
 import 'package:jobpilot/widgets/app_bar/appbar_trailing_image.dart';
+import '../../widgets/custom_message_bubble.dart';
 import 'package:jobpilot/widgets/custom_text_form_field.dart';
 import 'package:jobpilot/widgets/custom_icon_button.dart';
-import 'package:flutter_svg_provider/flutter_svg_provider.dart' as fs;
 import 'package:flutter/material.dart';
+import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:jobpilot/core/app_export.dart';
 import 'controller/chat_controller.dart';
 
@@ -21,303 +23,31 @@ class ChatScreen extends GetWidget<ChatController> {
         resizeToAvoidBottomInset: false,
         body: SizedBox(
           width: double.maxFinite,
-          child: Column(
-            children: [
-              _buildSixtySix(),
-              Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 20.h,
-                  vertical: 15.v,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                _buildSixtySix(),
+                SizedBox(
+                  height: 620.v,
+                  child: GetBuilder(
+                    builder: (ChatController controller) => Chat(
+                      messages: controller.messages,
+                      onAttachmentPressed: () =>
+                          controller.handleAttachmentPressed(context),
+                      onMessageTap: controller.handleMessageTap,
+                      onPreviewDataFetched: controller.handlePreviewDataFetched,
+                      onSendPressed: controller.handleSendPressed,
+                      showUserAvatars: true,
+                      showUserNames: true,
+                      user: controller.user,
+                    ),
+                  ),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "lbl_today".tr,
-                        style: CustomTextStyles.bodySmallBluegray30003,
-                      ),
-                    ),
-                    SizedBox(height: 24.v),
-                    _buildSixtyNine(
-                      image: ImageConstant.imgRectangle95,
-                      morningCanIHelp: "msg_hello_sir_good".tr,
-                    ),
-                    SizedBox(height: 4.v),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text(
-                          "lbl_09_30_am".tr,
-                          style: CustomTextStyles.bodySmallBluegray3000310,
-                        ),
-                        CustomImageView(
-                          imagePath: ImageConstant.imgCheckmark,
-                          height: 10.v,
-                          margin: EdgeInsets.only(
-                            left: 3.h,
-                            top: 2.v,
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 10.v),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(right: 98.h),
-                        child: Row(
-                          children: [
-                            CustomImageView(
-                              imagePath: ImageConstant.imgEllipse49,
-                              height: 35.adaptSize,
-                              width: 35.adaptSize,
-                              radius: BorderRadius.circular(
-                                17.h,
-                              ),
-                              margin: EdgeInsets.only(top: 13.v),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 10.h),
-                              child: _buildSixtyNine(
-                                image: ImageConstant.imgRectangle98,
-                                morningCanIHelp: "msg_morning_can_i_help".tr,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 4.v),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 45.h),
-                        child: Text(
-                          "lbl_09_31_am".tr,
-                          style: CustomTextStyles.bodySmallBluegray3000310,
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 10.v),
-                    Container(
-                      margin: EdgeInsets.only(left: 74.h),
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 15.h,
-                        vertical: 14.v,
-                      ),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: fs.Svg(
-                            ImageConstant.imgRectangle95,
-                          ),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      child: SizedBox(
-                        width: 227.h,
-                        child: Text(
-                          "msg_i_saw_the_ui_ux2".tr,
-                          maxLines: 4,
-                          overflow: TextOverflow.ellipsis,
-                          style: CustomTextStyles
-                              .bodyMediumDMSansOnPrimaryContainer13
-                              .copyWith(
-                            height: 1.50,
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 4.v),
-                    _buildTime(
-                      time: "lbl_09_33_am".tr,
-                      checkmark: ImageConstant.imgCheckmark,
-                    ),
-                    SizedBox(height: 10.v),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(right: 98.h),
-                        child: Row(
-                          children: [
-                            CustomImageView(
-                              imagePath: ImageConstant.imgEllipse49,
-                              height: 35.adaptSize,
-                              width: 35.adaptSize,
-                              radius: BorderRadius.circular(
-                                17.h,
-                              ),
-                              margin: EdgeInsets.only(
-                                top: 31.v,
-                                bottom: 18.v,
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding: EdgeInsets.only(left: 10.h),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      padding: EdgeInsets.symmetric(
-                                        horizontal: 20.h,
-                                        vertical: 10.v,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: fs.Svg(
-                                            ImageConstant.imgRectangle98,
-                                          ),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          SizedBox(height: 3.v),
-                                          Container(
-                                            width: 150.h,
-                                            margin: EdgeInsets.only(right: 1.h),
-                                            child: Text(
-                                              "msg_oh_yes_please_send2".tr,
-                                              maxLines: 2,
-                                              overflow: TextOverflow.ellipsis,
-                                              style: CustomTextStyles
-                                                  .bodyMediumDMSans13
-                                                  .copyWith(
-                                                height: 1.50,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    SizedBox(height: 4.v),
-                                    Text(
-                                      "lbl_09_35_am".tr,
-                                      style: CustomTextStyles
-                                          .bodySmallBluegray3000310,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 10.v),
-                    Container(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 10.h,
-                        vertical: 9.v,
-                      ),
-                      decoration: AppDecoration.fillPrimary.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder15,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            height: 44.v,
-                            width: 33.h,
-                            margin: EdgeInsets.only(
-                              left: 10.h,
-                              top: 5.v,
-                              bottom: 5.v,
-                            ),
-                            child: Stack(
-                              alignment: Alignment.topRight,
-                              children: [
-                                CustomImageView(
-                                  imagePath: ImageConstant.imgUserRed700,
-                                  width: 33.h,
-                                  alignment: Alignment.center,
-                                ),
-                                Align(
-                                  alignment: Alignment.topRight,
-                                  child: Padding(
-                                    padding: EdgeInsets.only(left: 6.h),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        CustomImageView(
-                                          imagePath:
-                                              ImageConstant.imgContrastRed300,
-                                          width: 12.h,
-                                          alignment: Alignment.centerRight,
-                                        ),
-                                        SizedBox(height: 10.v),
-                                        Text(
-                                          "lbl_pdf".tr,
-                                          style: CustomTextStyles
-                                              .labelMediumExtraBold,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              left: 15.h,
-                              top: 5.v,
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                SizedBox(
-                                  width: 90.h,
-                                  child: Text(
-                                    "msg_jamet_cv_ui_ux".tr,
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: CustomTextStyles
-                                        .bodySmallOnPrimaryContainer,
-                                  ),
-                                ),
-                                SizedBox(height: 2.v),
-                                Text(
-                                  "lbl_867_kb_pdf".tr,
-                                  style:
-                                      CustomTextStyles.bodySmallBluegray10001,
-                                ),
-                              ],
-                            ),
-                          ),
-                          CustomImageView(
-                            imagePath: ImageConstant.imgNotification,
-                            height: 24.adaptSize,
-                            width: 24.adaptSize,
-                            margin: EdgeInsets.only(
-                              left: 22.h,
-                              top: 16.v,
-                              bottom: 15.v,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 5.v),
-                    _buildTime(
-                      time: "lbl_09_33_am".tr,
-                      checkmark: ImageConstant.imgCheckmarkBlueGray40001,
-                    ),
-                    SizedBox(height: 5.v),
-                  ],
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
-        bottomNavigationBar: _buildSendMassage(),
+        // bottomNavigationBar: _buildSendMassage(),
       ),
     );
   }
@@ -491,29 +221,43 @@ class ChatScreen extends GetWidget<ChatController> {
     required String image,
     required String morningCanIHelp,
   }) {
-    return SizedBox(
-      height: 48.v,
+    return Container(
+      constraints: BoxConstraints(
+        minHeight: 48.v,
+      ),
       width: 192.h,
       child: Stack(
         alignment: Alignment.center,
         children: [
-          Opacity(
-            opacity: 0.1,
-            child: CustomImageView(
-              imagePath: image,
-              height: 48.v,
-              alignment: Alignment.center,
-            ),
-          ),
-          Align(
-            alignment: Alignment.center,
-            child: Text(
-              morningCanIHelp,
-              style: CustomTextStyles.bodyMediumDMSans13.copyWith(
-                color: appTheme.blueGray70001,
-              ),
-            ),
-          ),
+          // Opacity(
+          //   opacity: 0.1,
+          //   child: CustomImageView(
+          //     imagePath: image,
+          //     height: 48.v,
+          //     alignment: Alignment.center,
+          //   ),
+          // ),
+          // Align(
+          //   alignment: Alignment.center,
+          //   child: Container(
+          //     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          //     decoration: BoxDecoration(
+          //       color: Color.fromRGBO(19, 1, 96, 1),
+          //       borderRadius: BorderRadius.circular(8),
+          //     ),
+          //     child: Text(
+          //       morningCanIHelp,
+          //       style: CustomTextStyles.bodyMediumDMSans13.copyWith(
+          //         color: appTheme.whiteA700,
+          //       ),
+          //       overflow: TextOverflow.clip,
+          //     ),
+          //   ),
+          // ),
+          MessageBubble(
+            message: morningCanIHelp,
+            isMe: true,
+          )
         ],
       ),
     );

@@ -1,18 +1,15 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
-import 'package:jobpilot/presentation/login_screen/binding/login_binding.dart';
-import '../sign_up_screen/binding/sign_up_binding.dart';
-import '../sign_up_screen/sign_up_screen.dart';
-import 'package:jobpilot/widgets/custom_text_form_field.dart';
-import 'package:jobpilot/widgets/custom_checkbox_button.dart';
-import 'package:jobpilot/widgets/custom_elevated_button.dart';
+import '../../../widgets/custom_text_form_field.dart';
+import '../../../widgets/custom_checkbox_button.dart';
+import '../../../widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
-import './models/login_model.dart';
-import 'package:jobpilot/core/app_export.dart';
+import 'models/login_model.dart';
+import '../../../core/app_export.dart';
 import '../sign_up_as/binding/sign_up_as_binding.dart';
 import '../sign_up_as/sign_up_as_screen.dart';
 import 'controller/login_controller.dart';
-import 'package:jobpilot/authHelper/googleauth/google_auth_helper.dart'; // ignore_for_file: must_be_immutable
+import '../../../authHelper/googleauth/google_auth_helper.dart'; // ignore_for_file: must_be_immutable
 
 class LoginScreen extends GetWidget<LoginController> {
   const LoginScreen({Key? key})

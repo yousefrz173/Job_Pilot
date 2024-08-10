@@ -43,7 +43,7 @@ final Map<String, String> enUs = {
   "msg_we_have_sent_the":
       "We have sent the reset password to the email address brandonelouis@gmial.com",
   "msg_we_have_sent_the2":
-      "We have sent the reset password to the email address ",
+      "We have sent the verification code to the email address ",
   "msg_you_have_not_received": "You have not received the email? Resend",
   "msg_you_have_not_received2": "You have not received the email?",
 
@@ -543,6 +543,8 @@ final Map<String, String> enUs = {
   "lbl_edit_profile": "Edit profile",
   "lbl_education": "Education",
   "lbl_email": "Email",
+  "lbl_verification_code": "Enter Verification Code",
+  "lbl_verify": "Verify",
   "lbl_email_address": "Email address",
   "lbl_employee_size": "Employee size",
   "lbl_employment_type": "Employment type",

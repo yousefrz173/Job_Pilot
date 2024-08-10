@@ -4,6 +4,7 @@ import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:jobpilot/core/app_constants.dart';
+import 'package:jobpilot/core/app_export.dart';
 import 'package:jobpilot/core/errors/error_entity.dart';
 import 'package:jobpilot/data/models/userModels/user_models.dart';
 
@@ -15,6 +16,8 @@ class HttpUtil {
   }
 
   late Dio dio;
+  String _token =
+      "eyJ0eXAiOiJKV1QiLCJhbGciOiJII1NiJ9.eyJc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2NvbXBhbnkvbG9naW4iLCJpYXQiOjE3MjMzMjQ0ODAsImV4cCI6MTcyMzMyODA4MCwibmJmIjoxNzIzMzI0NDgwLCJqdGkiOiJRbm5mRGVaYXplc0cwdUM2Iiwic3ViIjoiMjIiLCJwcnYiOiJjZmU3ZWM5OWEyM2Y0Mzg4ZTdmMWQ1ZmI4NzA4Mzc1Yzg1NGVkYTY0In0.L7LvaY3N74aEipIdlbj7Nd5C_qHuRdfkdVpvn8swMWE";
 
   // Private constructor
   HttpUtil.internal() {
@@ -67,7 +70,7 @@ class HttpUtil {
     Options requestOptions = options ?? Options();
     requestOptions.headers = requestOptions.headers ?? {};
 
-    Map<String, dynamic>? authorization = getAuthorizationHeader();
+    Map<String, dynamic>? authorization = await getAuthorizationHeader();
     if (authorization != null) {
       requestOptions.headers!.addAll(authorization);
     }
@@ -91,7 +94,7 @@ class HttpUtil {
     requestOptions.headers = requestOptions.headers ?? {};
 
     // Add authorization header if user is logged in
-    Map<String, dynamic>? authorization = getAuthorizationHeader();
+    Map<String, dynamic>? authorization = await getAuthorizationHeader();
     if (authorization != null) {
       requestOptions.headers!.addAll(authorization);
     }
@@ -106,10 +109,12 @@ class HttpUtil {
   }
 
   // Method to get authorization header if user is logged in
-  Map<String, dynamic>? getAuthorizationHeader() {
+  Future<Map<String, dynamic>?> getAuthorizationHeader() async {
     var headers = <String, dynamic>{};
-    if (Get.isRegistered<User>() && User.to.hasToken) {
-      headers['Authorization'] = 'Bearer ${User.to.token}';
+    var user = await UserPreferences.loadUser() ??
+        User(password: 'password', email: 'email', token: _token);
+    if (user.hasToken) {
+      headers['Authorization'] = 'Bearer ${user.token}';
     }
     return headers.isNotEmpty ? headers : null;
   }

@@ -1017,15 +1017,15 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
   ///Handling route based on bottom click actions
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
-      case BottomBarEnum.Homebluegray30005:
+      case BottomBarEnum.Home:
         return AppRoutes.postingPage;
-      case BottomBarEnum.Settings:
+      case BottomBarEnum.Connections:
         return "/";
       case BottomBarEnum.Add:
         return "/";
-      case BottomBarEnum.Bookmarkbluegray30006:
+      case BottomBarEnum.Chat:
         return "/";
-      case BottomBarEnum.Bookmarkbluegray3000624x24:
+      case BottomBarEnum.Bookmark:
         return "/";
       default:
         return "/";

@@ -77,6 +77,8 @@ import '../presentation/notifications_one_screen/notifications_one_screen.dart';
 import '../presentation/notifications_one_screen/binding/notifications_one_binding.dart';
 import '../presentation/notifications_two_screen/notifications_two_screen.dart';
 import '../presentation/notifications_two_screen/binding/notifications_two_binding.dart';
+import '../presentation/wallet_page/bindings/wallet_binding.dart';
+import '../presentation/wallet_page/wallet_page.dart';
 import '../presentation/your_application_screen/your_application_screen.dart';
 import '../presentation/your_application_screen/binding/your_application_binding.dart';
 import '../presentation/no_notifications_screen/no_notifications_screen.dart';
@@ -142,6 +144,8 @@ class AppRoutes {
   static const String loginScreen = '/login_screen';
 
   static const String signUpScreen = '/sign_up_screen';
+
+  static const String walletPage = '/wallet_screen';
 
   static const String signUpAsScreen = '/sign_up_as_screen';
 
@@ -317,6 +321,13 @@ class AppRoutes {
       page: () => SignUpAsScreen(),
       bindings: [
         SignUpAsBinding(),
+      ],
+    ),
+    GetPage(
+      name: walletPage,
+      page: () => WalletPage(),
+      bindings: [
+        WalletBinding(),
       ],
     ),
     GetPage(

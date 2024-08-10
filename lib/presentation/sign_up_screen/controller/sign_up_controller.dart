@@ -65,11 +65,11 @@ class SignUpController extends GetxController {
 
   @override
   void onInit() {
-    if (role == UserRole.Company) {
+    if (role == UserRole.company) {
       nameUsernameLabel = Rx(labels["name"]!);
       dateBirthEstablishmentLabel = Rx(labels["establishment_date"]!);
     }
-    if (role == UserRole.Seeker || role == UserRole.Customer) {
+    if (role == UserRole.job_seeker || role == UserRole.customer) {
       nameUsernameLabel = Rx(labels["username"]!);
       dateBirthEstablishmentLabel = Rx(labels["birth_date"]!);
     }
@@ -101,15 +101,15 @@ class SignUpController extends GetxController {
   }
 
   Future<String?> register() async {
-    String path = role == UserRole.Company
+    String path = role == UserRole.company
         ? AppConstants.COMPANY_PATH
-        : role == UserRole.Seeker
+        : role == UserRole.job_seeker
             ? AppConstants.SEEKER_PATH
             : AppConstants.CUSTOMER_PATH;
 
     Map<String, dynamic> data = {};
     switch (role) {
-      case UserRole.Company:
+      case UserRole.company:
         data = {
           'name': nameUsernameController.text,
           'password': passwordController.text,

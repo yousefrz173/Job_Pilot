@@ -283,6 +283,27 @@ class ImageConstant {
       '$imagePath/img_television_blue_gray_800_01.png';
 
 // Common images
+  static String imgChart = '$imagePath/img_chart.png';
+
+  static String imgIcon = '$imagePath/img_icon.svg';
+
+  static String imgArrowRight = '$imagePath/img_arrow_right.svg';
+
+  static String imgGroup159 = '$imagePath/img_group_159.png';
+
+  static String imgClosePrimary = '$imagePath/img_close_primary.svg';
+
+  static String imgComputer = '$imagePath/img_computer.svg';
+
+  static String imgCombinedShape36906 =
+      '$imagePath/img_combined_shape_36906.svg';
+
+  static String imgThumb = '$imagePath/img_thumb.png';
+
+  static String imgGroup141 = '$imagePath/img_group_141.png';
+
+  static String imgBg = '$imagePath/img_bg.png';
+
   static String imgEye = '$imagePath/img_eye.png';
 
   static String imgGoogle220x15 = '$imagePath/img_google_2_20x15.png';

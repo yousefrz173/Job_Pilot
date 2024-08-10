@@ -48,10 +48,26 @@ dependencies:
   flutter_svg_provider: ^1.0.7
   dio: ^5.5.0+1
   get_storage: ^2.1.1
+  flutter_chat_types: ^3.6.2
+  image_picker: ^1.1.2
+  mime: ^1.0.5
+  open_filex: ^4.4.0
+  web_socket_channel: ^3.0.1
+  path_provider: ^2.1.4
+  uuid: ^4.4.2
+  file_picker: ^8.0.5
+  flutter_chat_ui: ^1.6.14
+  flutter_launcher_icons: ^0.13.1
+  flutter_paymob: ^1.0.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/logo.jpeg"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -76,6 +92,7 @@ flutter:
     - assets/images/
     - assets/images/image_not_found.png
     - assets/fonts/
+    - assets/icons/
   fonts:
     - family: DMSans
       fonts:

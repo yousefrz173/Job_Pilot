@@ -11,7 +11,31 @@ class MessageModel {
         andyRobertson1: "Andy Robertson".obs,
         ohYesPleaseSend: "Oh yes, please send your CV/Res ... ".obs,
         distance: "5m ago".obs,
-        notifNewMessage: "2".obs)
+        notifNewMessage: "2".obs),
+    AndyrobertsonItemModel(
+        andyRobertson: ImageConstant.imgEllipse48.obs,
+        andyRobertson1: "Alex Morgan".obs,
+        ohYesPleaseSend: "I saw the UI/UX Designer vac... ".obs,
+        distance: "09:30 am".obs,
+        notifNewMessage: "".obs),
+    AndyrobertsonItemModel(
+        andyRobertson: ImageConstant.imgEllipse48.obs,
+        andyRobertson1: "Alex Morgan".obs,
+        ohYesPleaseSend: "I saw the UI/UX Designer vac... ".obs,
+        distance: "09:30 am".obs,
+        notifNewMessage: "".obs),
+    AndyrobertsonItemModel(
+        andyRobertson: ImageConstant.imgEllipse48.obs,
+        andyRobertson1: "Alex Morgan".obs,
+        ohYesPleaseSend: "I saw the UI/UX Designer vac... ".obs,
+        distance: "09:30 am".obs,
+        notifNewMessage: "".obs),
+    AndyrobertsonItemModel(
+        andyRobertson: ImageConstant.imgEllipse48.obs,
+        andyRobertson1: "Alex Morgan".obs,
+        ohYesPleaseSend: "I saw the UI/UX Designer vac... ".obs,
+        distance: "09:30 am".obs,
+        notifNewMessage: "".obs),
   ]);
 
   Rx<List<PmItemModel>> pmItemList = Rx([

@@ -27,31 +27,32 @@ class MessageScreen extends GetWidget<MessageController> {
         appBar: buildAppBar(),
         body: SizedBox(
           width: double.maxFinite,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              SizedBox(height: 7.v),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 16.h),
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 4.h),
-                      child: CustomSearchView(
-                        controller: controller.searchController,
-                        hintText: "lbl_search_message".tr,
-                        hintStyle: CustomTextStyles.bodySmallBluegray30002,
-                        contentPadding: EdgeInsets.only(
-                          top: 17.v,
-                          right: 30.h,
-                          bottom: 17.v,
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                SizedBox(height: 7.v),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16.h),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 4.h),
+                        child: CustomSearchView(
+                          controller: controller.searchController,
+                          hintText: "lbl_search_message".tr,
+                          hintStyle: CustomTextStyles.bodySmallBluegray30002,
+                          contentPadding: EdgeInsets.only(
+                            top: 17.v,
+                            right: 30.h,
+                            bottom: 17.v,
+                          ),
+                          borderDecoration:
+                              SearchViewStyleHelper.outlineIndigoD,
                         ),
-                        borderDecoration: SearchViewStyleHelper.outlineIndigoD,
                       ),
-                    ),
-                    SizedBox(height: 35.v),
-                    Expanded(
-                      child: SizedBox(
+                      SizedBox(height: 35.v),
+                      SizedBox(
                         width: double.maxFinite,
                         child: Padding(
                           padding: EdgeInsets.only(left: 4.h),
@@ -64,11 +65,11 @@ class MessageScreen extends GetWidget<MessageController> {
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
         bottomNavigationBar: _buildBottomBar(),
@@ -107,31 +108,27 @@ class MessageScreen extends GetWidget<MessageController> {
 
   /// Section Widget
   Widget _buildAndyRobertson() {
-    return Expanded(
-      child: Padding(
-        padding: EdgeInsets.only(right: 1.h),
-        child: Obx(
-          () => ListView.separated(
-            physics: BouncingScrollPhysics(),
-            shrinkWrap: true,
-            separatorBuilder: (
-              context,
-              index,
-            ) {
-              return SizedBox(
-                height: 30.v,
-              );
-            },
-            itemCount: controller
-                .messageModelobj.value.andyrobertsonItemList.value.length,
-            itemBuilder: (context, index) {
-              AndyrobertsonItemModel model = controller
-                  .messageModelobj.value.andyrobertsonItemList.value[index];
-              return AndyrobertsonItemWidget(
-                model,
-              );
-            },
-          ),
+    return Padding(
+      padding: EdgeInsets.only(right: 1.h),
+      child: Obx(
+        () => ListView.separated(
+          physics: BouncingScrollPhysics(),
+          shrinkWrap: true,
+          separatorBuilder: (
+            context,
+            index,
+          ) {
+            return SizedBox(
+              height: 30.v,
+            );
+          },
+          itemCount: controller
+              .messageModelobj.value.andyrobertsonItemList.value.length,
+          itemBuilder: (context, index) {
+            AndyrobertsonItemModel model = controller
+                .messageModelobj.value.andyrobertsonItemList.value[index];
+            return AndyrobertsonItemWidget(model, () {});
+          },
         ),
       ),
     );
@@ -175,29 +172,32 @@ class MessageScreen extends GetWidget<MessageController> {
   /// Section Widget
   Widget _buildFloatingActionButton() {
     return CustomFloatingButton(
-      height: 72,
-      width: 43,
-      backgroundColor: appTheme.deepOrangeA100,
-      child: CustomImageView(
-        imagePath: ImageConstant.imgThumbsUpOrange40072x43,
-        height: 36.0.v,
-        width: 21.5.h,
-      ),
-    );
+        onTap: () {},
+        height: 72,
+        width: 43,
+        backgroundColor: appTheme.deepOrangeA100,
+        child: Container(
+          height: 39.0.v,
+          width: 35.h,
+          child: Icon(
+            Icons.delete_outline_outlined,
+            size: 40.adaptSize,
+          ),
+        ));
   }
 
   ///Handling route based on bottom click actions
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
-      case BottomBarEnum.Homebluegray30005:
-        return AppRoutes.postingPage;
-      case BottomBarEnum.Settings:
+      case BottomBarEnum.Home:
+        return AppRoutes.homeScreen;
+      case BottomBarEnum.Connections:
         return "/";
       case BottomBarEnum.Add:
         return "/";
-      case BottomBarEnum.Bookmarkbluegray30006:
+      case BottomBarEnum.Chat:
         return "/";
-      case BottomBarEnum.Bookmarkbluegray3000624x24:
+      case BottomBarEnum.Bookmark:
         return "/";
       default:
         return "/";

@@ -1,4 +1,4 @@
-import '../../../../core/app_export.dart';
+import '../../../../core/my_app_export.dart';
 import '../models/sign_up_as_model.dart';
 
 /// A controller class for the AddAJobScreen.

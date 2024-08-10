@@ -79,6 +79,21 @@ class AppDecoration {
           ),
         ],
       );
+  // Outline decorations
+  static BoxDecoration get outlineErrorContainer => BoxDecoration(
+        color: theme.colorScheme.primaryContainer,
+        boxShadow: [
+          BoxShadow(
+            color: theme.colorScheme.errorContainer.withOpacity(0.15),
+            spreadRadius: 2.h,
+            blurRadius: 2.h,
+            offset: Offset(
+              0,
+              15,
+            ),
+          )
+        ],
+      );
   static BoxDecoration get outlineBluegray300 => BoxDecoration(
         color: appTheme.deepPurpleA700.withOpacity(0.05),
       );
@@ -142,6 +157,9 @@ class AppDecoration {
 }
 
 class BorderRadiusStyle {
+  static BorderRadius get roundedBorder30 => BorderRadius.circular(
+        30.h,
+      );
 // Circle borders
   static BorderRadius get circleBorder21 => BorderRadius.circular(
         21.h,

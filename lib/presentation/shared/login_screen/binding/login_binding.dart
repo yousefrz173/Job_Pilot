@@ -1,4 +1,4 @@
-import 'package:jobpilot/presentation/login_screen/controller/login_controller.dart';
+import '../controller/login_controller.dart';
 import 'package:get/get.dart';
 
 /// A binding class for the LoginScreen.

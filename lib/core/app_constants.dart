@@ -1,5 +1,5 @@
 class AppConstants {
-  static const SERVER_API_URL = 'http://192.168.45.76:8000/api';
+  static const SERVER_API_URL = 'http://192.168.1.5:8000/api';
 
   static const COMPANY_PATH = '/company';
 

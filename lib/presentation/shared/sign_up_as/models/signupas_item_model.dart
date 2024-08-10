@@ -1,4 +1,4 @@
-import '../../../../core/app_export.dart';
+import '../../../../core/my_app_export.dart';
 
 /// This class is used in the [signupas_item_widget] screen.
 class SignUpAsItemModel {

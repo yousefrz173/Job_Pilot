@@ -12,21 +12,21 @@ class LoginModel {
       ),
     ),
     DropdownMenuItem<UserRole>(
-      value: UserRole.Company,
+      value: UserRole.company,
       child: Text(
-        enumToString(UserRole.Company),
+        enumToString(UserRole.company),
       ),
     ),
     DropdownMenuItem<UserRole>(
-      value: UserRole.Seeker,
+      value: UserRole.job_seeker,
       child: Text(
-        enumToString(UserRole.Seeker),
+        enumToString(UserRole.job_seeker),
       ),
     ),
     DropdownMenuItem<UserRole>(
-      value: UserRole.Customer,
+      value: UserRole.customer,
       child: Text(
-        enumToString(UserRole.Customer),
+        enumToString(UserRole.customer),
       ),
     )
   ];

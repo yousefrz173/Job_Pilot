@@ -18,7 +18,7 @@ class LoginController extends GetxController {
 
   Rx<bool> rememberme = false.obs;
 
-  var role = UserRole.NOUSER.obs;
+  var role = UserRole.company.obs;
 
   @override
   onInit() {
@@ -31,9 +31,9 @@ class LoginController extends GetxController {
   }
 
   Future<String?> login() async {
-    final String path = role == Rx(UserRole.Company)
+    final String path = role == Rx(UserRole.company)
         ? AppConstants.COMPANY_PATH
-        : role == Rx(UserRole.Seeker)
+        : role == Rx(UserRole.job_seeker)
             ? AppConstants.SEEKER_PATH
             : AppConstants.CUSTOMER_PATH;
 
