@@ -1,3 +1,21 @@
+buildscript {
+    ext.kotlin_version = '1.9.0' // Replace this with the latest version
+
+    repositories {
+        google()
+        mavenCentral()  //add this line
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0' // Update to the latest version
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.3' // If using Google services
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
 allprojects {
     repositories {
         google()
