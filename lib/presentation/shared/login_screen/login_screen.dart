@@ -89,13 +89,9 @@ class LoginScreen extends GetWidget<LoginController> {
               ),
               SizedBox(height: 9.v),
               _buildPassword(),
-              SizedBox(height: 20.v),
-              _buildRememberme(),
               SizedBox(height: 32.v),
               _buildLogin(),
               SizedBox(height: 19.v),
-              _buildSignInWithGoogle(),
-              SizedBox(height: 16.v),
               RichText(
                 text: TextSpan(
                   children: [

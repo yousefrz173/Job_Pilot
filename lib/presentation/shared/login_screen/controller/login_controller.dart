@@ -19,7 +19,7 @@ class LoginController extends GetxController {
 
   Rx<bool> rememberme = false.obs;
 
-  var role = UserRole.NOUSER.obs;
+  var role = UserRole.company.obs;
 
   Rxn<User> currentUser = Rxn<User>();
 
@@ -58,6 +58,13 @@ class LoginController extends GetxController {
       );
       if (response["statusNumber"] == 200) {
         updateToken(response["${role.toString()} data"]["api"] ?? '');
+        updateUser(
+          role == UserRole.company
+              ? Company.fromJson(response)
+              : role == UserRole.job_seeker
+                  ? JobSeeker.fromJson(response)
+                  : Customer.fromJson(response),
+        );
 
         Get.toNamed(
           AppRoutes.homeScreen,

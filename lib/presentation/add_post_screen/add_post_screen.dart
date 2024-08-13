@@ -19,7 +19,7 @@ class AddPostScreen extends GetWidget<AddPostController> {
         resizeToAvoidBottomInset: false,
         appBar: _buildAppBar(),
         body: Container(
-          width: double.maxFinite,
+          width: double.infinity,
           padding: EdgeInsets.symmetric(
             horizontal: 18.h,
             vertical: 23.v,
@@ -34,78 +34,117 @@ class AddPostScreen extends GetWidget<AddPostController> {
               ),
             ),
             SizedBox(height: 37.v),
-            Row(children: [
-              CustomImageView(
-                imagePath: ImageConstant.imgImage,
-                height: 56.adaptSize,
-                width: 56.adaptSize,
-                radius: BorderRadius.circular(
-                  28.h,
+            Row(
+              children: [
+                CustomImageView(
+                  imagePath: ImageConstant.imgImage,
+                  height: 56.adaptSize,
+                  width: 56.adaptSize,
+                  radius: BorderRadius.circular(
+                    28.h,
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: 11.h,
-                  top: 11.v,
-                  bottom: 6.v,
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 11.h,
+                    top: 11.v,
+                    bottom: 6.v,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "lbl_orlando_diggs".tr,
+                        style: theme.textTheme.titleSmall,
+                      ),
+                      Text(
+                        "lbl_california_usa".tr,
+                        style: theme.textTheme.bodySmall,
+                      ),
+                      SizedBox(height: 28.v),
+                    ],
+                  ),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "lbl_orlando_diggs".tr,
-                      style: theme.textTheme.titleSmall,
-                    ),
-                    SizedBox(height: 3.v),
-                    Text(
-                      "lbl_california_usa".tr,
-                      style: theme.textTheme.bodySmall,
-                    ),
-                    SizedBox(height: 28.v),
-                    Padding(
-                      padding: EdgeInsets.only(left: 2.h),
-                      child: Text(
-                        "lbl_post_title".tr,
-                        style: CustomTextStyles.labelLargeOpenSans,
-                      ),
-                    ),
-                    SizedBox(height: 9.v),
-                    Padding(
-                      padding: EdgeInsets.only(left: 2.h),
-                      child: CustomTextFormField(
-                        controller: controller.thirtyNineController,
-                        hintText: "msg_write_the_title".tr,
-                        hintStyle: CustomTextStyles.bodySmallBluegray30003,
-                      ),
-                    ),
-                    SizedBox(height: 26.v),
-                    Padding(
-                      padding: EdgeInsets.only(left: 2.h),
-                      child: Text(
-                        "lbl_description".tr,
-                        style: theme.textTheme.labelLarge,
-                      ),
-                    ),
-                    SizedBox(height: 9.v),
-                    Padding(
-                      padding: EdgeInsets.only(left: 2.h),
-                      child: CustomTextFormField(
-                        controller: controller.fortyController,
-                        hintText: "msg_what_do_you_want".tr,
-                        hintStyle: CustomTextStyles.bodySmallBluegray30003,
-                        textInputAction: TextInputAction.done,
-                        maxLines: 9,
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20.h,
-                          vertical: 18.v,
+              ],
+            ),
+            SizedBox(height: 3.v),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 11.h,
+                    top: 11.v,
+                    bottom: 6.v,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(left: 2.h),
+                        child: Text(
+                          "lbl_post_title".tr,
+                          style: CustomTextStyles.labelLargeOpenSans,
                         ),
                       ),
-                    ),
-                    SizedBox(height: 5.v),
-                  ],
+                      SizedBox(height: 9.v),
+                      Padding(
+                        padding: EdgeInsets.only(left: 2.h),
+                        child: CustomTextFormField(
+                          width: 320.h,
+                          textStyle: TextStyle(
+                            color: appTheme.black900,
+                          ),
+                          controller: controller.thirtyNineController,
+                          hintText: "msg_write_the_title".tr,
+                          hintStyle: CustomTextStyles.bodySmallBluegray30003,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ]),
+              ],
+            ),
+            SizedBox(height: 26.v),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: 11.h,
+                    top: 11.v,
+                    bottom: 6.v,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(left: 2.h),
+                        child: Text(
+                          "lbl_description".tr,
+                          style: theme.textTheme.labelLarge,
+                        ),
+                      ),
+                      SizedBox(height: 9.v),
+                      Padding(
+                        padding: EdgeInsets.only(left: 2.h),
+                        child: CustomTextFormField(
+                          width: 320.h,
+                          controller: controller.fortyController,
+                          hintText: "msg_what_do_you_want".tr,
+                          hintStyle: CustomTextStyles.bodySmallBluegray30003,
+                          textInputAction: TextInputAction.done,
+                          maxLines: 9,
+                          contentPadding: EdgeInsets.symmetric(
+                            horizontal: 20.h,
+                            vertical: 18.v,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 5.v),
           ]),
         ),
         bottomNavigationBar: _buildMenuBar(),
@@ -115,16 +154,8 @@ class AddPostScreen extends GetWidget<AddPostController> {
 
   /// Section Widget
   PreferredSizeWidget _buildAppBar() {
-    return CustomAppBar(
-      leadingWidth: 44.h,
-      leading: AppbarLeadingImage(
-        imagePath: ImageConstant.imgArrowDownBlueGray70001,
-        margin: EdgeInsets.only(
-          left: 20.h,
-          top: 16.v,
-          bottom: 16.v,
-        ),
-      ),
+    return AppBar(
+      backgroundColor: appTheme.gray50,
       actions: [
         AppbarSubtitleTwo(
           text: "lbl_post".tr,

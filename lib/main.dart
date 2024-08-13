@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'core/my_app_export.dart';
+import 'data/apiClient/websocket_util.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]).then((value) {
@@ -29,7 +31,7 @@ class JobPilot extends StatelessWidget {
         fallbackLocale: Locale('en', 'US'),
         title: 'jobpilot',
         initialBinding: InitialBindings(),
-        initialRoute: AppRoutes.checkYourEmailScreen,
+        initialRoute: AppRoutes.myConnectionScreen,
         getPages: AppRoutes.pages,
       );
     });

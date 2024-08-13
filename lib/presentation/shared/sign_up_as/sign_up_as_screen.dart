@@ -13,6 +13,9 @@ class SignUpAsScreen extends GetWidget<SignUpAsController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: appTheme.gray5001,
+        ),
         body: SingleChildScrollView(
           child: Container(
             width: double.maxFinite,
@@ -23,7 +26,6 @@ class SignUpAsScreen extends GetWidget<SignUpAsController> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                _buildClose(),
                 SizedBox(height: 41.v),
                 Text(
                   "lbl_sign_up_as".tr,

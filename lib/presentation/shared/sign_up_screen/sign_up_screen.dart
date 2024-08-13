@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/services.dart';
-import 'package:jobpilot/presentation/login_screen/binding/login_binding.dart';
-import 'package:jobpilot/presentation/login_screen/login_screen.dart';
+import '../login_screen/binding/login_binding.dart';
+import '../login_screen/login_screen.dart';
+import 'package:jobpilot/widgets/custom_image_picker.dart';
 import 'package:jobpilot/widgets/custom_text_form_field.dart';
 import 'package:jobpilot/widgets/custom_checkbox_button.dart';
 import 'package:jobpilot/widgets/custom_elevated_button.dart';
@@ -20,12 +23,13 @@ class SignUpScreen extends GetWidget<SignUpController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: appTheme.gray5001,
+        ),
         resizeToAvoidBottomInset: false,
         body: Container(
           width: double.maxFinite,
           padding: EdgeInsets.only(
-            top: 15.h,
-            bottom: 18.h,
             right: 28.h,
             left: 28.h,
           ),
@@ -33,8 +37,6 @@ class SignUpScreen extends GetWidget<SignUpController> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                _buildClose(),
-                SizedBox(height: 52.v),
                 Text(
                   "msg_create_an_account".tr,
                   style: theme.textTheme.headlineLarge,
@@ -120,34 +122,43 @@ class SignUpScreen extends GetWidget<SignUpController> {
                 buildDatePickerField(context, controller,
                     controller.dateBirthEstablishmentLabel.value),
                 SizedBox(height: 20.v),
-                _buildRememberme(),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "lbl_picture".tr,
+                    style: theme.textTheme.labelLarge,
+                  ),
+                ),
+                SizedBox(height: 10.v),
+                _buildImagePicker(),
                 SizedBox(height: 20.v),
                 _buildSignUp(),
                 SizedBox(height: 15.v),
-                _buildSignUpWithGoogle(),
-                SizedBox(height: 16.v),
-                RichText(
-                  text: TextSpan(
-                    children: [
-                      TextSpan(
-                        text: "msg_already_have_an".tr,
-                        style: CustomTextStyles.bodySmal10penSansff514a6b,
-                      ),
-                      TextSpan(
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () => Get.off(
-                                () => LoginScreen(),
-                                binding: LoginBinding(),
-                              ),
-                        text: "lbl_sign_in".tr,
-                        style:
-                            CustomTextStyles.bodySmal10penSansff333030.copyWith(
-                          decoration: TextDecoration.underline,
+                Padding(
+                  padding: EdgeInsets.only(bottom: 20.h),
+                  child: RichText(
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "msg_already_have_an".tr,
+                          style: CustomTextStyles.bodySmal10penSansff514a6b,
                         ),
-                      )
-                    ],
+                        TextSpan(
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () => Get.off(
+                                  () => LoginScreen(),
+                                  binding: LoginBinding(),
+                                ),
+                          text: "lbl_sign_in".tr,
+                          style: CustomTextStyles.bodySmal10penSansff333030
+                              .copyWith(
+                            decoration: TextDecoration.underline,
+                          ),
+                        )
+                      ],
+                    ),
+                    textAlign: TextAlign.left,
                   ),
-                  textAlign: TextAlign.left,
                 )
               ],
             ),
@@ -343,5 +354,79 @@ class SignUpScreen extends GetWidget<SignUpController> {
   /// Navigates to the previous screen.
   onTapImgClose() {
     Get.back();
+  }
+
+  Widget _buildImagePicker() {
+    return GetBuilder<SignUpController>(
+      builder: (controller) {
+        return CustomImagePicker(
+            onImagePick: controller.pickImage,
+            selectedImage: controller.selectedImage.value,
+            imageName: controller.selectedImage.value?.name ?? '');
+      },
+    );
+    // CustomImagePicker(
+    //     onImagePick: controller.pickImage,
+    //     selectedImage: controller.selectedImage.value,
+    //     imageName: controller.selectedImage.value!.name);
+
+    // return InkWell(
+    //   onTap: controller.pickImage,
+    //   child: Card(
+    //     shape: RoundedRectangleBorder(
+    //       borderRadius: BorderRadius.circular(12.h),
+    //     ),
+    //     elevation: 4,
+    //     child: Padding(
+    //       padding: EdgeInsets.only(
+    //           // right: 100.h,
+    //           // left: 100.h,
+    //           ),
+    //       child: Row(
+    //         crossAxisAlignment: CrossAxisAlignment.center,
+    //         children: [
+    //           Container(
+    //             alignment: Alignment.topLeft,
+    //             height: 70.h,
+    //             width: 70.h,
+    //             decoration: BoxDecoration(
+    //               borderRadius: BorderRadius.circular(12.h),
+    //               border: Border.all(color: Colors.grey.shade300),
+    //               color: Colors.grey.shade200,
+    //             ),
+    //             child: Obx(() {
+    //               if (controller.selectedImage.value != null) {
+    //                 return ClipRRect(
+    //                   borderRadius: BorderRadius.circular(12.h),
+    //                   child: Image.file(
+    //                     File(controller.selectedImage.value!.path),
+    //                     fit: BoxFit.fill,
+    //                   ),
+    //                 );
+    //               } else {
+    //                 return Center(
+    //                   child: Icon(
+    //                     Icons.image,
+    //                     color: Colors.grey,
+    //                     size: 50.h,
+    //                   ),
+    //                 );
+    //               }
+    //             }),
+    //           ),
+    //           SizedBox(height: 10.v),
+    //           Obx(
+    //             () => Text(
+    //               overflow: TextOverflow.fade,
+    //               controller.imageName,
+    //               style: TextStyle(fontSize: 16.fSize, color: Colors.black54),
+    //             ),
+    //           ),
+    //           SizedBox(height: 10.v),
+    //         ],
+    //       ),
+    //     ),
+    //   ),
+    // );
   }
 }

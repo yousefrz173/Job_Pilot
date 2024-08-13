@@ -345,6 +345,7 @@ class HomeScreen extends GetWidget<HomeController> {
   /// Section Widget
   Widget _buildBottomBar() {
     return CustomBottomBar(
+      selectedIndex: RxInt(0),
       onChanged: (BottomBarEnum type) {
         print(type);
         print(

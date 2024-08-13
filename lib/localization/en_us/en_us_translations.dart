@@ -49,8 +49,8 @@ final Map<String, String> enUs = {
 
 // Successfully Screen
   "lbl_continue": "Continue",
-  "msg_your_password_has":
-      "Your password has been updated, please change your password regularly to avoid this happening",
+  "msg_you_have_verified":
+      "You have successfully verified your account , please proceed to home page!",
 
 // Home Screen Screen
   "lbl_38_9k": "38.9k",
@@ -104,6 +104,7 @@ final Map<String, String> enUs = {
   "lbl_restaurant": "Restaurant",
 
 // Filter Screen
+  "lbl_what_to_show": "What do you wanna show",
   "lbl_category": "Category",
   "lbl_minimum_salary": "Minimum Salary",
   "lbl_part_time2": "Part time",
@@ -508,6 +509,7 @@ final Map<String, String> enUs = {
   "lbl_a": "A",
   "lbl_about_company": "About Company",
   "lbl_about_me": "About me",
+  "lbl_id": "ID",
   "lbl_add_a_job": "Add a job",
   "lbl_add_education": "Add Education",
   "lbl_add_hashtag": "Add hashtag",
@@ -581,7 +583,8 @@ final Map<String, String> enUs = {
   "lbl_job_position2": "Job Position",
   "lbl_job_title": "Job title",
   "lbl_job_type": "Job Type",
-  "lbl_jobspot": "Jobspot",
+  "lbl_picture": "Picture",
+  "lbl_jobpilot": "JobPilot",
   "lbl_jul": "Jul",
   "lbl_language": "Language",
   "lbl_lead_designer": "Lead Designer",
@@ -603,8 +606,10 @@ final Map<String, String> enUs = {
   "lbl_pdf": "PDF",
   "lbl_phone_number": "Phone number",
   "lbl_post": "Post",
+  "lbl_posts": "Posts",
   "lbl_posting": "Posting",
   "lbl_programmer": "Programmer",
+  "lbl_profile_name": "Name",
   "lbl_read_all": "Read all",
   "lbl_read_more": "Read more",
   "lbl_remember_me": "Remember me",
@@ -667,6 +672,7 @@ final Map<String, String> enUs = {
       "Brandon, there are 10+ new jobs for UI/UX Designer in California, USA",
   "msg_brandon_there_are2": "Brandon, there are ",
   "msg_brandonelouis_gmail_com": "Brandonelouis@gmail.com",
+  "msg_verification_code": "Code conains both numbers & letters",
   "msg_california_united2": "California, United states",
   "msg_category_achievement": "Category/Achievement achieved",
   "msg_change_education": "Change Education",
@@ -782,3 +788,4 @@ final Map<String, String> enUs = {
 // Validation Error String
   "err_msg_please_enter_valid_password": "Please enter valid password",
 };
+final Map<String, String> arSy = {};

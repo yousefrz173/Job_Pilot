@@ -10,7 +10,7 @@ import 'models/pm_item_model.dart';
 import '../../../widgets/custom_bottom_bar.dart';
 import '../../../widgets/custom_floating_button.dart';
 import 'package:flutter/material.dart';
-import '../../../core/app_export.dart';
+import '../../../core/my_app_export.dart';
 import 'controller/message_controller.dart';
 
 // ignore_for_file: must_be_immutable
@@ -163,8 +163,9 @@ class MessageScreen extends GetWidget<MessageController> {
   /// Section Widget
   Widget _buildBottomBar() {
     return CustomBottomBar(
+      selectedIndex: RxInt(3),
       onChanged: (BottomBarEnum type) {
-        Get.toNamed(getCurrentRoute(type), id: 1);
+        Get.toNamed(getCurrentRoute(type));
       },
     );
   }
@@ -192,11 +193,11 @@ class MessageScreen extends GetWidget<MessageController> {
       case BottomBarEnum.Home:
         return AppRoutes.homeScreen;
       case BottomBarEnum.Connections:
-        return "/";
+        return AppRoutes.myConnectionScreen;
       case BottomBarEnum.Add:
-        return "/";
+        return AppRoutes.postingPageScreen;
       case BottomBarEnum.Chat:
-        return "/";
+        return AppRoutes.messageScreen;
       case BottomBarEnum.Bookmark:
         return "/";
       default:
@@ -207,7 +208,7 @@ class MessageScreen extends GetWidget<MessageController> {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.postingPage:
+      case AppRoutes.postingPageScreen:
         return PostingPage();
       default:
         return DefaultWidget();

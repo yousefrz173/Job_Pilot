@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:jobpilot/data/models/userModels/user_models.dart';
 
 import '../../../../core/my_app_export.dart';
@@ -32,7 +33,11 @@ class SignUpController extends GetxController {
 
   Rx<bool> rememberme = false.obs;
 
-  late final role = Get.arguments['role'];
+  late final role = Get.arguments?['role'] ?? "";
+
+  final ImagePicker _picker = ImagePicker();
+
+  Rx<XFile?> selectedImage = Rx<XFile?>(null);
 
   Rx<DateTime> selectedDate = DateTime.now().obs;
 
@@ -143,9 +148,11 @@ class SignUpController extends GetxController {
                   name: nameUsernameController.text,
                   email: emailController.text,
                   password: passwordController.text,
-                  employeeNumber: employeeNumberController.text,
-                  establishmentDate:
-                      DateTime.parse(dateBirthEstablishmentController.text),
+                  employeeNumber:
+                      int.tryParse(employeeNumberController.text) ?? 0,
+                  establishmentDate: DateTime.tryParse(
+                          dateBirthEstablishmentController.text) ??
+                      DateTime.now(),
                 )
               : role == UserRole.job_seeker
                   ? JobSeeker(
@@ -181,5 +188,16 @@ class SignUpController extends GetxController {
         e.toString(),
       );
     }
+  }
+
+  String get imageName => selectedImage.value?.name ?? "Choose Picture";
+
+  void pickImage() async {
+    final ImagePicker _picker = ImagePicker();
+    final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+    if (image != null) {
+      selectedImage.value = image;
+    }
+    update();
   }
 }

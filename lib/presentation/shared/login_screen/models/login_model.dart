@@ -6,12 +6,6 @@ import '../../../../core/my_app_export.dart';
 class LoginModel {
   static List<DropdownMenuItem<UserRole>> userRolesDropdownItems = [
     DropdownMenuItem<UserRole>(
-      value: UserRole.NOUSER,
-      child: Text(
-        enumToString(UserRole.NOUSER),
-      ),
-    ),
-    DropdownMenuItem<UserRole>(
       value: UserRole.company,
       child: Text(
         enumToString(UserRole.company),

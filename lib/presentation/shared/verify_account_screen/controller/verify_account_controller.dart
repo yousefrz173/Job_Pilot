@@ -30,18 +30,19 @@ class VerifyAccountController extends GetxController {
 
   Future<void> verify() async {
     var response;
-    var _token =
-        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2NvbXBhbnkvbG9naW4iLCJpYXQiOjE3MjMzMjQ5ODEsImV4cCI6MTcyMzMyODU4MSwibmJmIjoxNzIzMzI0OTgxLCJqdGkiOiJDekhqdUplMktRekdqN1F0Iiwic3ViIjoiMjIiLCJwcnYiOiJjZmU3ZWM5OWEyM2Y0Mzg4ZTdmMWQ1ZmI4NzA4Mzc1Yzg1NGVkYTY0In0.0NVBIuI-VVhcdf8gWgQ7qCImcX4MYlk_hlMirVMPpfY";
-    await UserPreferences.saveUser(
-      User(
-        password: 'password',
-        email: 'email',
-        token: _token,
-      ),
-    );
-    var user = await UserPreferences.loadUser();
-    // await UserPreferences.clearUserData();
-    print(user!.Token);
+    // FOR TESTING
+    // var _token =
+    //     "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2NvbXBhbnkvbG9naW4iLCJpYXQiOjE3MjMzMjQ5ODEsImV4cCI6MTcyMzMyODU4MSwibmJmIjoxNzIzMzI0OTgxLCJqdGkiOiJDekhqdUplMktRekdqN1F0Iiwic3ViIjoiMjIiLCJwcnYiOiJjZmU3ZWM5OWEyM2Y0Mzg4ZTdmMWQ1ZmI4NzA4Mzc1Yzg1NGVkYTY0In0.0NVBIuI-VVhcdf8gWgQ7qCImcX4MYlk_hlMirVMPpfY";
+    // await UserPreferences.saveUser(
+    //   User(
+    //     password: 'password',
+    //     email: 'email',
+    //     token: _token,
+    //   ),
+    // );
+    // var user = await UserPreferences.loadUser();
+    // // await UserPreferences.clearUserData();
+    // print(user!.Token);
     print(role);
     Map<String, dynamic> data = {
       'verificationCode': verificationCodeController.value.text,
@@ -57,6 +58,7 @@ class VerifyAccountController extends GetxController {
           "Success!",
           response["message"],
         );
+        Get.offNamed(AppRoutes.successfullyScreen);
       }
     } catch (e) {
       Get.snackbar(

@@ -121,6 +121,7 @@ class MyConnectionScreen extends GetWidget<MyConnectionController> {
   /// Section Widget
   Widget _buildBottomBar() {
     return CustomBottomBar(
+      selectedIndex: RxInt(1),
       onChanged: (BottomBarEnum type) {
         Get.toNamed(
           getCurrentRoute(type),
@@ -137,7 +138,7 @@ class MyConnectionScreen extends GetWidget<MyConnectionController> {
       case BottomBarEnum.Connections:
         return AppRoutes.myConnectionScreen;
       case BottomBarEnum.Add:
-        return AppRoutes.postingContainerScreen;
+        return AppRoutes.postingPage;
       case BottomBarEnum.Chat:
         return AppRoutes.messageScreen;
       case BottomBarEnum.Bookmark:

@@ -29,6 +29,7 @@ class PostingContainerScreen extends GetWidget<PostingContainerController> {
   /// Section Widget
   Widget _buildBottomBar() {
     return CustomBottomBar(
+      selectedIndex: RxInt(0),
       onChanged: (BottomBarEnum type) {
         Get.toNamed(getCurrentRoute(type), id: 1);
       },

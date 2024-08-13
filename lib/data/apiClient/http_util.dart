@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:jobpilot/core/app_constants.dart';
+import '../../../core/app_constants.dart';
 import 'package:jobpilot/core/app_export.dart';
 import 'package:jobpilot/core/errors/error_entity.dart';
 import 'package:jobpilot/data/models/userModels/user_models.dart';
@@ -17,7 +17,7 @@ class HttpUtil {
 
   late Dio dio;
   String _token =
-      "eyJ0eXAiOiJKV1QiLCJhbGciOiJII1NiJ9.eyJc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2NvbXBhbnkvbG9naW4iLCJpYXQiOjE3MjMzMjQ0ODAsImV4cCI6MTcyMzMyODA4MCwibmJmIjoxNzIzMzI0NDgwLCJqdGkiOiJRbm5mRGVaYXplc0cwdUM2Iiwic3ViIjoiMjIiLCJwcnYiOiJjZmU3ZWM5OWEyM2Y0Mzg4ZTdmMWQ1ZmI4NzA4Mzc1Yzg1NGVkYTY0In0.L7LvaY3N74aEipIdlbj7Nd5C_qHuRdfkdVpvn8swMWE";
+      "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2NvbXBhbnkvbG9naW4iLCJpYXQiOjE3MjM1NjAxNjcsImV4cCI6MTcyMzU2Mzc2NywibmJmIjoxNzIzNTYwMTY3LCJqdGkiOiJIMHBjRkJ1OTdVTldFT3pzIiwic3ViIjoiMTQiLCJwcnYiOiJjZmU3ZWM5OWEyM2Y0Mzg4ZTdmMWQ1ZmI4NzA4Mzc1Yzg1NGVkYTY0In0.mqlf6DikQLLSIIWjFqtlKeCnqxW7XFxttJMVop4rSMM";
 
   // Private constructor
   HttpUtil.internal() {
@@ -84,7 +84,7 @@ class HttpUtil {
   }
 
   // Method to send data via POST request
-  Future<Map<String, dynamic>> post({
+  Future<dynamic> post({
     required String path,
     Map<String, dynamic>? queryParameters,
     dynamic data,
@@ -113,8 +113,14 @@ class HttpUtil {
     var headers = <String, dynamic>{};
     var user = await UserPreferences.loadUser() ??
         User(password: 'password', email: 'email', token: _token);
+    if (kDebugMode) {
+      user.resetToken();
+      user.token = _token;
+      print(user.token);
+      print(user.hasToken);
+    }
     if (user.hasToken) {
-      headers['Authorization'] = 'Bearer ${user.token}';
+      headers['Authorization'] = 'Bearer ${user.Token}';
     }
     return headers.isNotEmpty ? headers : null;
   }

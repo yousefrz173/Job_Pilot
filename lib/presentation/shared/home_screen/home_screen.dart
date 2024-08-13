@@ -1,35 +1,115 @@
+import 'dart:typed_data';
+
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:get/get.dart';
+import 'package:jobpilot/presentation/shared/home_screen/widgets/post_list.dart';
+import 'package:jobpilot/presentation/shared/home_screen/widgets/company_list.dart';
+import 'package:jobpilot/presentation/shared/home_screen/widgets/customer_list.dart';
+
+import '../../../widgets/custom_search_view.dart';
 import '../../posting_page/posting_page.dart';
 import '../../../widgets/custom_elevated_button.dart';
 import '../../../widgets/custom_icon_button.dart';
+import '../../specialization_screen/models/specialization_item_model.dart';
+import '../../specialization_screen/widgets/specialization_item_widget.dart';
+import 'controller/search_controller.dart';
 import 'models/seniordesigner_item_model.dart';
 import '../home_screen/widgets/seniordesigner_item_widget.dart';
 import '../../../widgets/custom_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import '../../../core/my_app_export.dart';
 import 'controller/home_controller.dart';
+import 'widgets/job_seeker_list.dart';
 
 // ignore_for_file: must_be_immutable
 class HomeScreen extends GetWidget<HomeController> {
-  const HomeScreen({Key? key})
+  HomeScreen({Key? key})
       : super(
           key: key,
         );
+
+  var searchXController = Get.find<SearchXController>();
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
-          width: double.maxFinite,
-          padding: EdgeInsets.symmetric(
-            horizontal: 20.h,
-            vertical: 5.v,
+        body: SingleChildScrollView(
+          child: Container(
+            width: double.maxFinite,
+            padding: EdgeInsets.only(
+              bottom: 20.h,
+            ),
+            child: Column(
+              children: [
+                _buildSixtyThree(),
+                GetBuilder(
+                  builder: (SearchXController searchXController) {
+                    if (searchXController.searchQuery?.value == '') {
+                      return _buildHomeScreen();
+                    } else if (searchXController.isLoading.value) {
+                      return Center(child: CircularProgressIndicator());
+                    } else if (searchXController.posts.isEmpty &&
+                        searchXController.jobSeekers.isEmpty &&
+                        searchXController.companies.isEmpty &&
+                        searchXController.customers.isEmpty) {
+                      return Center(child: Text("No results found"));
+                    } else {
+                      return SizedBox(
+                        height: 500.v,
+                        child: ListView(
+                          shrinkWrap: true,
+                          children: [
+                            if (searchXController.jobSeekers.isNotEmpty)
+                              JobSeekerList(
+                                  jobSeekers: searchXController.jobSeekers),
+                            if (searchXController.companies.isNotEmpty)
+                              CompanyList(
+                                  companies: searchXController.companies),
+                            if (searchXController.customers.isNotEmpty)
+                              CustomerList(
+                                  customers: searchXController.customers),
+                            if (searchXController.posts.isNotEmpty)
+                              PostingItemList(posts: searchXController.posts),
+                          ],
+                        ),
+                      );
+                    }
+                  },
+                ),
+              ],
+            ),
           ),
-          child: ListView(
-            // crossAxisAlignment: CrossAxisAlignment.start,
+        ),
+        bottomNavigationBar: _buildBottomBar(),
+        floatingActionButton: _buildSpeedDial(),
+      ),
+    );
+  }
+
+  Widget _buildHomeScreen() {
+    return Column(
+      children: [
+        SizedBox(height: 23.v),
+        Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: 20.v,
+          ),
+          child: Column(
             children: [
-              SizedBox(height: 40.v),
-              _buildJoinNow(),
-              SizedBox(height: 23.v),
+              SizedBox(height: 8.v),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "lbl_specialization".tr,
+                  style: CustomTextStyles.titleMediumBlack900,
+                ),
+              ),
+              SizedBox(height: 21.v),
+              _buildSpecialization(),
+              SizedBox(height: 18.v),
               _buildFindYourJob(),
               SizedBox(height: 18.v),
               Text(
@@ -41,7 +121,224 @@ class HomeScreen extends GetWidget<HomeController> {
             ],
           ),
         ),
-        bottomNavigationBar: _buildBottomBar(),
+      ],
+    );
+  }
+
+  Widget _buildSpeedDial() {
+    return SpeedDial(
+      animatedIcon: AnimatedIcons.add_event,
+      backgroundColor: Colors.blue,
+      overlayColor: Colors.black,
+      overlayOpacity: 0.5,
+      children: [
+        SpeedDialChild(
+          child: Icon(Icons.post_add),
+          backgroundColor: Colors.red,
+          label: 'Add Post',
+          labelStyle: TextStyle(fontSize: 18.0),
+          onTap: () {
+            Get.toNamed(AppRoutes.addPostScreen);
+          },
+        ),
+        SpeedDialChild(
+          child: Icon(Icons.work),
+          backgroundColor: Colors.green,
+          label: 'Add Job Offer',
+          labelStyle: TextStyle(fontSize: 18.0),
+          onTap: () async {
+            print('Image type: ');
+            await controller.fetchImage();
+          },
+        ),
+      ],
+    );
+  }
+
+  /// Section Widget
+  Widget _buildSearchAndFilter() {
+    return Row(
+      children: [
+        Expanded(
+          child: CustomSearchView(
+            onChanged: (nullValue) {
+              if (nullValue == '') {
+                searchXController.resetSearchQuery();
+              }
+            },
+            prefix: IconButton(
+              color: appTheme.blue900,
+              style: CustomButtonStyles.fillDeepPurple,
+              hoverColor: appTheme.orange100,
+              iconSize: 30.adaptSize,
+              icon: Icon(Icons.search),
+              onPressed: () => searchXController.searchOrFilter(),
+            ),
+            suffix: IconButton(
+                color: appTheme.blue900,
+                hoverColor: appTheme.orange100,
+                iconSize: 30.adaptSize,
+                icon: Icon(Icons.close),
+                onPressed: () {
+                  searchXController.searchController.clear();
+                  searchXController.resetSearchQuery();
+                }),
+            controller: searchXController.searchController,
+            hintText: "lbl_search".tr,
+            contentPadding: EdgeInsets.only(
+              top: 12.v,
+              right: 30.h,
+              bottom: 12.v,
+            ),
+            borderDecoration: SearchViewStyleHelper.outlineIndigoD,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(left: 15.h),
+          child: CustomIconButton(
+            onTap: () => _showFilterBottomSheet(),
+            height: 40.adaptSize,
+            width: 40.adaptSize,
+            padding: EdgeInsets.all(8.h),
+            decoration: IconButtonStyleHelper.outlineSecondaryContainerTL10,
+            child: CustomImageView(
+              imagePath: ImageConstant.imgClock,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// Section Widget
+  Widget _buildSixtyThree() {
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.only(
+        top: 2.h,
+        bottom: 22.h,
+        left: 21.v,
+        right: 21.v,
+      ),
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(
+            ImageConstant.imgGroup77,
+          ),
+          fit: BoxFit.fill,
+        ),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SizedBox(height: 5.v),
+          Padding(
+            padding: EdgeInsets.only(
+              left: 15.h,
+              right: 10.h,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 17.v),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        width: 310.h,
+                        height: 50.v,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 0,
+                              right: 45.h,
+                              child: InkWell(
+                                onTap: () =>
+                                    Get.toNamed(AppRoutes.notificationsScreen),
+                                child: Icon(
+                                  Icons.notifications_none_rounded,
+                                  color: appTheme.whiteA700,
+                                  size: 30.v,
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              top: 0,
+                              right: 0,
+                              child: CustomImageView(
+                                onTap: () =>
+                                    Get.toNamed(AppRoutes.profileScreen),
+                                imagePath: ImageConstant.imgImage50x50,
+                                height: 40.adaptSize,
+                                width: 40.adaptSize,
+                                radius: BorderRadius.circular(
+                                  25.h,
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              top: 10.v,
+                              child: Text(
+                                "Hello " + "lbl_orlando_diggs".tr,
+                                style: CustomTextStyles
+                                    .titleSmallOnPrimaryContainerMedium,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    bottom: 12.v,
+                    top: 20.v,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "lbl_find_your".tr + "\n" + "msg_dream_job_here".tr,
+                        style: CustomTextStyles
+                            .titleLargeOpenSansOnPrimaryContainer,
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 26.v),
+          _buildSearchAndFilter(),
+        ],
+      ),
+    );
+  }
+
+  /// Section Widget
+  Widget _buildSpecialization() {
+    return Obx(
+      () => GridView.builder(
+        shrinkWrap: true,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          mainAxisExtent: 141.v,
+          crossAxisCount: 3,
+          mainAxisSpacing: 15.h,
+          crossAxisSpacing: 5.h,
+        ),
+        physics: NeverScrollableScrollPhysics(),
+        itemCount: controller
+            .specializationModelObj.value.specializationItemList.value.length,
+        itemBuilder: (context, index) {
+          SpecializationItemModel model = controller
+              .specializationModelObj.value.specializationItemList.value[index];
+          return SpecializationItemWidget(
+            model,
+          );
+        },
       ),
     );
   }
@@ -356,6 +653,7 @@ class HomeScreen extends GetWidget<HomeController> {
   /// Section Widget
   Widget _buildBottomBar() {
     return CustomBottomBar(
+      selectedIndex: RxInt(0),
       onChanged: (BottomBarEnum type) {
         Get.toNamed(
           getCurrentRoute(type),
@@ -405,31 +703,118 @@ class HomeScreen extends GetWidget<HomeController> {
     );
   }
 
-  ///Handling route based on bottom click actions
-  String getCurrentRoute(BottomBarEnum type) {
-    switch (type) {
-      case BottomBarEnum.Home:
-        return AppRoutes.homeScreen;
-      case BottomBarEnum.Connections:
-        return AppRoutes.myConnectionScreen;
-      case BottomBarEnum.Add:
-        return "/";
-      case BottomBarEnum.Chat:
-        return AppRoutes.messageScreen;
-      case BottomBarEnum.Bookmark:
-        return "/";
-      default:
-        return AppRoutes.homeScreen;
-    }
+  void _showFilterBottomSheet() {
+    Get.bottomSheet(
+      Container(
+        padding: EdgeInsets.all(20),
+        height: Get.height * 0.6, // Adjust height as needed
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Filter Options",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 20),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    _buildFilterOption("Companies", Icons.filter_1),
+                    _buildFilterOption("Job Seekers", Icons.filter_2),
+                    _buildFilterOption("Customers", Icons.filter_3),
+                    _buildFilterOption("Posts", Icons.filter_4),
+                    _buildFilterOption("No filter", Icons.cancel),
+                    // Add more options as needed
+                  ],
+                ),
+              ),
+            ),
+            ElevatedButton(
+              style: CustomButtonStyles.fillDeepPurple,
+              onPressed: () {
+                Get.back(); // Close the bottom sheet
+                // Apply the filters here
+              },
+              child: Padding(
+                padding: const EdgeInsets.all(18.0),
+                child: Center(
+                  child: Text(
+                    "Back",
+                    style: TextStyle(color: appTheme.whiteA700, fontSize: 12.h),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      backgroundColor: Colors.white,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          top: Radius.circular(20),
+        ),
+      ),
+    );
   }
 
-  ///Handling page based on route
-  Widget getCurrentPage(String currentRoute) {
-    switch (currentRoute) {
-      case AppRoutes.postingPage:
-        return PostingPage();
-      default:
-        return DefaultWidget();
-    }
+  Widget _buildFilterOption(String title, IconData icon) {
+    return ListTile(
+      leading: Icon(icon),
+      title: Text(title),
+      onTap: () {
+        switch (title) {
+          case "Companies":
+            searchXController.changeFilterOption(FilterOptions.companies);
+            break;
+          case "Job Seekers":
+            searchXController.changeFilterOption(FilterOptions.job_seekers);
+            break;
+          case "Customers":
+            searchXController.changeFilterOption(FilterOptions.customers);
+            break;
+          case "Posts":
+            searchXController.changeFilterOption(FilterOptions.posts);
+            break;
+          case "No filter":
+            searchXController.changeFilterOption(FilterOptions.no_filter);
+            break;
+          default:
+            searchXController.changeFilterOption(FilterOptions.no_filter);
+            break;
+        }
+      },
+    );
+  }
+}
+
+///Handling route based on bottom click actions
+String getCurrentRoute(BottomBarEnum type) {
+  switch (type) {
+    case BottomBarEnum.Home:
+      return AppRoutes.homeScreen;
+    case BottomBarEnum.Connections:
+      return AppRoutes.myConnectionScreen;
+    case BottomBarEnum.Add:
+      return AppRoutes.postingPageScreen;
+    case BottomBarEnum.Chat:
+      return AppRoutes.messageScreen;
+    case BottomBarEnum.Bookmark:
+      return "/";
+    default:
+      return AppRoutes.homeScreen;
+  }
+}
+
+///Handling page based on route
+Widget getCurrentPage(String currentRoute) {
+  switch (currentRoute) {
+    case AppRoutes.postingPageScreen:
+      return PostingPage();
+    default:
+      return DefaultWidget();
   }
 }

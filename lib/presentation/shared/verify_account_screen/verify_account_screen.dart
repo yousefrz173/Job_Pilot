@@ -71,7 +71,7 @@ class VerifyAccountScreen extends GetWidget<VerifyAccountController> {
                   child: CustomTextFormField(
                     textStyle: TextStyle(color: Colors.amber),
                     controller: controller.verificationCodeController.value,
-                    hintText: "msg_brandonelouis_gmail_com".tr,
+                    hintText: "msg_verification_code".tr,
                     hintStyle: CustomTextStyles.bodySmallGray90099,
                     textInputAction: TextInputAction.done,
                     contentPadding: EdgeInsets.symmetric(
@@ -89,7 +89,7 @@ class VerifyAccountScreen extends GetWidget<VerifyAccountController> {
                 ),
                 SizedBox(height: 15.v),
                 CustomElevatedButton(
-                  onPressed: () => Get.toNamed(AppRoutes.homeScreen),
+                  onPressed: () => Get.offNamed(AppRoutes.homeScreen),
                   text: "lbl_back_to_home".tr.toUpperCase(),
                   buttonStyle: CustomButtonStyles.fillOrange,
                 ),

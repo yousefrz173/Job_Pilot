@@ -97,7 +97,7 @@ class SpecializationScreen extends GetWidget<SpecializationController> {
       () => GridView.builder(
         shrinkWrap: true,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          mainAxisExtent: 231.v,
+          mainAxisExtent: 161.v,
           crossAxisCount: 2,
           mainAxisSpacing: 15.h,
           crossAxisSpacing: 15.h,

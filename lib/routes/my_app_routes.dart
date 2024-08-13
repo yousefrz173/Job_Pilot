@@ -5,7 +5,7 @@ import '../presentation/shared/sign_up_screen/binding/sign_up_binding.dart';
 import '../presentation/shared/sign_up_as/sign_up_as_screen.dart';
 import '../presentation/shared/sign_up_as/binding/sign_up_as_binding.dart';
 import '../presentation/shared/verify_account_screen/binding/verify_account_binding.dart';
-import '../presentation/successfully_screen/successfully_screen.dart';
+import '../presentation/shared/successfully_screen/successfully_screen.dart';
 import '../presentation/description_screen/description_screen.dart';
 import '../presentation/description_screen/binding/description_binding.dart';
 import '../presentation/description_one_screen/description_one_screen.dart';
@@ -20,7 +20,7 @@ import '../presentation/shared/sign_up_screen/sign_up_screen.dart';
 import '../presentation/forgot_password_screen/forgot_password_screen.dart';
 import '../presentation/forgot_password_screen/binding/forgot_password_binding.dart';
 import '../presentation/shared/verify_account_screen/verify_account_screen.dart';
-import '../presentation/successfully_screen/binding/successfully_binding.dart';
+import '../presentation/shared/successfully_screen/binding/successfully_binding.dart';
 import '../presentation/shared/home_screen/home_screen.dart';
 import '../presentation/shared/home_screen/binding/home_binding.dart';
 import '../presentation/company_screen/binding/company_binding.dart';
@@ -36,20 +36,20 @@ import '../presentation/search_tab_container_screen/search_tab_container_screen.
 import '../presentation/search_tab_container_screen/binding/search_tab_container_binding.dart';
 import '../presentation/specialization_screen/specialization_screen.dart';
 import '../presentation/specialization_screen/binding/specialization_binding.dart';
-import '../presentation/filter_screen/filter_screen.dart';
-import '../presentation/filter_screen/binding/filter_binding.dart';
+import '../presentation/shared/filter_screen/filter_screen.dart';
+import '../presentation/shared/filter_screen/binding/filter_binding.dart';
 import '../presentation/filter_one_screen/filter_one_screen.dart';
 import '../presentation/filter_one_screen/binding/filter_one_binding.dart';
 import '../presentation/no_results_found_screen/no_results_found_screen.dart';
 import '../presentation/no_results_found_screen/binding/no_results_found_binding.dart';
-import '../presentation/posting_container_screen/posting_container_screen.dart';
-import '../presentation/posting_container_screen/binding/posting_container_binding.dart';
-import '../presentation/my_connection_screen/my_connection_screen.dart';
-import '../presentation/my_connection_screen/binding/my_connection_binding.dart';
+import '../presentation/shared/posting_page/posting_page.dart';
+import '../presentation/shared/posting_page/bindings/posting_page_binding.dart';
+import '../presentation/shared/my_connection_screen/my_connection_screen.dart';
+import '../presentation/shared/my_connection_screen/binding/my_connection_binding.dart';
 import '../presentation/about_us_tab_container_screen/about_us_tab_container_screen.dart';
 import '../presentation/about_us_tab_container_screen/binding/about_us_tab_container_binding.dart';
-import '../presentation/add_post_screen/add_post_screen.dart';
-import '../presentation/add_post_screen/binding/add_post_binding.dart';
+import '../presentation/shared/add_post_screen/add_post_screen.dart';
+import '../presentation/shared/add_post_screen/binding/add_post_binding.dart';
 import '../presentation/add_a_job_screen/add_a_job_screen.dart';
 import '../presentation/add_a_job_screen/binding/add_a_job_binding.dart';
 import '../presentation/edit_add_a_job_screen/edit_add_a_job_screen.dart';
@@ -72,8 +72,8 @@ import '../presentation/save_job_screen/save_job_screen.dart';
 import '../presentation/save_job_screen/binding/save_job_binding.dart';
 import '../presentation/no_savings_screen/no_savings_screen.dart';
 import '../presentation/no_savings_screen/binding/no_savings_binding.dart';
-import '../presentation/notifications_screen/notifications_screen.dart';
-import '../presentation/notifications_screen/binding/notifications_binding.dart';
+import '../presentation/shared/notifications_screen/notifications_screen.dart';
+import '../presentation/shared/notifications_screen/binding/notifications_binding.dart';
 import '../presentation/notifications_one_screen/notifications_one_screen.dart';
 import '../presentation/notifications_one_screen/binding/notifications_one_binding.dart';
 import '../presentation/notifications_two_screen/notifications_two_screen.dart';
@@ -84,10 +84,10 @@ import '../presentation/your_application_screen/your_application_screen.dart';
 import '../presentation/your_application_screen/binding/your_application_binding.dart';
 import '../presentation/no_notifications_screen/no_notifications_screen.dart';
 import '../presentation/no_notifications_screen/binding/no_notifications_binding.dart';
-import '../presentation/profile_screen/profile_screen.dart';
-import '../presentation/profile_screen/binding/profile_binding.dart';
-import '../presentation/edit_profile_screen/edit_profile_screen.dart';
-import '../presentation/edit_profile_screen/binding/edit_profile_binding.dart';
+import '../presentation/shared/profile_screen/profile_screen.dart';
+import '../presentation/shared/profile_screen/binding/profile_binding.dart';
+import '../presentation/shared/edit_profile_screen/edit_profile_screen.dart';
+import '../presentation/shared/edit_profile_screen/binding/edit_profile_binding.dart';
 import '../presentation/about_me_screen/about_me_screen.dart';
 import '../presentation/about_me_screen/binding/about_me_binding.dart';
 import '../presentation/add_work_experience_screen/add_work_experience_screen.dart';
@@ -152,7 +152,7 @@ class AppRoutes {
 
   static const String forgotPasswordScreen = '/forgot_password_screen';
 
-  static const String checkYourEmailScreen = '/verify_account_screen';
+  static const String verifyAccountScreen = '/verify_account_screen';
 
   static const String successfullyScreen = '/successfully_screen';
 
@@ -184,9 +184,7 @@ class AppRoutes {
 
   static const String noResultsFoundScreen = '/no_results_found_screen';
 
-  static const String postingPage = '/posting_page';
-
-  static const String postingContainerScreen = '/posting_container_screen';
+  static const String postingPageScreen = '/posting_page_screen';
 
   static const String myConnectionScreen = '/my_connection_screen';
 
@@ -339,7 +337,7 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: checkYourEmailScreen,
+      name: verifyAccountScreen,
       page: () => VerifyAccountScreen(),
       bindings: [
         CheckYourEmailBinding(),
@@ -437,10 +435,10 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: postingContainerScreen,
-      page: () => PostingContainerScreen(),
+      name: postingPageScreen,
+      page: () => PostingPageScreen(),
       bindings: [
-        PostingContainerBinding(),
+        PostingPageBinding(),
       ],
     ),
     GetPage(

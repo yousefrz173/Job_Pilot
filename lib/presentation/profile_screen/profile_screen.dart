@@ -66,10 +66,13 @@ class ProfileScreen extends GetWidget<ProfileController> {
     );
   }
 
-  /// Section Widget
   Widget _buildSixtyThree() {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 21.v),
+      margin: EdgeInsets.only(left: 1.h),
+      padding: EdgeInsets.symmetric(
+        horizontal: 12.h,
+        vertical: 21.v,
+      ),
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
@@ -82,39 +85,67 @@ class ProfileScreen extends GetWidget<ProfileController> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(height: 5.v),
-          CustomAppBar(
-            height: 24.v,
-            actions: [
-              AppbarTrailingImage(
-                imagePath: ImageConstant.imgQuestionOnprimarycontainer,
-                margin: EdgeInsets.only(left: 23.h),
-              ),
-              AppbarTrailingImage(
-                imagePath: ImageConstant.imgSearch,
-                margin: EdgeInsets.only(
-                  left: 15.h,
-                  right: 23.h,
+          Padding(
+            padding: EdgeInsets.only(
+              left: 15.h,
+              right: 10.h,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 17.v),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CustomImageView(
+                        imagePath: ImageConstant.imgImage50x50,
+                        height: 50.adaptSize,
+                        width: 50.adaptSize,
+                        radius: BorderRadius.circular(
+                          25.h,
+                        ),
+                      ),
+                      SizedBox(height: 13.v),
+                      Text(
+                        "lbl_orlando_diggs".tr,
+                        style:
+                            CustomTextStyles.titleSmallOnPrimaryContainerMedium,
+                      ),
+                      SizedBox(height: 1.v),
+                      Text(
+                        "lbl_california_usa".tr,
+                        style: CustomTextStyles.bodySmallOnPrimaryContainer,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-          SizedBox(height: 76.v),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Padding(
-              padding: EdgeInsets.only(left: 27.h),
-              child: Text(
-                "lbl_california_usa".tr,
-                style: CustomTextStyles.bodySmallOnPrimaryContainer,
-              ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 92.v),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CustomImageView(
+                        imagePath: ImageConstant.imgQuestionOnprimarycontainer,
+                        height: 24.adaptSize,
+                        width: 24.adaptSize,
+                      ),
+                      CustomImageView(
+                        imagePath: ImageConstant.imgSearch,
+                        height: 24.adaptSize,
+                        width: 24.adaptSize,
+                        margin: EdgeInsets.only(left: 15.h),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ),
           SizedBox(height: 26.v),
           Padding(
-            padding: EdgeInsets.only(
-              left: 27.h,
-              right: 13.h,
-            ),
+            padding: EdgeInsets.only(left: 15.h),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -486,6 +517,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
   /// Section Widget
   Widget _buildBottomBar() {
     return CustomBottomBar(
+      selectedIndex: RxInt(0),
       onChanged: (BottomBarEnum type) {
         Get.toNamed(getCurrentRoute(type), id: 1);
       },

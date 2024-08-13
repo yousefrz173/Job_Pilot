@@ -5,6 +5,7 @@ class CustomBottomBar extends StatelessWidget {
   CustomBottomBar({
     Key? key,
     this.onChanged,
+    required this.selectedIndex,
   }) : super(
           key: key,
         );
@@ -22,7 +23,7 @@ class CustomBottomBar extends StatelessWidget {
       type: BottomBarEnum.Connections,
     ),
     BottomMenuModel(
-      icon: Icons.add_circle,
+      icon: Icons.post_add,
       activeIcon: Icons.add_circle,
       type: BottomBarEnum.Add,
     ),

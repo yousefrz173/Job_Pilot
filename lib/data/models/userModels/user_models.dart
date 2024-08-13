@@ -88,7 +88,7 @@ class Company extends User {
     this.establishmentDate,
   });
   final DateTime? establishmentDate;
-  final String? employeeNumber;
+  final int? employeeNumber;
 
   @override
   Company copyWith({
@@ -97,7 +97,7 @@ class Company extends User {
     String? email,
     String? password,
     DateTime? establishmentDate,
-    String? employeeNumber,
+    int? employeeNumber,
     int? id,
     String? type,
     String? profilePhoto,
@@ -112,6 +112,22 @@ class Company extends User {
       id: id ?? this.id,
       profilePhoto: profilePhoto ?? this.profilePhoto,
       type: type ?? this.type,
+    );
+  }
+
+  @override
+  factory Company.fromJson(Map<String, dynamic> json) {
+    print(json);
+    return Company(
+      id: json['id'] ?? 0,
+      establishmentDate:
+          DateTime.tryParse(json['establishment_date'] ?? '') ?? DateTime.now(),
+      employeeNumber: json['employee_number'] ?? 0,
+      profilePhoto: json['profile_photo'] ?? '',
+      token: json['token'] ?? '',
+      name: json['name'] ?? '',
+      email: json['email'] ?? '',
+      password: json['password'] ?? '',
     );
   }
 }
@@ -155,6 +171,20 @@ class JobSeeker extends User {
       type: type ?? this.type,
     );
   }
+
+  @override
+  factory JobSeeker.fromJson(Map<String, dynamic> json) {
+    return JobSeeker(
+      id: json['id'] ?? 0,
+      name: json['username'] ?? '',
+      fullName: json['full_name'] ?? '',
+      birthDate: DateTime.tryParse(json['birth_date'] ?? '') ?? DateTime.now(),
+      profilePhoto: json['profile_photo'] ?? '',
+      password: json['password'],
+      token: json['token'] ?? '',
+      email: json['email'] ?? '',
+    );
+  }
 }
 
 class Customer extends User {
@@ -194,6 +224,19 @@ class Customer extends User {
       id: id ?? this.id,
       profilePhoto: profilePhoto ?? this.profilePhoto,
       type: type ?? this.type,
+    );
+  }
+
+  factory Customer.fromJson(Map<String, dynamic> json) {
+    return Customer(
+      id: json['id'] ?? 0,
+      name: json['username'] ?? '',
+      fullName: json['full_name'] ?? '',
+      birthDate: DateTime.tryParse(json['birth_date']) ?? DateTime.now(),
+      profilePhoto: json['profile_photo'] ?? '',
+      password: json['password'],
+      token: json['token'] ?? '',
+      email: json['email'] ?? '',
     );
   }
 }

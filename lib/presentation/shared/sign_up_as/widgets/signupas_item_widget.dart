@@ -18,42 +18,44 @@ class SignUpAsItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(
-        horizontal: 20.h,
-        vertical: 23.v,
-      ),
-      decoration: AppDecoration.fillOnPrimaryContainer.copyWith(
-        borderRadius: BorderRadiusStyle.roundedBorder15,
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 2.v),
-            child: Obx(
-              () => Text(
-                enumToString(signUpAsItemModelObj.jobPosition!.value),
-                style: CustomTextStyles.titleSmallGray90001,
+    return InkWell(
+      onTap: () {
+        controller.to(
+          signUpAsItemModelObj.jobPosition!.value,
+        );
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(
+          horizontal: 20.h,
+          vertical: 23.v,
+        ),
+        decoration: AppDecoration.fillOnPrimaryContainer.copyWith(
+          borderRadius: BorderRadiusStyle.roundedBorder15,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 2.v),
+              child: Obx(
+                () => Text(
+                  enumToString(signUpAsItemModelObj.jobPosition!.value),
+                  style: CustomTextStyles.titleSmallGray90001,
+                ),
               ),
             ),
-          ),
-          Obx(
-            () => CustomIconButton(
-              height: 24.adaptSize,
-              width: 24.adaptSize,
-              padding: EdgeInsets.all(8.h),
-              child: CustomImageView(
-                imagePath: signUpAsItemModelObj.close!.value,
+            Obx(
+              () => CustomIconButton(
+                height: 24.adaptSize,
+                width: 24.adaptSize,
+                padding: EdgeInsets.all(8.h),
+                child: CustomImageView(
+                  imagePath: signUpAsItemModelObj.close!.value,
+                ),
               ),
-              onTap: () {
-                controller.to(
-                  signUpAsItemModelObj.jobPosition!.value,
-                );
-              },
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

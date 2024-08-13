@@ -1,4 +1,4 @@
-import 'package:jobpilot/presentation/message_screen/controller/message_controller.dart';
+import '../controller/message_controller.dart';
 import 'package:get/get.dart';
 
 /// A binding class for the MessageScreen.

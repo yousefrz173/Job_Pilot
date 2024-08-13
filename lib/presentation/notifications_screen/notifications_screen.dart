@@ -17,7 +17,15 @@ class NotificationsScreen extends GetWidget<NotificationsController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: _buildAppBar(),
+        appBar: AppBar(
+          backgroundColor: appTheme.gray5001,
+          actions: [
+            AppbarSubtitleOne(
+              text: "lbl_read_all".tr,
+              margin: EdgeInsets.fromLTRB(22.h, 20.v, 22.h, 19.v),
+            ),
+          ],
+        ),
         body: Container(
           width: double.maxFinite,
           padding: EdgeInsets.symmetric(
